@@ -1,0 +1,9 @@
+.page-header{
+	@extend .container-fluid; 
+	padding: 0.8125rem;
+	.fullscreen-wrapper{
+	   min-height: 18.75rem;
+	   position: relative;
+	}
+}
+

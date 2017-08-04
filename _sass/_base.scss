@@ -140,3 +140,24 @@ svg:not(:root) {
   width: 100%;
   position: relative;
 }
+
+.white-bg{
+  background-color: $white;  //white background color
+}
+.bg-image-cover{ //full cover image background
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.row-full{  //full row with no gutter
+  @extend .row;
+  @extend .no-gutters;
+}
+.overlay-bg{
+   background-image: url('/assets/images/texture.png');
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0; 
+}
