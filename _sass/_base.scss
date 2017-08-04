@@ -9,10 +9,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $body-color;
-  font-family: $regular ;
+  color: $light-color;
+  font-family: $regular;
   line-height: 1.5;
-  background: url(/images/bg.jpg);
+  background: $background-color url('/assets/images/texture.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -127,19 +127,16 @@ nav {
   li ol {
     margin-top: 0;
   }
-}
-
+} 
 /* fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
-
-
-/* Container*/
-
+ 
+/* Container*/ 
 .container{
-  max-width: 1190px;
-  width: auto;
+  max-width: 1192px;
+  width: 100%;
   position: relative;
 }

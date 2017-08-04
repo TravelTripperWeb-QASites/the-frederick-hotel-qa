@@ -20,12 +20,14 @@ $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
 
-$global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
-$caption-font-family        : $serif !default;
-$regular                    : Courier New W07 Regular;
-$italic                     : Courier New W01 Italic;
-$icon                       : eleganticonsregular;
+$regular                    : "Courier New W07 Regular", serif !default;
+$italic                     : "Courier New W01 Italic", serif !default;
+
+$global-font-family         : $regular !default;
+$header-font-family         : $regular !default;
+$caption-font-family        : $italic !default;
+
+
 
 /* type scale */
 $type-size-1                : 4.688rem !default;  // ~75.52px
@@ -49,7 +51,7 @@ $light-gray                 : mix(#fff, $gray, 50%) !default;
 $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $body-color                 : #fff !default;
-$background-color           : #fff !default;
+$background-color           : #0b0b0b !default;
 $text-color                 : $dark-gray !default;
 $border-color               : $lighter-gray !default;
 
@@ -58,6 +60,9 @@ $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;
 $info-color                 : #007a9c !default;
+
+$light-color                : #d9d9d9 !default;
+
 
 
 /* brands */
