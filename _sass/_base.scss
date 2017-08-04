@@ -161,3 +161,29 @@ svg:not(:root) {
    bottom: 0;
    left: 0; 
 }
+.e-icon{
+  font-family: $font-icon;
+}
+
+//buttons
+.btn-primary{
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $white !important;
+  border-color: $primary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 0.9rem 1.4rem 0.6rem 1.4rem;
+  cursor: pointer;
+}
+.btn-blue{
+  @extend .btn-primary;
+   padding: 1rem 0.9rem 0.6rem 1.4rem;
+     .e-icon{
+      position: relative;
+      vertical-align: middle;
+    }
+}
