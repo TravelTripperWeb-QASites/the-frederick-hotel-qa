@@ -1,7 +1,7 @@
 # Site Settings
-title                    : "fredrick"
+title                    : "The Frederick Hotel"
 title_separator          : "-"
-name                     : "Hotel Property Name"
+name                     : "The Frederick Hotel"
 description              : "Site default description."
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"

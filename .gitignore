@@ -33,6 +33,6 @@ bower_components/
 node_modules/
 .bundle/
 vendor/
-
+assets/fonts
 
 !assets/js/vendor/

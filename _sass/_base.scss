@@ -9,9 +9,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
+  color: $body-color;
   font-family: $regular ;
   line-height: 1.5;
+  background: url(/images/bg.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,4 +133,13 @@ nav {
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+
+/* Container*/
+
+.container{
+  max-width: 1190px;
+  width: auto;
+  position: relative;
 }
