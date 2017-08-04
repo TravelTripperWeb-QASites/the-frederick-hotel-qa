@@ -1,0 +1,22 @@
+{
+  "_definitions": [
+    {
+      "name": {
+        "required": true
+      },
+      "title": {
+        "required": true
+      },
+      "file": "events.json"
+    },
+    {
+      "name": {
+        "required": true
+      },
+      "title": {
+        "required": true
+      },
+      "file": "gallery.json"
+    }
+  ]
+}
