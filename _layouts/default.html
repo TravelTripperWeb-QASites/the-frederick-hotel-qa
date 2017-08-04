@@ -19,14 +19,15 @@
       {% endcase %}
 
     {% endif %}
-
+   
+   {% comment%}
     {% include mainnav.html %}
-
-	<div class="container">
+   {% endcomment %}
+	 
 
 	    {{content}}
 	    
-	</div><!-- /.container -->
+	 
 
     <footer class="footer">
       {% include footer/custom.html %}
