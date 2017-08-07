@@ -7,18 +7,73 @@
     @extend .container ;
     @extend .row ;
     margin: auto;
-    .rotate{
-      }
 
-    .dining,
+    .image-holder{
+      position: relative;
+    .caption-90{
+      @include rotate(-90);
+      @include transform-origin(left top);
+      left: 10%;
+      top: auto;
+      position: absolute;
+      bottom: 6%;
+      }
+      }
+      .lady{
+
+        @extend  .col-md-7;
+      }
+    .dining {
+      padding: 0px;
+      @extend  .col-md-7;
+    }
+
     .bridge{
-      padding: 0;
+      padding: 0px;
+      @extend  .col-md-5;
+    }
+    .life-style,.cocktail{
+      @extend  .col-md-5 ;
+      @extend  .align-self-center ;
     }
     .img-fluid{
       width: 100%;
     }
   }
 
+}
+
+.location-bottom{
+  background: $black;
+  padding-top:0rem;
+  margin: 0;
+  padding-bottom:2.300rem;
+  @extend .row ;
+  @extend .h-location ;
+  .photo{
+      @extend .col-md-7 ;
+      @extend  .align-self-center ;
+      padding: 0;
+
+  .image-holder{
+    position: relative;
+    .img-fluid{
+      @include  media-breakpoint-down(md){
+        width: 100%;
+      };
+        width: auto;
+    }
+    .caption-right-90{
+      @include rotate(-90);
+      @include transform-origin(right top);
+      right: 10%;
+      top: 0;
+      position: absolute;
+      bottom: auto;
+      left: auto;
+    }
+  }
+  }
 }
 /* news letters*/
 .news-letters{
@@ -131,8 +186,11 @@
     }
 
     .contact-details{
-      width: 60%;
+      width: 100%;
       text-align: center;
+      @include media-breakpoint-up(md){
+          width: 60%;
+      }
       p{
         line-height: 2.205rem;
         span{
