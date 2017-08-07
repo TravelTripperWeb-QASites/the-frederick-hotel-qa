@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0rem 0 0.5rem;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -127,14 +127,14 @@ nav {
   li ol {
     margin-top: 0;
   }
-} 
+}
 /* fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
- 
-/* Container*/ 
+
+/* Container*/
 .container{
   max-width: 1192px;
   width: 100%;
@@ -159,7 +159,7 @@ svg:not(:root) {
    top: 0;
    right: 0;
    bottom: 0;
-   left: 0; 
+   left: 0;
 }
 .e-icon{
   font-family: $font-icon;

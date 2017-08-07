@@ -22,12 +22,10 @@
         font-size: $type-size-6 ;
         letter-spacing: 1px;
         font-weight: bold;
-        &:hover{
-          text-decoration: none;
-        }
+      
       }
       span{
-      font-family: $icon;
+      font-family: $font-icon;
       font-size: 18px;
       color:$black;
       vertical-align: middle;

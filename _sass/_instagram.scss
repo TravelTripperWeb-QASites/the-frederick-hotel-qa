@@ -1,3 +1,10 @@
+/* news letters*/
+.news-letters{
+	@extend .container-fluid;
+  padding: 0;
+}
+/* instagram*/
+
 .instagram{
   @extend .row ;
   @extend .align-items-center ;
@@ -36,22 +43,32 @@
           text-transform: uppercase;
           }
         }
-        i{
-          @include  border-radius(50%);
-          border:1px solid $light-color;
-          width: 27px;
-          height: 27px;
-          padding-top: 6px;
-          font-size: 12px;
-          margin: 10px 5px;
-        }
+
         a{
           color:$light-color;
-
+          @include transition($global-transition);
           &:hover{
             text-decoration: underline;
+              @include transition($global-transition);
+          }
+
+        }
+        .social-links{
+          a{
+            font-size:$type-size-7;
+            color:$light-color;
+            padding: 0 5px;
+            @include transition($global-transition);
+            &:hover{
+              color: $primary-color;
+              text-decoration: none;
+            }
+            span{
+              border: 1px solid $light-color;
+              padding: 10px;
+              @include border-radius(50%);
+            }
           }
         }
-
     }
 }
