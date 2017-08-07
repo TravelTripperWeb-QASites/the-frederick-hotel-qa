@@ -19,6 +19,10 @@ $(document).ready(function(){
     
     $(window).resize(function() {
       setHeight();
-    });
-
+    }); 
+        
 });
+
+//end ready
+//
+//
