@@ -88,5 +88,26 @@
 	.banner-wrapper{
 		@extend .fullscreen-wrapper;
 		height: 38.5rem;
+
+		h2{ 
+			 width:39.38rem;
+			 max-width: 100%;
+			 margin: 0 auto;
+			 text-align: center;
+			 text-transform: uppercase; 
+			 u{ 
+		 	 	position: relative;
+		 	 	border-bottom: 0;
+		 	 	&:before{
+		 	 		content: '';
+		 	 		position: absolute;
+		 	 		bottom: 1.675rem;
+		 	 		height: 2px;
+		 	 		background: $light-color;
+		 	 		width: 100%;
+		 	 	}
+		 	 }
+		}
+
 	}
 }
