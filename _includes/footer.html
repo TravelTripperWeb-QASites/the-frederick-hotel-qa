@@ -1,6 +1,6 @@
 <div class="container d-flex justify-content-between">
-  <span >&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
-  <span class="tt-signature"><img src="/images/tt-signature.png" alt="Traveltipper"/> </span>
+  <div class="col">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</div>
+  <div class=" col tt-signature"><img src="/images/tt-signature.png" alt="Traveltipper"/> </div>
   <!-- <div class="social-icons">
     {% if site.data.ui-text[site.default_lang].follow_label %}
       <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>

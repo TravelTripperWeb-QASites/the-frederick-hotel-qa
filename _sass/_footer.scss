@@ -4,4 +4,32 @@
   height: 60px;
   line-height: 60px; 
   font-size: $type-size-7 ;
+  .triumph{
+    background: $background-color ;
+    padding: 2.188rem 0;
+    .contact,.visit{
+      @extend .col-sm-3 ;
+        text-align: center;
+    }
+
+    .logo{
+        @extend .col-sm-6 ;
+        text-align: center;
+      }
+    a{
+      color:$black;
+      text-transform: uppercase;
+      font-size: $type-size-6 ;
+      letter-spacing: 1px;
+      font-weight: bold;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    span{  
+      font-size: 18px;
+      color:$black;
+      vertical-align: middle;
+    }
+  }
 }
