@@ -1,3 +1,25 @@
+/*home location*/
+
+.h-location{
+  background: $black;
+  padding-top:2.300rem;
+  .location{
+    @extend .container ;
+    @extend .row ;
+    margin: auto;
+    .rotate{
+      }
+
+    .dining,
+    .bridge{
+      padding: 0;
+    }
+    .img-fluid{
+      width: 100%;
+    }
+  }
+
+}
 /* news letters*/
 .news-letters{
 	@extend .container-fluid;
