@@ -28,8 +28,8 @@ h1 {
 
 h2 {
   font-size: $type-size-2;
-  letter-spacing: .800rem;
-  line-height: 72px;
+  letter-spacing: .200rem;
+  line-height: 4.5rem;
 }
 
 h3 {
@@ -153,7 +153,7 @@ svg:not(:root) {
   @extend .row;
   @extend .no-gutters;
 }
-.content-2{ 
+.content-2{
     @extend .col-sm-6;
 }
 .overlay-bg{
@@ -193,22 +193,22 @@ svg:not(:root) {
 .btn-outline{
   @extend .btn-primary;
   background: transparent;
-  border: 2px solid $black; 
+  border: 2px solid $black;
   color: $black !important;
   &:hover{
     background-color: $black;
     color: $white !important;
-    border: 2px solid $black; 
+    border: 2px solid $black;
   }
 }
-.btn-outline-arrow{ 
-   @extend .btn-blue; 
-   border: 2px solid $black; 
+.btn-outline-arrow{
+   @extend .btn-blue;
+   border: 2px solid $black;
    color: $black !important;
     background: transparent;
    &:hover{
      background-color: $black;
      color: $white !important;
-     border: 2px solid $black; 
+     border: 2px solid $black;
    }
 }

@@ -22,9 +22,15 @@
       a{
         color:$black;
         text-transform: uppercase;
+        border-bottom: 1px solid transparent;
         font-size: $type-size-6 ;
         letter-spacing: 1px;
         font-weight: bold;
+        @include transition($global-transition);
+        &:hover{
+          border-color:$black;
+          text-decoration: none;
+        }
       }
     span{
       font-size: 18px;

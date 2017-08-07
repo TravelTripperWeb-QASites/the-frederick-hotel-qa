@@ -1,6 +1,6 @@
 .page-header{
-	@extend .container-fluid; 
-	padding: 0.8125rem; 
+	@extend .container-fluid;
+	padding: 0.8125rem;
 	.social-links{
 		margin: 2rem;
 		padding: 2.125rem 0;
@@ -11,7 +11,7 @@
       	li{
       		display: inline;
       		a{
-      			color: $light-color; 
+      			color: $light-color;
       			width: 30%;
       			padding: .25em .78em;
       			font-size: $type-size-6 ;
@@ -27,14 +27,14 @@
 	.btn-primary{
         position: absolute;
         right: 3rem;
-        top: 3rem; 
+        top: 3rem;
 	}
 	.title{
 		text-transform: uppercase;
-		letter-spacing: 1.05rem; 
+		letter-spacing: 1.05rem;
 		line-height: 6rem;
 		min-width: 53.13rem;
-		max-width: 100%; 		
+		max-width: 100%;
 		margin: 4.9rem auto;
 		@include centerer(true, true);
 	}
@@ -43,7 +43,7 @@
 		position: absolute;
 		bottom: 0rem;
 		height: 75px;
-		text-align: center;  
+		text-align: center;
 		@include centerer(true, false);
 		@include transition($global-transition);
 		cursor: pointer;
@@ -53,7 +53,7 @@
 		}
 		.e-icon{
 			display: block;
-			text-align: center; 
+			text-align: center;
 			animation: pulse 1.5s infinite;
 			font-size: $type-size-4;
 			line-height: 1.5rem;
@@ -67,20 +67,20 @@
   0% {
     opacity: 0.2;
     margin-top: -10px;
-  } 
+  }
   100% {
      opacity: 1;
      margin-top: 0px;
   }
 }
-.logo{ 
+.logo{
 	text-align: center;
 	img{
-		margin: 6.8rem auto; 
+		margin: 6.8rem auto;
 	}
 }
 .title{
-	font-size: $type-size-1; 
+	font-size: $type-size-1;
 	letter-spacing: 0.8rem;
 }
 .fullscreen-wrapper{
@@ -88,18 +88,17 @@
    position: relative;
 }
 .heading-banner{
-	@extend .container-fluid; 
+	@extend .container-fluid;
 	.banner-wrapper{
 		@extend .fullscreen-wrapper;
 		height: 38.5rem;
 
-		h2{ 
-			 width:39.38rem;
-			 max-width: 100%;
+		h2{
+			 max-width:42rem;
 			 margin: 0 auto;
 			 text-align: center;
-			 text-transform: uppercase; 
-			 u{ 
+			 text-transform: uppercase;
+			 u{
 		 	 	position: relative;
 		 	 	border-bottom: 0;
 		 	 	&:before{
@@ -127,26 +126,26 @@
 	 width:100%;
 	 height:100%;
 	 padding: 14px;
-	 .intro{ 
+	 .intro{
 	 	width:100%;
 	    height:100%;
 	    position: relative;
 	    	.btn-primary{
 	            position: absolute;
 	            right: 3rem;
-	            top: 3rem; 
+	            top: 3rem;
 	    	}
 	    	h3{
 	    		@include centerer(true, false);
 	    		margin-top: 5%;
-	    		max-width: 22.5rem; 
-	    		text-align: center;	
+	    		max-width: 22.5rem;
+	    		text-align: center;
 	    	}
 	    	.title{
 	    		text-transform: uppercase;
-	    		letter-spacing: 1.05rem; 
-	    		line-height: 6rem; 
-	    		max-width: 22.5rem; 		 
+	    		letter-spacing: 1.05rem;
+	    		line-height: 6rem;
+	    		max-width: 22.5rem;
 	    		@include centerer(true, true);
 	    	}
 	    	.logo-intro{
@@ -160,10 +159,10 @@
 	    		bottom: 6%;
 	    		color: $white;
 	    		cursor: pointer;
-	    		 
+
 	    		&:hover{
 	    				color: $light-color;
-	    				 
+
 	    			}
 	    	}
 	 }
@@ -184,7 +183,7 @@
    	@include rotate(-90);
    	@include transform-origin(right bottom);
    	position: absolute;
-   	right: 48px; 
+   	right: 48px;
    	top: -24%;
    }
    .content-wrapper{
@@ -257,7 +256,7 @@
 		h3{
 			line-height: 2.5rem;
 			line-height: 2.5rem;
-		    letter-spacing: 0.33rem;  
+		    letter-spacing: 0.33rem;
 		    font-weight: 600;
 		}
 		p{
@@ -276,7 +275,7 @@
 			@include rotate(-90);
 			@include transform-origin(right bottom);
 			position: absolute;
-			right: 25%; 
+			right: 25%;
 			top: 16%;
 		}
 	}

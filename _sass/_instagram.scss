@@ -2,7 +2,7 @@
 
 .h-location{
   background: $black;
-  padding-top:2.300rem;
+  padding:3.300rem 0rem;
   .location{
     @extend .container ;
     @extend .row ;
@@ -35,21 +35,12 @@
     .life-style,.cocktail{
       @extend  .col-md-5 ;
       @extend  .align-self-center ;
+      padding: 0px;
     }
     .img-fluid{
       width: 100%;
     }
   }
-
-}
-
-.location-bottom{
-  background: $black;
-  padding-top:0rem;
-  margin: 0;
-  padding-bottom:2.300rem;
-  @extend .row ;
-  @extend .h-location ;
   .photo{
       @extend .col-md-7 ;
       @extend  .align-self-center ;
@@ -57,11 +48,18 @@
 
   .image-holder{
     position: relative;
+    margin-left: 0;
+    @media (min-width:1340px){
+      margin-left: -100px;
+    }
+      @media (min-width:1640px){
+          margin-left: -370px;
+      }
     .img-fluid{
       @include  media-breakpoint-down(md){
         width: 100%;
-      };
-        width: auto;
+        }
+      width: auto;
     }
     .caption-right-90{
       @include rotate(-90);
@@ -150,6 +148,18 @@
             border-color: transparent;
           }
       }
+      u{
+       position: relative;
+       border-bottom: 0;
+       &:before{
+         content: '';
+         position: absolute;
+         bottom: 1.675rem;
+         height: 2px;
+         background: $light-color;
+         width: 100%;
+       }
+      }
   }
   .nwl-bg{
     min-height: 610px;
@@ -202,9 +212,10 @@
         a{
           color:$light-color;
           @include transition($global-transition);
+          border-bottom: 1px solid transparent;
           &:hover{
-            text-decoration: underline;
-              @include transition($global-transition);
+            border-color: $light-color ;
+            text-decoration: none;
           }
 
         }
@@ -216,7 +227,8 @@
             @include transition($global-transition);
             &:hover{
               color: $primary-color;
-              text-decoration: none;
+              text-decoration:none;
+                border-color: transparent;
             }
             span{
               border: 1px solid $light-color;
