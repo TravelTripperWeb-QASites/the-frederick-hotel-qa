@@ -140,3 +140,50 @@ svg:not(:root) {
   width: 100%;
   position: relative;
 }
+
+.white-bg{
+  background-color: $white;  //white background color
+}
+.bg-image-cover{ //full cover image background
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.row-full{  //full row with no gutter
+  @extend .row;
+  @extend .no-gutters;
+}
+.overlay-bg{
+   background-image: url('/assets/images/texture.png');
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0; 
+}
+.e-icon{
+  font-family: $font-icon;
+}
+
+//buttons
+.btn-primary{
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $white !important;
+  border-color: $primary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 0.9rem 1.4rem 0.6rem 1.4rem;
+  cursor: pointer;
+}
+.btn-blue{
+  @extend .btn-primary;
+   padding: 1rem 0.9rem 0.6rem 1.4rem;
+     .e-icon{
+      position: relative;
+      vertical-align: middle;
+    }
+}
