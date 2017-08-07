@@ -1,0 +1,74 @@
+/* news letters*/
+.news-letters{
+	@extend .container-fluid;
+  padding: 0;
+}
+/* instagram*/
+
+.instagram{
+  @extend .row ;
+  @extend .align-items-center ;
+  margin: 0;
+
+  .heading{
+      background:$light-color;
+      @extend .text-center ;
+      width: 100%;
+      color:$black;
+      padding: 2.863rem 0 0.6rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.289rem;
+      h3{
+      padding:1.19rem 0rem;
+      }
+   }
+  .instagram-img{
+      width:100%;
+      @include media-breakpoint-up(md){
+        width: 20%;
+        padding: 0;
+        }
+        img{
+          width: 100%;
+        }
+    }
+
+    .contact-details{
+      width: 60%;
+      text-align: center;
+      p{
+        line-height: 2.205rem;
+        span{
+          font-weight: bold;
+          text-transform: uppercase;
+          }
+        }
+
+        a{
+          color:$light-color;
+          @include transition($global-transition);
+          &:hover{
+            text-decoration: underline;
+              @include transition($global-transition);
+          }
+
+        }
+        .social-links{
+          a{
+            font-size:$type-size-7;
+            color:$light-color;
+            padding: 0 5px;
+            @include transition($global-transition);
+            &:hover{
+              color: $primary-color;
+              text-decoration: none;
+            }
+            span{
+              border: 1px solid $light-color;
+              padding: 10px;
+              @include border-radius(50%);
+            }
+          }
+        }
+    }
+}
