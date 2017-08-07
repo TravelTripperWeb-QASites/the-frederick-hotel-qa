@@ -1,0 +1,57 @@
+.instagram{
+  @extend .row ;
+  @extend .align-items-center ;
+  margin: 0;
+
+  .heading{
+      background:$light-color;
+      @extend .text-center ;
+      width: 100%;
+      color:$black;
+      padding: 2.863rem 0 0.6rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.289rem;
+      h3{
+      padding:1.19rem 0rem;
+      }
+   }
+  .instagram-img{
+      width:100%;
+      @include media-breakpoint-up(md){
+        width: 20%;
+        padding: 0;
+        }
+        img{
+          width: 100%;
+        }
+    }
+
+    .contact-details{
+      width: 60%;
+      text-align: center;
+      p{
+        line-height: 2.205rem;
+        span{
+          font-weight: bold;
+          text-transform: uppercase;
+          }
+        }
+        i{
+          @include  border-radius(50%);
+          border:1px solid $light-color;
+          width: 27px;
+          height: 27px;
+          padding-top: 6px;
+          font-size: 12px;
+          margin: 10px 5px;
+        }
+        a{
+          color:$light-color;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+
+    }
+}
