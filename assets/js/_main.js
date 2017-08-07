@@ -21,7 +21,11 @@ $(document).ready(function(){
       setHeight();
     }); 
       
-  //carosel  
+   $('.homeintro').fadeIn('slow');
+   $('.close-icon').click(function(){
+     $('.homeintro').fadeOut('slow');
+   });
+
 });
 
 //end ready

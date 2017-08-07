@@ -47,6 +47,10 @@
 		@include centerer(true, false);
 		@include transition($global-transition);
 		cursor: pointer;
+		a{
+			color: $white;
+			text-decoration: none;
+		}
 		.e-icon{
 			display: block;
 			text-align: center; 
@@ -112,7 +116,59 @@
 	}
 }
 
+.homeintro{
+	position: fixed;
+	display: none;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 z-index:5;
+	 width:100%;
+	 height:100%;
+	 padding: 14px;
+	 .intro{ 
+	 	width:100%;
+	    height:100%;
+	    position: relative;
+	    	.btn-primary{
+	            position: absolute;
+	            right: 3rem;
+	            top: 3rem; 
+	    	}
+	    	h3{
+	    		@include centerer(true, false);
+	    		margin-top: 5%;
+	    		max-width: 22.5rem; 
+	    		text-align: center;	
+	    	}
+	    	.title{
+	    		text-transform: uppercase;
+	    		letter-spacing: 1.05rem; 
+	    		line-height: 6rem; 
+	    		max-width: 22.5rem; 		 
+	    		@include centerer(true, true);
+	    	}
+	    	.logo-intro{
+	    		@include centerer(true, false);
+	    		position: absolute;
+	    		bottom: 6%;
+	    	}
+	    	.close-icon{
+	    		position: absolute;
+	    		left: 6%;
+	    		bottom: 6%;
+	    		color: $white;
+	    		cursor: pointer;
+	    		 
+	    		&:hover{
+	    				color: $light-color;
+	    				 
+	    			}
+	    	}
+	 }
 
+}
 .home-welcome{
    background-color: $light-color;
    min-height: 100px;
