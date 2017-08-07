@@ -20,7 +20,8 @@ $(document).ready(function(){
     $(window).resize(function() {
       setHeight();
     }); 
-        
+      
+  //carosel  
 });
 
 //end ready

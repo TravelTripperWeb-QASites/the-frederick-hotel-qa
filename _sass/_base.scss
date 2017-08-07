@@ -153,6 +153,9 @@ svg:not(:root) {
   @extend .row;
   @extend .no-gutters;
 }
+.content-2{ 
+    @extend .col-sm-6;
+}
 .overlay-bg{
    background-image: url('/assets/images/texture.png');
    position: absolute;
@@ -186,4 +189,26 @@ svg:not(:root) {
       position: relative;
       vertical-align: middle;
     }
+}
+.btn-outline{
+  @extend .btn-primary;
+  background: transparent;
+  border: 2px solid $black; 
+  color: $black !important;
+  &:hover{
+    background-color: $black;
+    color: $white !important;
+    border: 2px solid $black; 
+  }
+}
+.btn-outline-arrow{ 
+   @extend .btn-blue; 
+   border: 2px solid $black; 
+   color: $black !important;
+    background: transparent;
+   &:hover{
+     background-color: $black;
+     color: $white !important;
+     border: 2px solid $black; 
+   }
 }
