@@ -30,9 +30,8 @@ layout: default
                <div class="logo">
                   <a href="/"><img src="/assets/images/logo.png" alt="The Frederick Hotel"></a>
               </div>
-              <div class="title text-center">This must be the place. </div>
-
-
+              <div class="title text-center" id="typetext" data-content="This must be ^the place."> </div>
+ 
               <div class="scroll-down">
                 <a data-scroll href="#welcome"> Scroll Down
                <span class="e-icon">G</span>
@@ -47,7 +46,7 @@ layout: default
      <div class="full-row">
        <div  id="welcome" class="banner-wrapper bg-image-cover" style="background-image: url('/assets/images/wood-chairs.jpg');">
           <div class="overlay-bg d-flex">
-             <h2 class="align-self-center">distinctly <u>modern</u> aesthetic &amp; <u>relaxed</u> sensibility</h2>
+             <h2 class="banner-title align-self-center">distinctly <u>modern</u> aesthetic &amp; <u>relaxed</u> sensibility</h2>
           </div>
        </div>
     </div>
@@ -58,18 +57,20 @@ layout: default
        <div class="row">
          <div class="content-wrapper">
             <div class="content">
+            <div data-aos="fade-down">
                <h3>Welcome to <br />the Frederick hotel</h3>
                <p>Lorem ipsum dolor sit amet, propriae imperdiet eu usu, legere dissentias at usu. Nec an dictas facilisis expetenda, ea scaevola assueverit philosophia duo, id nec laoreet ceteros. Ea cum tantas dissentiunt, eum quis illud ei, pri possim perfecto.</p>
                <a href="" class="btn btn-outline">Contact us</a>
+            </div>
             </div>
          </div>
         </div>
       </div>
    </div>
    <div class="full-row">
-      <div class="container">
+      <div class="container p-xs-0">
        <div class="row">
-         <div class="content-wrapper">
+         <div class="content-wrapper p-xs-0">
          <div class="carousel-wrapper">
              <div id="carouselAbout" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner" role="listbox">
@@ -114,7 +115,7 @@ layout: default
      <div class="full-row">
        <div class="banner-wrapper bg-image-cover" style="background-image: url('/assets/images/grey-fashion.jpg');">
           <div class="overlay-bg d-flex">
-             <h2 class="align-self-center">The greatest
+             <h2 class="banner-title align-self-center">The greatest
 <u>comfort</u> is the <u>freedom</u>
 <br />to <u>be yourself</u>.</h2>
           </div>
@@ -129,7 +130,7 @@ layout: default
                <figure>
                   <img src="/assets/images/i-fell.jpg" class="img-fluid" alt="I fell in love here">
                </figure>
-               <div class="detail">
+               <div class="detail" data-aos="fade-down">
                   <h3>your Exclusive <br/>launch offer</h3>
                    <p>Lorem ipsum dolor sit amet, propriae imperdiet eu usu, legere dissentias at usu. </p>
                    <a href="" class="btn btn-outline-arrow">Book Now <span class="e-icon">$</span></a>

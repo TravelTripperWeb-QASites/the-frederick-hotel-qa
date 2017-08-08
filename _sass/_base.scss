@@ -4,6 +4,10 @@
 html {
   position: relative;
   min-height: 100%;
+  font-size: 0.813rem;
+    @include media-breakpoint-up(lg){
+      font-size:$type-size-5 ;
+    }
 }
 
 body {
@@ -12,7 +16,7 @@ body {
   color: $light-color;
   font-family: $regular;
   line-height: 1.5;
-  background: $background-color url('/assets/images/texture.png');
+  background: $background-color url('/assets/images/texture.png'); 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,9 +31,37 @@ h1 {
 }
 
 h2 {
-  font-size: $type-size-2;
-  letter-spacing: .200rem;
-  line-height: 4.5rem;
+  font-size: $type-size-10;
+  letter-spacing: .1rem;
+  line-height: 3.5rem;
+  @include media-breakpoint-up(md){
+   font-size: $type-size-2;
+   line-height: 4.5rem;
+   letter-spacing: .2rem;
+  }
+     u{
+      position: relative;
+      border-bottom: 0;
+      
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 0.875rem;
+        left: 0;
+        height: 2px;
+        background: $light-color;
+        width: 0px;
+        @include transition(all .7s ease);
+          @include media-breakpoint-up(md){  
+            bottom: 1.675rem;
+          }
+      }
+     } 
+      u.active{
+        &:before{ 
+          width: 100%;
+        }
+      } 
 }
 
 h3 {
@@ -212,3 +244,13 @@ svg:not(:root) {
      border: 2px solid $black;
    }
 }
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 

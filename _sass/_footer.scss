@@ -41,10 +41,10 @@
 
   .copy-rights{
      @extend .container ;
-  .wrapper{
-    @extend .d-flex ;
+  .wrapper{ 
     @extend .justify-content-between ;
     @extend .row ;
+    @extend .no-gutters;
   }
 }
 }
