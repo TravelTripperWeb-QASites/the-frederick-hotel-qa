@@ -7,9 +7,9 @@ layout: default
         <h3>Launching <br />October 15th, 2017</h3>
        <div class="title text-center">Ready for take off! </div>
        <div class="logo-intro">
-           <a href="/"><img src="/assets/images/logo.png" alt="The Frederick Hotel"></a>
+           <a href="/" title="The Frederick Hotel"><img src="/assets/images/logo.png" alt="The Frederick Hotel"></a>
        </div>
-       <div class="close-icon"><span class="e-icon">Q</span></div>
+       <div class="close-icon"><span class="e-icon" aria-label="Close & Skip to Main Page">Q</span></div>
      </div> 
 </div> 
 <section class="page-header white-bg">
@@ -18,22 +18,26 @@ layout: default
          <div class="overlay-bg">
               <div class="social-links">
               	  <ul>
-              	   <li><a href=""><span aria-hidden="true" class="social_facebook"></span></a></li>
-              	   <li><a href=""><span aria-hidden="true" class="social_twitter"></span></a></li>
-              	   <li><a href=""><span aria-hidden="true" class="social_instagram"></span></a></li>
-              	   <li><a href=""><span aria-hidden="true" class="social_googleplus"></span></a></li>
-              	   <li><a href=""><span aria-hidden="true" class="social_pinterest"></span></a></li>
+                  {% if site.data.social.facebook.username %}
+              	   <li><a href="https://facebook.com/{{ site.data.social.facebook.username }}" title="Like us on Facebook" target="_blank"><span aria-hidden="true" class="social_facebook"></span></a></li>
+                   {% endif %}
+                   {% if site.data.social.twitter.username %}
+              	   <li><a href="https://twitter.com/{{ site.data.social.twitter.username }}" title="Tweet Us" target="_blank"><span aria-hidden="true" class="social_twitter"></span></a></li>
+                    {% endif %} 
+              	   <li><a href="" title="Share Instagram images"><span aria-hidden="true" class="social_instagram" target="_blank"></span></a></li>
+              	   <li><a href="" title="Google Plus" target="_blank"><span aria-hidden="true" class="social_googleplus"></span></a></li>
+              	   <li><a href="" title="Pin It" target="_blank"><span aria-hidden="true" class="social_pinterest"></span></a></li>
               	  </ul>
               </div>
 
-              <a class="btn btn-blue">Book Now <span class="e-icon">$</span></a>
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <span class="e-icon">$</span></a>
                <div class="logo">
-                  <a href="/"><img src="/assets/images/logo.png" alt="The Frederick Hotel"></a>
+                  <a href="/" title="The Frederick Hotel Homepage"><img src="/assets/images/logo.png" alt="The Frederick Hotel"></a>
               </div>
               <div class="title text-center" id="typetext" data-content="This must be ^the place."> </div>
  
               <div class="scroll-down">
-                <a data-scroll href="#welcome"> Scroll Down
+                <a title="go to Welcome section" data-scroll href="#welcome"> Scroll Down
                <span class="e-icon">G</span>
                </a>
               </div>
@@ -60,7 +64,7 @@ layout: default
             <div data-aos="fade-down">
                <h3>Welcome to <br />the Frederick hotel</h3>
                <p>Lorem ipsum dolor sit amet, propriae imperdiet eu usu, legere dissentias at usu. Nec an dictas facilisis expetenda, ea scaevola assueverit philosophia duo, id nec laoreet ceteros. Ea cum tantas dissentiunt, eum quis illud ei, pri possim perfecto.</p>
-               <a href="" class="btn btn-outline">Contact us</a>
+               <a title="Contact Us" href="#" class="btn btn-outline">Contact us</a>
             </div>
             </div>
          </div>
@@ -91,11 +95,11 @@ layout: default
                  </div>
                </div>
                 <div class="wht-space">  </div>
-                <a class="carousel-control-prev"  href=""  data-target="#carouselAbout" role="button" data-slide="prev">
+                <a class="carousel-control-prev"  href="#" title="previous slide"  data-target="#carouselAbout" role="button" data-slide="prev">
                     <span class="e-icon" aria-hidden="true">D</span>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next"  href="" data-target="#carouselAbout" role="button" data-slide="next">
+                  <a class="carousel-control-next"  href="#" title="next slide"  data-target="#carouselAbout" role="button" data-slide="next">
                     <span class="e-icon" aria-hidden="true">E</span>
                     <span class="sr-only">Next</span>
                   </a>
@@ -133,7 +137,7 @@ layout: default
                <div class="detail" data-aos="fade-down">
                   <h3>your Exclusive <br/>launch offer</h3>
                    <p>Lorem ipsum dolor sit amet, propriae imperdiet eu usu, legere dissentias at usu. </p>
-                   <a href="" class="btn btn-outline-arrow">Book Now <span class="e-icon">$</span></a>
+                   <a href="" title="Contact Us" class="btn btn-outline-arrow">Book Now <span class="e-icon">$</span></a>
                </div>
             </div>
             <div class="content-2 p-0">
