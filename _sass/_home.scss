@@ -56,10 +56,18 @@
 		} 
 		 
 	}
-	.scroll-down{
-		max-width: 100px;
+	.opening{
 		position: absolute;
-		bottom: 0rem;
+		bottom: 8rem;
+		@include centerer(true, false);
+		font-size: $type-size-3;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.scroll-down{
+		max-width: 80px;
+		position: absolute;
+		bottom: 1.3rem;
 		height: 75px;
 		text-align: center;
 		@include centerer(true, false);

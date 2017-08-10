@@ -21,6 +21,9 @@
       }
       .f-logo{
         border:0px;
+        img{
+          max-width: 150px;
+        }
       }
       a{
         color:$black;
@@ -29,6 +32,7 @@
         font-size: $type-size-6 ;
         letter-spacing: 1px;
         font-weight: bold;
+        text-decoration: none;
         @include transition($global-transition);
         &:hover{
           border-color:$black;
