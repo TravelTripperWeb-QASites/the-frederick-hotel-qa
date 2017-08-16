@@ -1,0 +1,89 @@
+/*
+   Typography
+   ========================================================================== */
+
+$font-size-base             : 1rem !default; // Assumes the browser default, typically `16px`
+
+/* systrem typefaces */
+$serif                      : Georgia, Times, serif !default;
+$sans-serif                 : -apple-systrem, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* sans serif typefaces */
+$sans-serif-narrow          : $sans-serif !default;
+$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+
+/* serif typefaces */
+$georgia                    : Georgia, serif !default;
+$times                      : Times, serif !default;
+$bodoni                     : "Bodoni MT", serif !default;
+$calisto                    : "Calisto MT", serif !default;
+$garamond                   : Garamond, serif !default;
+
+$regular                    : "Courier New W07 Regular", serif !default;
+$italic                     : "Courier New W01 Italic", serif !default;
+$icon                       : "eleganticonsregular",  serif !default;
+
+$global-font-family         : $regular !default;
+$header-font-family         : $regular !default;
+$caption-font-family        : $italic !default;
+
+$font-icon                  : "ElegantIcons" !default; //font for icons
+
+/* type scale */
+$type-size-1                : 4.688rem !default;  // ~75.52px
+$type-size-2                :   3rem !default;  // ~48px
+$type-size-3                : 1.5rem !default;  // ~24px
+$type-size-4                : 1rem !default;      // ~16px
+$type-size-5                : 0.9375rem !default;           //15px
+$type-size-6                : 0.875rem !default;   // ~14px
+$type-size-7                : 0.75rem !default;    // ~12px
+$type-size-8                : 0.625rem !default;  // ~10px
+$type-size-9                :   2.5rem !default;  // ~48px
+$type-size-10                :   2.2rem !default;  // ~48px
+/*
+   Colors
+   ========================================================================== */
+
+$gray                       : #7a8288 !default;
+$dark-gray                  : mix(#000, $gray, 40%) !default;
+$darker-gray                : mix(#000, $gray, 60%) !default;
+$light-gray                 : mix(#fff, $gray, 50%) !default;
+$lighter-gray               : mix(#fff, $gray, 90%) !default;
+
+$body-color                 : #fff !default;
+$background-color           : #0b0b0b !default;
+$text-color                 : $dark-gray !default;
+$border-color               : $lighter-gray !default;
+
+$primary-color              : #282e7a !default;
+$success-color              : #62c462 !default;
+$warning-color              : #f89406 !default;
+$danger-color               : #ee5f5b !default;
+$info-color                 : #007a9c !default;
+
+$light-color                : #d9d9d9 !default;
+
+
+
+/* brands */
+$facebook-color             : #3b5998 !default;
+$google-plus-color          : #dd4b39 !default;
+$instagram-color            : #517fa4 !default;
+$pinterest-color            : #cb2027 !default;
+$twitter-color              : #55acee !default;
+$youtube-color              : #bb0000 !default;
+
+/* links */
+$link-color                 : $info-color !default;
+$link-color-hover           : mix(#000, $link-color, 25%) !default;
+$link-color-visited         : mix(#fff, $link-color, 25%) !default;
+
+
+/*
+   Other
+   ========================================================================== */
+
+$border-radius              : 4px !default;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+$global-transition          : all 0.2s ease-in-out !default;

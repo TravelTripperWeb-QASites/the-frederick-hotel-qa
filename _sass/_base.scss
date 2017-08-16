@@ -1,0 +1,256 @@
+/*
+   Base Elements
+   ========================================================================== */
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 0.813rem;
+    @include media-breakpoint-up(lg){
+      font-size:$type-size-5 ;
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $light-color;
+  font-family: $regular;
+  line-height: 1.5;
+  background: $background-color url('/assets/images/texture.png'); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: $type-size-1;
+  font-family: $regular;
+}
+
+h2 {
+  font-size: $type-size-10;
+  letter-spacing: .1rem;
+  line-height: 3.5rem;
+  @include media-breakpoint-up(md){
+   font-size: $type-size-2;
+   line-height: 4.5rem;
+   letter-spacing: .2rem;
+  }
+     u{
+      position: relative;
+      border-bottom: 0;
+      
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 0.875rem;
+        left: 0;
+        height: 2px;
+        background: $light-color;
+        width: 0px;
+        @include transition(all .7s ease);
+          @include media-breakpoint-up(md){  
+            bottom: 1.675rem;
+          }
+      }
+     } 
+      u.active{
+        &:before{ 
+          width: 100%;
+        }
+      } 
+}
+
+h3 {
+  font-size: $type-size-3;
+}
+
+h4 {
+  font-size: $type-size-6;
+}
+
+h5 {
+  font-size: $type-size-6;
+}
+
+h6 {
+  font-size: $type-size-6;
+}
+
+small, .small {
+  font-size: $type-size-6;
+}
+
+p {
+  font-size:$type-size-5 ;
+  margin-bottom: 1.3rem;
+}
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
+  a {
+    color: inherit;
+  }
+}
+
+del a {
+  color: inherit;
+}
+
+/* links */
+
+a {
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+/* horizontal rule */
+
+hr {
+  display: block;
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/* sets a default bottom margin and removes bullet points from lists */
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+li ul,
+li ol {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+/* removes margins, padding, and bullet points from navigation lists */
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* override white-space for nested lists */
+  ul li,
+  ol li {
+    margin-bottom: 0;
+  }
+
+  li ul,
+  li ol {
+    margin-top: 0;
+  }
+}
+/* fix IE9 SVG bug */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Container*/
+.container{
+  max-width: 1192px;
+  width: 100%;
+  position: relative;
+}
+
+.white-bg{
+  background-color: $white;  //white background color
+}
+.bg-image-cover{ //full cover image background
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.row-full{  //full row with no gutter
+  @extend .row;
+  @extend .no-gutters;
+}
+.content-2{
+    @extend .col-sm-6;
+}
+.overlay-bg{
+   background-image: url('/assets/images/texture.png');
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+.e-icon{
+  font-family: $font-icon;
+}
+
+//buttons
+.btn-primary{
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $white !important;
+  border-color: $primary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 0.9rem 1.4rem 0.6rem 1.4rem;
+  cursor: pointer;
+}
+.btn-blue{
+  @extend .btn-primary;
+   padding: 1.2rem 1.1rem 0.8rem 1.6rem;
+     .e-icon{
+      position: relative;
+      vertical-align: middle;
+    }
+}
+.btn-outline{
+  @extend .btn-primary;
+  background: transparent;
+  border: 2px solid $black;
+  color: $black !important;
+  &:hover{
+    background-color: $black;
+    color: $white !important;
+    border: 2px solid $black;
+  }
+}
+.btn-outline-arrow{
+   @extend .btn-blue;
+   border: 2px solid $black;
+   color: $black !important;
+    background: transparent;
+   &:hover{
+     background-color: $black;
+     color: $white !important;
+     border: 2px solid $black;
+   }
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 

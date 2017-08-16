@@ -1,0 +1,15 @@
+main:
+  - title: About
+    url: /
+  - title: Rooms
+    url: /
+  - title: Offers
+    url: /
+  - title: Location
+    url: /
+  - title: Events
+    url: 
+  - title: Gallery
+    url: /
+  - title: Contact
+    url: /
