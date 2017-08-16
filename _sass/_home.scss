@@ -388,3 +388,9 @@
 		}
 	}
 }
+
+.freedom {
+	@include media-breakpoint-down(xs){
+		margin-top: 1rem;
+	  }
+}
