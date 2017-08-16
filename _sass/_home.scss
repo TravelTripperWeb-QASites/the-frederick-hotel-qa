@@ -382,6 +382,9 @@
 			position: absolute;
 			right: 25%;
 			top: 16%;
+			@include media-breakpoint-down(xs){
+				right: 10%
+			}
 		}
 	}
 }
