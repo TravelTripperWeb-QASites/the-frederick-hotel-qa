@@ -1,5 +1,8 @@
-<div class="container d-flex justify-content-between">
-  <div class="social-icons">
+<div class="copy-rights">
+  <div class="wrapper">
+  <div class="col-md-12 text-center">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</div>
+  <!--div class="signature"><img src="/assets/images/triumph-logo" alt="Traveltipper"/> </div-->
+  <!-- <div class="social-icons">
     {% if site.data.ui-text[site.default_lang].follow_label %}
       <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>
     {% endif %}
@@ -9,6 +12,6 @@
     {% if site.data.social.facebook.username %}
       <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a>
     {% endif %}
-  </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  </div> -->
+</div>
 </div>
