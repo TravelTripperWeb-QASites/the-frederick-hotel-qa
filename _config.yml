@@ -3,7 +3,7 @@ title                    : "The Frederick Hotel"
 title_separator          : "-"
 name                     : "The Frederick Hotel"
 description              : "The Frederick Hotel"
-url                      : "http://www.frederickhotelnyc.com"
+url                      : "https://www.frederickhotelnyc.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TravelTripperWeb/frederick-hotel"
 
