@@ -214,7 +214,7 @@
 
 }
 .home-welcome{
-   background-color: $light-color;
+   background-color: #ECECEC;
    min-height: 100px;
    color: $black;
    .img-left{
@@ -258,7 +258,7 @@
 	   	   @include media-breakpoint-up(xl){
 	   	  	padding: 5.625rem 1rem 7.625rem;
 	   	  }
-        background-color: $light-color;
+        background-color: #ECECEC;
    	  	h3{
    	  		line-height: 2.5rem;
    	  		font-weight: 600;
@@ -298,11 +298,11 @@
 	     }
 	   	.wht-space{
 	   		height: 35px;
-		    width: 41%;
+		    // width: 41%;
 		    position: absolute;
 		    top: 0;
 		    left: 0;
-		    background-color: $light-color;
+		    background-color: #ECECEC;
 		    @include media-breakpoint-up(md){
 		     	height: 56px;
 		     }
@@ -382,6 +382,15 @@
 			position: absolute;
 			right: 25%;
 			top: 16%;
+			@include media-breakpoint-down(xs){
+				right: 10%
+			}
 		}
 	}
+}
+
+.freedom {
+	@include media-breakpoint-down(xs){
+		margin-top: 1rem;
+	  }
 }
