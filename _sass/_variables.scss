@@ -18,9 +18,9 @@ $georgia                    : Georgia, serif !default;
 $times                      : Times, serif !default;
 $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
-$garamond                   : Garamond, serif !default;
-
+$garamond                   : Garamond, serif !default; 
 $regular                    : "Courier New W07 Regular", serif !default;
+$medium                     : "Courier W01 Medium", serif !default;
 $italic                     : "Courier New W01 Italic", serif !default;
 $icon                       : "eleganticonsregular",  serif !default;
 
@@ -41,10 +41,18 @@ $type-size-7                : 0.75rem !default;    // ~12px
 $type-size-8                : 0.625rem !default;  // ~10px
 $type-size-9                :   2.5rem !default;  // ~48px
 $type-size-10                :   2.2rem !default;  // ~48px
+
+$font-45  :2.813rem; //45px
+$font-35  :2.188rem; //35px
+$font-24  :1.5rem;  //24px
+$font-12  :0.75rem; //12px
+$font-200 : 12.5rem; //200px
+$font-15  : 0.9375rem; //15px
+$font-14  : 0.875rem; //14px
+$font-16  : 1rem; //14px
 /*
    Colors
    ========================================================================== */
-
 $gray                       : #7a8288 !default;
 $dark-gray                  : mix(#000, $gray, 40%) !default;
 $darker-gray                : mix(#000, $gray, 60%) !default;
@@ -56,14 +64,19 @@ $background-color           : #0b0b0b !default;
 $text-color                 : $dark-gray !default;
 $border-color               : $lighter-gray !default;
 
-$primary-color              : #282e7a !default;
+$primary-color              : #2b337e !default;
 $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
-$danger-color               : #ee5f5b !default;
+$danger-color               : #a83944 !default;
 $info-color                 : #007a9c !default;
 
-$light-color                : #d9d9d9 !default;
-
+$white                      : $body-color !default;
+$light-color                : #d9d9d9 !default; 
+$light-slate-grey           : #73747a !default;
+$slate-grey                 : #414141 !default;
+$midnight-charcoal          : #1e1e1e !default;
+$caption-black              : #16141a !default;
+$caption-hover              : #707070 !default;
 
 
 /* brands */

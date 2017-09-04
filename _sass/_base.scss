@@ -16,7 +16,7 @@ body {
   color: $light-color;
   font-family: $regular;
   line-height: 1.5;
-  background: $background-color url('/assets/images/texture.png'); 
+  background: $background-color url('/assets/images/pattern.png'); 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,12 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $type-size-1;
+  font-size: $font-45;
   font-family: $regular;
 }
 
 h2 {
-  font-size: $type-size-10;
+  font-size: $font-24;
   letter-spacing: .1rem;
   line-height: 3.5rem;
   @include media-breakpoint-up(md){
@@ -65,15 +65,15 @@ h2 {
 }
 
 h3 {
-  font-size: $type-size-3;
+  font-size: $font-12;
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-size: $font-200;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $font-14;
 }
 
 h6 {
