@@ -1,6 +1,132 @@
+.inner-banner{
+  height:477px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.heading-section{
+  @extend .container;
+  .heading-inner{
+    @extend .row;
+    padding:3.6rem 0;
+    .heading{
+      @extend .col-md-5;
+      h1{text-transform:uppercase; color:$midnight-charcoal;}
+      &.heading-big{
+        @extend .col-md-9;
+      }
+    }
+    .btns-sec{
+      @extend .col-md-4;
+      padding-top:3.825rem;
+      padding-left: 1.6rem;
+      .btn-holder{
+        &:first-child{
+          margin: 0 0 2.95rem 0;
+        }
+      }
+    }
+  }
+}
+.whyus{
+  background:$light-slate-grey; 
+  padding-top:4rem;
+  .heading{
+  font-weight:bold;
+  color:$white;
+  font-size:$font-16;
+  }
+}
 .old-newyork{
 	width:100%;
 	img{
 		width:100%;
 		}
+}
+
+
+.save-on-stays{
+  .heading-sec{
+    margin: 3rem auto 4rem auto;
+    @extend .container;
+    max-width:1123px;
+    @include  media-breakpoint-down(md){
+      margin-top: 0rem;
+    }
+    .btn-holder{
+      margin-top: 3rem;
+      @include  media-breakpoint-down(md){
+        margin-top: 2rem;
+      }
+    }
+  }
+  .offers-wrap{
+    @extend .row-full;
+    .offer-sec{
+      position:relative;
+      cursor:pointer;
+      @extend .col-md-3;
+      padding:0;
+      .offer-heading{
+        position:relative;
+        height:8.75rem;
+        h6{
+          font-family:$medium ;
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          top: 40%;
+          text-align: center;
+          margin: auto;
+          letter-spacing:0.2rem;
+          color:$midnight-charcoal;
+        }
+      }
+      .btn-holder{
+        display:none;
+        position:absolute;
+       
+        left:0%;
+        top:40%;
+        right: 0%;
+        margin: auto;
+        text-align: center;
+      }
+      .offer-img{
+        position:relative;
+        min-height: 475px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .img-bg{
+          background-color:rgba(255, 255, 255, 0.4);
+          position:absolute;
+          top:0;
+          bottom:0;
+          right:0;
+          left:0px;
+          display:none;
+          transition: $global-transition;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      &:hover{
+        .btn-holder{display:block;}
+        .offer-heading{
+        background-color:$primary-color;
+          h6{color:$white;}
+        }
+        .offer-img{
+          .img-bg{
+            display:block;
+            transition: $global-transition;
+          }
+        }
+      }
+    }
+  }
 }
