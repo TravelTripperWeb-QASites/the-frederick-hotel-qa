@@ -73,7 +73,7 @@ h5 {
 }
 
 h6 {
-  font-size: $type-size-6;
+  font-size: $font-16;
 }
 
 small, .small {
@@ -241,6 +241,20 @@ svg:not(:root) {
      border: 2px solid $black;
    }
 }
+.btn-white{
+  @extend .btn-blue;
+  background-color: $white;
+  color: $primary-color !important;
+  @include transition($global-transition);
+   i{
+      padding-left: .6rem;
+   }
+  &:hover{
+    color: $white !important;
+    background-color: $primary-color;
+    text-decoration: none;
+  }
+}
 .btn-square{
   @extend .btn-blue;
   max-width: 142px;
@@ -260,7 +274,7 @@ svg:not(:root) {
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  padding: .3rem .5rem;
+  padding: .3rem .7rem;
   font-size: $font-14;
   font-family: $medium;
   letter-spacing:.12rem;
@@ -279,6 +293,7 @@ svg:not(:root) {
   }
   &:hover, &:focus{
          outline: 0;
+         box-shadow: none;
          color: $slate-grey;
          &:before{
              height: 50%;
