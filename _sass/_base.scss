@@ -213,6 +213,9 @@ svg:not(:root) {
   line-height: 1.3rem;
   padding: 0.9rem 1.4rem 0.6rem 1.4rem;
   cursor: pointer;
+  &:hover{
+    text-decoration: none;
+  }
 }
 .btn-blue{
   @extend .btn-primary;
@@ -232,6 +235,15 @@ svg:not(:root) {
     color: $white !important;
     border: 2px solid $black;
   }
+}
+.btn-white{
+    @extend .btn-primary;
+    color: $primary-color !important;
+    background-color: $white;
+     &:hover{
+        background-color: $black;
+        color: $white !important;
+      }
 }
 .btn-outline-arrow{
    @extend .btn-blue;

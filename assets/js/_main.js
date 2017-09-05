@@ -3,6 +3,13 @@
    ========================================================================== */ 
 $(document).ready(function(){
 
+    $(".special-item").hover(function(){
+      $(this).find(".overlay").slideDown(100);
+      $(this).find(".offer-bottom").addClass("active");
+    }, function(){
+      $(this).find(".overlay").slideUp(100);
+      $(this).find(".offer-bottom").removeClass("active");
+    }); 
   // FitVids init
   $("#main").fitVids();
 
@@ -78,7 +85,9 @@ $(document).ready(function(){
               
        });
     });
-  
+      
+
+
 }); 
 //end ready
 
