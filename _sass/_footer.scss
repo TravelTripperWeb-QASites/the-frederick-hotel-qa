@@ -6,7 +6,6 @@
   font-size: $type-size-7 ;
 
   .triumph{
-    background:$light-color ;
     padding: 2.188rem 0;
     .contact,.visit{
       @extend .col-sm-3 ;
@@ -45,9 +44,12 @@
       vertical-align: middle;
       }
    }
-
+.bg-dark{
+  background: $midnight-charcoal;
+}
   .copy-rights{
      @extend .container ;
+     
   .wrapper{ 
     @extend .justify-content-between ;
     @extend .row ;
