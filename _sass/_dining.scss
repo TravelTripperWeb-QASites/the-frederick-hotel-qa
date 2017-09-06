@@ -12,5 +12,39 @@
 }
 .page-intro {
   background-color: $midnight-charcoal;
-  padding: 4.000rem 0;
+  padding: 4.000rem 4.250rem;
+    .-left {
+      margin-right: -26px;
+      .left-content {
+        padding-left: 1.875rem;
+        width: 78%;
+      }
+      .left-image {
+        padding-top: 3.250em;
+         img {
+           width: 100%;
+         }
+         span {
+           display: block;
+           font-family: $italic;
+           color: $light-slate-grey;
+           font-size: $font-14;
+           padding: 2.125em 0;
+           letter-spacing: 0.050rem;
+         }
+      }
+      .btn-holder {
+        text-align: right;
+      }
+    }
+    .-right {
+      margin-left: 26px;
+      .logo-wrap {
+        max-width: 273px;
+        margin: 0 auto;
+         img {
+           width: 100%;
+         }
+      }
+    }
 }
