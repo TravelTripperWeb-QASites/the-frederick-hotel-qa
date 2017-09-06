@@ -323,7 +323,74 @@
 		}
 	}
 }
-
+.rooms-carousel{
+	background: linear-gradient(to left, $midnight-charcoal 50%, transparent 50%);
+	padding-top:4.125rem;
+	margin-bottom:5.125rem;
+	@include  media-breakpoint-down(md){
+		background: linear-gradient(to left, $midnight-charcoal 50%, transparent 50%);
+	}
+	.rooms-carousel-container{
+		@extend .container;
+		.rooms-carousel-inner{
+			@extend .row;
+			.carousel{
+				width:100%;
+				.carousel-item{
+					padding-top: 5rem;
+				}
+				.carousel-caption{
+					position: absolute;
+				    top: -10px;
+				    right: 100px;
+				    left: auto;
+				    bottom: auto;
+					p{
+						font-style:italic; 
+						margin: 0;
+					}
+				}
+				a{
+					width:31px;
+					height:31px;
+					background:$white ;
+					position:absolute;
+					color: $midnight-charcoal;
+					top:0px;
+					right:0px;
+					left:auto;
+					opacity:1;
+					i{
+						 
+					}
+					&.carousel-control-prev{
+						right: 33px;
+					}
+				}
+			}
+			.rooms-heading{
+				color: $midnight-charcoal;
+				@extend .col-md-6;
+				h2{padding-top:3.438rem;}
+				h5{padding-bottom:2.2rem;}
+			}
+			.rooms-content{
+				@extend .col-md-6;
+				p{ 
+				    width: 86%;
+    				float: right;
+    				margin: 3.5rem 0;
+    				@include  media-breakpoint-down(md){
+    					width: 100%;
+    				}
+				}
+			}
+      img{
+        width: 100%;
+      }
+		}
+	}
+}
 .freedom {
 	@include media-breakpoint-down(xs){
 		margin-top: 1rem;

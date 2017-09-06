@@ -183,7 +183,7 @@
   @extend .row ;
   @extend .align-items-center ;
   margin: 0;
-
+  background-color: $midnight-charcoal;
   .heading{
       background:$light-color;
       @extend .text-center ;
