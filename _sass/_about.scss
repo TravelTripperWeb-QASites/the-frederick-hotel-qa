@@ -9,6 +9,9 @@
 
 .heading-section{
   @extend .container;
+  @include  media-breakpoint-up(lg){
+     padding: 0;
+  }
   .heading-inner{
     @extend .row;
     padding:3.6rem 0;
@@ -19,15 +22,8 @@
         @extend .col-md-9;
       }
     }
-    .btns-sec{
-      @extend .col-md-4;
-      padding-top:3.825rem;
-      padding-left: 1.6rem;
-      .btn-holder{
-        &:first-child{
-          margin: 0 0 2.95rem 0;
-        }
-      }
+    .btn-holder{
+      padding: 1rem 0;
     }
   }
 }
@@ -40,7 +36,20 @@
   color:$white;
   font-size:$font-16;
   }
+  .why-pic{
+  @extend .col-md-5;
+  padding-top: 2rem;
+  padding-left:0; 
+  }
+  .why-content{
+    @extend .col-md-5;
+    p{
+      padding: 1.5rem 0rem 1rem 5rem;
+    }
+    }
+
 }
+
 .amenites{
   @extend .container;
   margin :4rem auto;
@@ -70,6 +79,9 @@
       }
     }
     }
+    .btn-holder{
+      padding: 1rem 0;
+    }
     }
 }
 .history{
@@ -79,6 +91,9 @@
   .first-pic{
     @extend .col-md-4;
     @extend .text-left;
+    .btn-holder{
+      padding: 1rem 0;
+    }
   }
 
   .middle-pic{
@@ -182,8 +197,8 @@
         @include transition($global-transition);
       }
       .offer-img{
-        opacity: 1;
-       transition: $global-transition;
+        opacity: 1; 
+         @include transition($global-transition);
         position:relative;
         min-height: 475px;
         background-repeat: no-repeat;
@@ -218,3 +233,5 @@
     }
   }
 }
+
+
