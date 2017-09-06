@@ -315,6 +315,21 @@ svg:not(:root) {
              background-color: $slate-grey;
          }
   }
+
+  &.cat-white{
+    color: $white;
+    &:before{
+      content: '';
+      background-color: $white;
+    }
+    &:hover{
+      color: $slate-grey !important;
+      text-decoration: none;
+      &:before{
+        background-color: $slate-grey;
+    }
+    }
+  }
 }
 @keyframes type{ 
   from { width: 0; } 

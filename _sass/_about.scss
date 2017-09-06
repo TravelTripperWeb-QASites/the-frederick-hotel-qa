@@ -22,25 +22,89 @@
         @extend .col-md-9;
       }
     }
-    .btns-sec{
-      @extend .col-md-4;
-      padding-top:3.825rem;
-      padding-left: 1.6rem;
-      .btn-holder{
-        &:first-child{
-          margin: 0 0 2.95rem 0;
-        }
-      }
+    .btn-holder{
+      padding: 1rem 0;
     }
   }
 }
 .whyus{
+  @extend .row-full;
   background:$light-slate-grey; 
   padding-top:4rem;
   .heading{
   font-weight:bold;
   color:$white;
   font-size:$font-16;
+  }
+  .why-pic{
+  @extend .col-md-5;
+  padding-top: 2rem;
+  padding-left:0; 
+  }
+  .why-content{
+    @extend .col-md-5;
+    p{
+      padding: 1.5rem 0rem 1rem 5rem;
+    }
+    }
+
+}
+
+.amenites{
+  @extend .container;
+  margin :4rem auto;
+  .amienites-pic{
+    @extend .col-md-6;
+    }
+  .amienites-list{
+    @extend .col-md-6;
+    color:$midnight-charcoal;
+    padding-left:3rem;
+    padding-top:1rem;
+    ul {
+    margin-top:1rem;
+    padding:0;
+    li{
+      position:relative;
+       padding-left:2rem;
+      &:before{
+      position:absolute;
+      content:"";
+      width:4px;
+      height:4px;
+      top:35%;
+      left:0;
+      @include border-radius(50%);
+      background:$midnight-charcoal;
+      }
+    }
+    }
+    .btn-holder{
+      padding: 1rem 0;
+    }
+    }
+}
+.history{
+  @extend .row-full;
+  background:$midnight-charcoal;
+  padding:3.5rem 0;
+  .first-pic{
+    @extend .col-md-4;
+    @extend .text-left;
+    .btn-holder{
+      padding: 1rem 0;
+    }
+  }
+
+  .middle-pic{
+    @extend .col-md-6;
+    @extend .text-center;
+    @extend .align-self-center;
+  }
+  .last-pic{
+    @extend .col-md-2;
+    @extend .text-right;
+    padding:0;
   }
 }
 .old-newyork{
@@ -50,8 +114,40 @@
 		}
 }
 
+.book-now-sec{
+    background-size:cover;
+   .inner-content{
+    text-align:center;
+    max-width:370px;
+    margin:auto;
+    background:$primary-color;
+    padding:6rem 0rem;
 
-.save-on-stays{
+    h5{
+    font-size:1.813rem;
+    font-family:$medium;
+    word-spacing: .8rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    }
+
+    .fr-logo{
+      margin:3rem 0;
+      
+    }
+
+    h6{
+      font-family:$medium;
+      word-spacing: .1rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.5rem;
+      font-size:$font-12;
+      padding-bottom:2rem;
+    }
+
+   }
+}
+.exclusive-offers-sec{
   .heading-sec{
     margin: 3rem auto 4rem auto;
     @extend .container;
@@ -125,6 +221,7 @@
         .offer-heading{
         background-color:$primary-color;
           h6{color:$white;}
+          transition: $global-transition;
         }
         .offer-img{
           .img-bg{ 
@@ -135,3 +232,5 @@
     }
   }
 }
+
+
