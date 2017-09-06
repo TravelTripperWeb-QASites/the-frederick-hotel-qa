@@ -32,35 +32,55 @@ $(document).ready(function(){
    $('.close-icon').click(function(){
      $('.homeintro').fadeOut('slow');
    });
-     
+     //main nav scroll resize
+  function changeHeader(){
+    if($( window ).width() > 991){
+    if($(window).scrollTop() > 200) {
+      $(".navbar").addClass("shrink-nav"); 
+       $(".navbar").css({'top':'0px','opacity':'1'}); 
+       $('body').css('margin-top','115px');
+    }
+    else {
+      $(".navbar").removeClass("shrink-nav");
+      $('body').css('margin-top','');
+    }
+    }
+  }   
+   $(window).on("load resize scroll",function(e){
+    changeHeader();
+   });
+  //end main nav scroll resize 
     // global variables for widget
+   if($("#typetext").length){ 
     var text =  $("#typetext").attr('data-content'), t = [];
     $p = $("#typetext");
      var speed = 150;
     // main 'typer' function.
-      function type (text) { 
-      $.each(text.split(''), function(i, letter){
-         setTimeout(function(){
-        t.push(setTimeout ( function () {
-          if ( letter[0] === "^") {
-            $p.append("<br>");
-          } else {
-            $p.append(letter[0]);
-          }
-          if ( !letter.slice(1) ) {
-            return 1;
-          } else {
-            type(letter.slice(1));
-          }
-        },20)); 
-      }, speed*i); 
-        });
-        
-      }
-    setTimeout ( function () {
-      type(text);
-    },2000); 
-       
+        function type (text) { 
+        $.each(text.split(''), function(i, letter){
+           setTimeout(function(){
+          t.push(setTimeout ( function () {
+            if ( letter[0] === "^") {
+              $p.append("<br>");
+            } else {
+              $p.append(letter[0]);
+            }
+            if ( !letter.slice(1) ) {
+              return 1;
+            } else {
+              type(letter.slice(1));
+            }
+          },20)); 
+        }, speed*i); 
+          });
+          
+        }
+      setTimeout ( function () {
+        type(text);
+      },2000); 
+    }  
+
+
     AOS.init({
       offset: 60,
       duration: 900,

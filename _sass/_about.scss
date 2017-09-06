@@ -9,6 +9,9 @@
 
 .heading-section{
   @extend .container;
+  @include  media-breakpoint-up(lg){
+     padding: 0;
+  }
   .heading-inner{
     @extend .row;
     padding:3.6rem 0;
