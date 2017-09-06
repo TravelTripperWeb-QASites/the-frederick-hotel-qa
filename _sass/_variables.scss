@@ -49,7 +49,7 @@ $font-12  :0.75rem; //12px
 $font-200 : 12.5rem; //200px
 $font-15  : 0.9375rem; //15px
 $font-14  : 0.875rem; //14px
-$font-16  : 1rem; //14px
+$font-16  : 1rem; //16px
 /*
    Colors
    ========================================================================== */
@@ -99,4 +99,4 @@ $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 
 $border-radius              : 4px !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$global-transition          : all 0.2s ease-in-out !default;
+$global-transition          : all 0.5s ease-in-out !default;
