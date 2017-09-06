@@ -19,15 +19,8 @@
         @extend .col-md-9;
       }
     }
-    .btns-sec{
-      @extend .col-md-4;
-      padding-top:3.825rem;
-      padding-left: 1.6rem;
-      .btn-holder{
-        &:first-child{
-          margin: 0 0 2.95rem 0;
-        }
-      }
+    .btn-holder{
+      padding: 1rem 0;
     }
   }
 }
@@ -40,7 +33,20 @@
   color:$white;
   font-size:$font-16;
   }
+  .why-pic{
+  @extend .col-md-5;
+  padding-top: 2rem;
+  padding-left:0; 
+  }
+  .why-content{
+    @extend .col-md-5;
+    p{
+      padding: 1.5rem 0rem 1rem 5rem;
+    }
+    }
+
 }
+
 .amenites{
   @extend .container;
   margin :4rem auto;
@@ -70,6 +76,9 @@
       }
     }
     }
+    .btn-holder{
+      padding: 1rem 0;
+    }
     }
 }
 .history{
@@ -79,6 +88,9 @@
   .first-pic{
     @extend .col-md-4;
     @extend .text-left;
+    .btn-holder{
+      padding: 1rem 0;
+    }
   }
 
   .middle-pic{
@@ -157,6 +169,7 @@
       .offer-heading{
         position:relative;
         height:8.75rem;
+        @include transition($global-transition);
         h6{
           font-family:$medium ;
           position: absolute;
@@ -167,52 +180,54 @@
           margin: auto;
           letter-spacing:0.2rem;
           color:$midnight-charcoal;
+          @include transition($global-transition);
         }
       }
-      .btn-holder{
-        display:none;
-        position:absolute;
-       
+      .btn-holder{ 
+        opacity: 0;
+        position:absolute; 
         left:0%;
         top:40%;
         right: 0%;
         margin: auto;
         text-align: center;
+        @include transition($global-transition);
       }
       .offer-img{
-       transition: $global-transition;
+        opacity: 1;
         position:relative;
         min-height: 475px;
         background-repeat: no-repeat;
         background-size: cover;
         .img-bg{
+          opacity: 0;
           background-color:rgba(255, 255, 255, 0.4);
           position:absolute;
           top:0;
           bottom:0;
           right:0;
-          left:0px;
-          display:none;
-          transition: $global-transition;
+          left:0px; 
+          @include transition($global-transition);
         }
         img{
           width: 100%;
         }
       }
       &:hover{
-        .btn-holder{display:block;}
+        .btn-holder{opacity: 1;}
         .offer-heading{
         background-color:$primary-color;
           h6{color:$white;}
           transition: $global-transition;
         }
         .offer-img{
-          .img-bg{
-            display:block;
-            transition: $global-transition;
+          .img-bg{ 
+             opacity: 1;
           }
         }
       }
     }
   }
 }
+
+

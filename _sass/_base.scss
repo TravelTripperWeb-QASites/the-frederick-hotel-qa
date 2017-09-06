@@ -6,7 +6,7 @@ html {
   min-height: 100%;
   font-size: 0.813rem;
     @include media-breakpoint-up(lg){
-      font-size:$type-size-5 ;
+      font-size:$font-15 ;
     }
 }
 
@@ -32,13 +32,9 @@ h1 {
 
 h2 {
   font-size: $font-24;
-  letter-spacing: .1rem;
-  line-height: 3.5rem;
-  @include media-breakpoint-up(md){
-   font-size: $type-size-2;
-   line-height: 4.5rem;
-   letter-spacing: .2rem;
-  }
+  letter-spacing: .1rem; 
+  font-family: $medium;
+  line-height: 2.5rem;
      u{
       position: relative;
       border-bottom: 0;
@@ -85,8 +81,9 @@ small, .small {
 }
 
 p {
-  font-size:$type-size-5 ;
+  font-size:$font-15 ;
   margin-bottom: 1.3rem;
+  line-height: 1.5rem;
 }
 
 u,
@@ -213,6 +210,10 @@ svg:not(:root) {
   line-height: 1.3rem;
   padding: 0.9rem 1.4rem 0.6rem 1.4rem;
   cursor: pointer;
+  &:hover{
+     outline: 0;
+     background-color: $slate-grey;
+  }
 }
 .btn-blue{
   @extend .btn-primary;
@@ -244,7 +245,82 @@ svg:not(:root) {
      border: 2px solid $black;
    }
 }
+.btn-white{
+  @extend .btn-blue;
+  background-color: $white;
+  color: $primary-color !important;
+  @include transition($global-transition);
+   i{
+      padding-left: .6rem;
+   }
+  &:hover{
+    color: $white !important;
+    background-color: $primary-color;
+    text-decoration: none;
+  }
+}
+.btn-square{
+  @extend .btn-blue;
+  max-width: 142px;
+  padding: 3rem;
+  white-space: normal; 
+  right: 0;
+  top: 0;
+  border:0px;
+  &:hover
+  {
+    background-color: $white;
+    color: $primary-color !important;
+  }
+}
+.btn-2-cta{
+  color: $primary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding: .3rem .7rem;
+  font-size: $font-14;
+  font-family: $medium;
+  letter-spacing:.12rem;
+  font-weight: bold;
+  outline: 0; 
+  @include transition($global-transition);
+  &:before{
+     content: '';
+     height: 100%;
+     width: 2px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     background-color: $primary-color;
+      @include transition($global-transition);
+  }
+  &:hover, &:focus{
+         outline: 0;
+         box-shadow: none;
+         color: $slate-grey;
+         &:before{
+             height: 50%;
+             top: 26%;
+             background-color: $slate-grey;
+         }
+  }
 
+  &.cat-white{
+    color: $white;
+    &:before{
+      content: '';
+      background-color: $white;
+    }
+    &:hover{
+      color: $slate-grey !important;
+      text-decoration: none;
+      &:before{
+        background-color: $slate-grey;
+    }
+    }
+  }
+}
 @keyframes type{ 
   from { width: 0; } 
 } 
