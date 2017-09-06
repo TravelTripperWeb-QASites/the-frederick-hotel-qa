@@ -1,7 +1,24 @@
+ // Carousel fade transition
+.carousel-fade {
+	.carousel-item {
+		display: block;
+		position: absolute;
+		opacity: 0;
+		transition: opacity .85s ease-in-out;
+        
+		&.active {
+			opacity: 1;
+		}
+	}
+}
 .hero-slider{
+	background: $slate-grey;
 	.carousel-inner,
 	.carousel-item{
         min-height: 560px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         .carousel-caption { 
         	top: 28%;
             bottom: auto;
@@ -281,10 +298,10 @@
 	padding: 3.75rem 0 0 0;
 	@extend .container-fluid;
 	background-color: $light-color;
-	background-image: url('/assets/images/bg-offers.jpg');
+	background-image: url('/assets/images/home/bg-lamp.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	background-size: 100%;
+	background-position: bottom 580px right 0;
 	color: $black;
 	.wrapper{
       @extend .row;
@@ -332,9 +349,11 @@
 		background: linear-gradient(to left, $midnight-charcoal 50%, transparent 50%);
 	}
 	.rooms-carousel-container{
-		@extend .container;
+		@extend .container; 
+			     padding: 0; 
 		.rooms-carousel-inner{
-			@extend .row;
+			@extend .row; 
+              @extend .no-gutters; 
 			.carousel{
 				width:100%;
 				.carousel-item{
@@ -371,7 +390,10 @@
 			}
 			.rooms-heading{
 				color: $midnight-charcoal;
-				@extend .col-md-6;
+				@extend .col-md-6;  
+				 @include  media-breakpoint-up(lg){
+				    padding: 0;
+				  }
 				h2{padding-top:3.438rem;}
 				h5{padding-bottom:2.2rem;}
 			}
@@ -379,6 +401,7 @@
 				@extend .col-md-6;
 				p{ 
 				    width: 86%;
+				    color: $white;
     				float: right;
     				margin: 3.5rem 0;
     				@include  media-breakpoint-down(md){
@@ -391,6 +414,391 @@
       }
 		}
 	}
+}
+.spring-fall{
+	@extend .container-fluid;
+	.spring-inner{
+		@extend .row;
+		margin-left: 2.3rem;
+		@include  media-breakpoint-down(md){
+			margin-left: 0;
+		}
+		.left-part{
+			@extend .col-md-4;
+			h2{
+				padding-top:4.313rem;
+			}
+			p{ 
+				width:100%;
+				margin-top: 2rem;
+		        @include  media-breakpoint-up(md){
+		          width:80%; 
+		        }
+			}
+		}
+		.middle-part{
+			@extend .col-md-4;
+		}
+		.right-part{
+			@extend .col-md-4;
+			margin-top:3.875rem;
+			padding:0;
+			text-align: right; 
+			.btn-holder{
+				margin: 3.125rem 4rem 0 0;
+				@include  media-breakpoint-down(md){
+					margin: 0;
+					position: absolute;
+				    top: 20%;
+				    left: 15px;
+				}
+			}
+		}
+	}
+}
+/*Dining section*/
+
+.dining-section{
+	background: linear-gradient(to left, transparent 50%, $midnight-charcoal 50%);
+	margin-top:5.125rem;
+	margin-bottom:5.125rem;
+    @extend .container-fluid ;
+    .dining-section-wrapper{
+        @extend .row ;
+
+      .dining-phot-description{
+        @extend .col-md-6; 
+         text-align: right;
+         padding: 2.125rem 0rem 2.125rem 0rem;
+         @include  media-breakpoint-up(sm){
+           padding: 5.125rem 0rem 5.125rem 6rem;
+         }
+         figure{
+           position: relative;
+         img{
+           width:auto;
+          }
+          figcaption{
+            position: absolute;
+            top:50%;
+            left: 0;
+            right: 0;
+            text-align: right;
+            img{
+               width: 100%;
+                  @include  media-breakpoint-up(lg){
+                    width: auto;
+                  }
+             }
+          }
+        }
+        p{ 
+          color: $white;
+          max-width: 500px;
+          margin: 2rem 1rem 0rem 1;
+          text-align: center;
+          float: none;
+           @include  media-breakpoint-up(sm){
+                 margin: 5rem 4rem 1rem 0;
+                  text-align: left;
+                  float: right;
+           }
+        }
+      }
+      .gastronomic{
+        @extend .col-md-6; 
+         padding: 2.125rem 0rem 2.125rem 2rem;
+         @include  media-breakpoint-up(md){
+           padding: 5.125rem 0rem 5.125rem 6rem;
+         }
+          figure{
+           position: relative;
+           margin-top: 6rem;
+           img{
+             width:100%;
+            }
+             
+
+            figcaption{
+              position: absolute;
+              top:50%;
+              left: 0;
+              right: 0;
+              text-align: center;
+              img{
+                 width: auto;
+               }
+            }
+          }
+
+          .hotel-links{
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+            height: 0;
+            position: absolute;
+              bottom: 495px;
+              left: -261px;
+                a{
+                text-transform: uppercase;
+                padding: 0 1.500rem;
+                 letter-spacing: 4px; 
+                 &:after{
+                   content:"";
+                   position: absolute;
+                   width: 10px;
+                   height:10px; 
+                   border-radius: 50%;
+                   top: 7px;
+                  margin-left: 13px;
+                 }
+
+                 &:nth-last-of-type(1){
+                  &:after{
+                     content: "";
+                      display: none;
+                  }
+                 }
+              }
+           }
+           .hotel-links-bottom{
+             padding:31px 0px;
+             a{
+             text-transform: uppercase;
+             padding: 0 1.500rem;
+              letter-spacing: 4px; 
+              &:after{
+                content:"";
+                position: absolute;
+                width: 10px;
+                height:10px; 
+                border-radius: 50%;
+                margin-top: 7px;
+                margin-left: 23px;
+              }
+
+              &:nth-last-of-type(1){
+               &:after{
+                  content: "";
+                   display: none;
+               }
+              }
+           }
+           }
+ 
+          .btn-holder{
+             margin: 2rem 0;
+          }
+
+      }
+    }
+}
+/*location*/
+.location-section{
+  @extend .container;
+  margin-top: 5.5rem;
+  .heading-sec{
+    @extend .row ;
+  }
+  .heading{
+      @extend .col-md-3;
+     margin-top: 2.3rem;
+  }
+  .photos{
+    @extend .col-md-9;
+    @extend .row ;
+    .photo{
+        @extend .col-md-6;
+          margin: 0rem;
+          img{
+              @include  media-breakpoint-down(md){
+            width: 100%
+           }
+          }
+        @include  media-breakpoint-up(sm){
+        margin: 0.500rem 0;
+        }
+    }
+    }
+}
+
+.location-content{
+  @extend .container-fluid;
+  .location-wrapper{
+    @extend .row ;
+    .photo{
+      @extend .col-md-2 ;
+      padding: 0px;
+        img{
+          display: none;
+            @include  media-breakpoint-up(md){
+              width: auto;
+              display:block;
+            }
+          }
+      .top{
+        margin-top: 0rem;
+
+        @include  media-breakpoint-up(lg){
+            margin-top: -2.3rem;
+        }
+
+      }
+    }
+    .description{
+         @extend .col-md-5 ;
+         @extend .align-self-center ;
+        p{
+            padding:-0rem;
+            @include media-breakpoint-up(lg){
+              padding:0rem 7rem 0rem 2.6rem;
+          }
+
+        }
+    }
+    .links{
+      @extend .col-md-5;
+      @extend .align-self-center ;
+      .btn-holder{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        @include media-breakpoint-up(md){
+        margin-top: 1rem;
+        margin-left: 1.5rem
+       }
+      }
+    }
+}
+}
+.updates{
+  @extend  .container;
+  margin: 1.6rem auto;
+  @include media-breakpoint-up(md){
+      margin: 3.1rem auto;
+  }
+  h2{
+    @extend .text-center ;
+  }
+  .nav-tabs{ 
+    max-width: 842px;
+    margin:1.8rem auto;
+      @include media-breakpoint-up(md){
+        margin:3.8rem auto;
+      }
+    border:1px solid $midnight-charcoal;
+    padding: 10px;
+   .nav-item{
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 0;
+     position: relative;
+     background: $midnight-charcoal; 
+     &:after{
+       content: ""; 
+       width: 1px;
+        height: 36px;
+        position: absolute;
+        right: 0;
+        top: 12px;
+     }
+
+     &:nth-last-of-type(1){
+      &:after{
+         content: "";
+          display: none;
+      }
+     }
+
+    .nav-link{
+        border-radius: 0;
+        border:0px; 
+        cursor:pointer;
+        color: $white;
+        &.active{  
+        	background-color: $primary-color;
+        }
+
+     }
+   }
+ }
+
+ .tab-content{
+  max-width: 969px;
+  margin: auto;
+  text-align: center;
+   figure{
+     width: 100%;
+     min-height: 300px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-top: 3rem;
+     @include  media-breakpoint-up(md){
+       margin-top: 0rem;
+     }
+   }
+   small{
+     text-transform: uppercase; 
+     margin-top: 2rem
+   }
+   h3{ 
+     margin:1rem 0 2.8rem 0;
+   }
+   span{ 
+   }
+
+ }
+}
+
+.triumph-hotels{
+  background-color: $midnight-charcoal; 
+  color: $white;
+  text-align: center;
+  h2{ 
+    font-size: $font-18;
+  }
+  h3{
+    font-size: $font-35; 
+    @extend .pb-4 ;
+  }
+  @extend .pt-4;
+  .more-hotels{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .inner-content{
+      margin-top: 3rem;
+      background-color: $lighter-wood;
+      padding: 3rem 0rem;
+      max-width: 371px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-transform: uppercase;
+      ul{
+      	padding: 0 20px;
+      	margin: 0;
+        li{
+          padding: .3rem 0; 
+          a{
+            color:$white; 
+            letter-spacing: 0.12rem;
+            img{
+              width:auto;
+              max-width: 170px;
+            }
+            span{
+            	display: block;
+            	color: $light-gold;
+            	font-size: $font-12;
+            	text-transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .freedom {
 	@include media-breakpoint-down(xs){
