@@ -3,6 +3,13 @@
    ========================================================================== */ 
 $(document).ready(function(){
 
+    $(".special-item").hover(function(){
+      $(this).find(".overlay").slideDown(100);
+      $(this).find(".offer-bottom").addClass("active");
+    }, function(){
+      $(this).find(".overlay").slideUp(100);
+      $(this).find(".offer-bottom").removeClass("active");
+    }); 
   // FitVids init
   $("#main").fitVids();
 
@@ -78,21 +85,5 @@ $(document).ready(function(){
               
        });
     });
-
-    function initMap() {
-      // Create a map object and specify the DOM element for display.
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
-      });
-    }
-
-  
 }); 
-
-
-
-
 //end ready
-
-//
