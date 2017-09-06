@@ -1,0 +1,49 @@
+.navbar{
+	background-color: $midnight-charcoal;
+	color: $white;
+	height: 113px;
+    padding: 0;
+	ul.navbar-nav{
+		.nav-item{
+			.nav-link{
+				color: $white;
+				text-transform: uppercase;
+				font-size: $font-16;
+				padding: 3.1rem 2.3rem 2.8rem 2.3rem; 
+				border-bottom:  0.3125rem solid transparent;
+                @include transition($global-transition);
+				&:hover{
+					border-bottom:  0.3125rem solid $white;
+					background-color: $slate-grey;
+				}
+			}
+		}
+	}
+	.btn-square{
+      max-width: 142px;
+      height: 115px;
+      margin-left: 20px;
+	}
+	.group-logo{
+		padding: 2rem;
+	}
+}
+.brand-centered { 
+  position: absolute;
+  width: 200px;   
+  vertical-align: middle;
+  left:42%;
+  height: 113px;
+  left:calc(50% - 100px);
+  top: 0;
+  .navbar-brand {
+  	vertical-align: middle;
+  	height: 100%;
+  	position: relative;
+	   img{
+	   	  max-width: 100%;
+	   	  padding-top: 1.3rem;
+	   } 
+	}
+}
+ 

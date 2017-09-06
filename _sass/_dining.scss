@@ -1,9 +1,16 @@
 .inner-banner {
   height: 477px;
 }
-.page-intro {
+.page-intro-headline {
   padding: 4.250rem 4.250rem;
+  .container-fluid {
+    padding: 0 1.875rem;
+  }
     h1 {
       color: $midnight-charcoal;
     }
+}
+.page-intro {
+  background-color: $midnight-charcoal;
+  padding: 4.000rem 0;
 }

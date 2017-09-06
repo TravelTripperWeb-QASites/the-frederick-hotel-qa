@@ -13,7 +13,7 @@ $(document).ready(function(){
   //hero auto image widnow height
     function setHeight() {
       windowHeight = $(window).innerHeight();
-      $('.fullscreen-wrapper').css('min-height', windowHeight - 26);
+      $('.hero-slider .carousel-item, .hero-slider .carousel-inner').css('min-height', windowHeight - 113);
     }
     setHeight();
     
