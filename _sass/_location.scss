@@ -1,0 +1,333 @@
+.location{
+  @extend .container ;
+  @extend .row ;
+  margin: 2rem  auto 0 auto;
+    @include  media-breakpoint-up(md){
+      margin: 6rem  auto 0 auto;
+    }
+  .description{
+      @extend .col-md-7 ;
+  }
+  .photo{
+      @extend .col-md-5 ;
+      img{
+        width: 100%;
+        @include  media-breakpoint-up(lg){
+            width: auto;
+        }
+      }
+
+    }
+}
+.location-address{
+  @extend .row ;
+  margin: 0;
+
+  .address{
+      @extend .col-md-5 ;
+      h5{
+          @extend .text-center ;
+          font-weight: bold;
+       }
+       ul{   padding: 1rem  2rem;
+           @include  media-breakpoint-up(md){
+         padding: 2rem  1.5rem;}
+          @include  media-breakpoint-up(lg){
+             padding: 2rem 5rem;
+          }
+
+         li{
+           padding:0rem  0rem 1.2rem  3rem;
+           line-height: 1.800rem;
+           font-weight: bold;
+             @include  media-breakpoint-up(md){
+                padding:0rem  4rem 1.8rem  4rem;
+                 line-height: 2.400rem;
+             }
+           &.icon-add{
+              background-image: url(/images/location/address.svg);
+              background-position: 0px 7px;
+              background-repeat: no-repeat;
+           }
+           &.icon-tell{
+              background-image: url(/images/location/telephone.svg);
+              background-position: 0px 7px;
+              background-repeat: no-repeat;
+           }
+           &.icon-email{
+              background-image: url(/images/location/email.svg);
+              background-position: 0px 7px;
+              background-repeat: no-repeat;
+           }
+           hr{
+             margin: 0.1rem;
+           }
+         }
+       }
+    }
+  .photo{
+    padding-top: 2rem;
+  
+      @extend .col-md-7 ;
+      img{
+        width: 100%;
+           @media(min-width: 1600px){
+            width: auto;
+        }
+      }
+      .group-img{
+          @extend .row ;
+          margin: 0;
+          @include  media-breakpoint-up(md){
+            margin-right: -15px;
+            margin-left: -15px;
+          }
+
+      .p1{
+          @extend .col-md-6 ;
+      }
+      .p2{
+          @extend .col-md-6 ;
+      }
+    }
+    }
+}
+
+  .map-gray{
+    @extend .container ;
+  .attraction-info{
+    @extend  .row ;
+    padding:2rem 0;
+    color:$white;
+    .attraction-img{
+      @extend  .col-md-5;
+      img{
+        width: 100%;
+        @include  media-breakpoint-up(lg){
+            width:auto;
+        }
+      }
+    }
+    .attraction-list{
+      @extend  .col-md-7;
+      padding-left: 10px;
+        @include  media-breakpoint-up(md){
+            padding-left: 2rem;
+        }
+
+      ul{
+        list-style: none;
+        li{
+          padding:0.50rem 0rem;
+          text-transform: uppercase;
+            @include  media-breakpoint-up(md){
+                padding:0.50rem 3rem;
+            }
+          a{
+            color:$white;
+              padding-left: 3rem;
+            &:hover,
+            &.active{
+              color: $black;
+              text-decoration: none;
+              background-image:url(/images/home/black-arrow.png);
+              background-repeat: no-repeat;
+              background-position: left;
+            }
+          }
+        }
+      }
+    }
+  }
+    }
+
+.walking-tours{
+    margin: 2rem  auto;
+    @include  media-breakpoint-up(md){
+      margin: 6rem  auto;
+    }
+    @extend .container ;
+    @extend .row ;
+  .walking-info{
+      @extend .col-md-5 ;
+      padding-top: 0.6rem;
+        @include  media-breakpoint-up(md){
+            padding-top: 2.6rem;
+        }
+      figure{
+        margin: 1.8rem 0;
+        img{
+          width: 100%;
+        }
+          @include  media-breakpoint-up(md){
+            margin: 4.8rem 0;
+          }
+      }
+      p{
+        padding-right: 1rem;
+          @include  media-breakpoint-up(md){
+              padding-right: 5rem;
+          }
+
+      }
+      .btn-holder{
+        padding: 1.4rem 0;
+      }
+    }
+  .walking-slider{
+    @extend .col-md-7 ;
+    .carousel{
+      width:100%;
+      .carousel-caption{
+        position: absolute;
+          top: 20px;
+          right: 120px;
+          left: auto;
+          bottom: auto;
+        p{
+          font-style:italic;
+          color:$white;
+          margin: 0;
+        }
+      }
+      a{
+        width:31px;
+        height:31px;
+        background:$background-color;
+        position:absolute;
+        top:40px;
+        right:40px;
+        left:auto;
+        opacity:1;
+        i{
+          color:$text-color;
+        }
+        &.carousel-control-prev{
+          right: 73px;
+        }
+      }
+    }
+  }
+}
+
+.favorites{
+  margin:  4.375rem 0;
+  .heading{
+    text-align: center;
+    h5{font-weight:bold;}
+    padding-bottom: 4.375rem;
+  }
+  .content{
+    max-width: 1127px;
+    margin: auto;
+    @extend .row;
+      background: $gray;
+    .show-img{
+      @extend .col-md-5 ;
+      padding: 0;
+      @extend .text-center ;
+   
+      img{
+        width: 100%;
+      }
+      @include  media-breakpoint-down(md){
+        height: 400px;
+      }
+    }
+    .show-list{
+      @extend .col-md-7 ;
+      padding: 1.8rem 1rem;
+      @include  media-breakpoint-up(md){
+          padding: 4.8rem 3.9rem;
+      }
+      ul{
+        li{
+          color:$white;
+          span{
+            &:nth-child(1){
+              text-transform: uppercase;
+            }
+          }
+          h3{
+            color: $white;
+            }
+          padding: 1rem;
+          border-bottom: 1px solid $white;
+          &.active{
+            background: $dark-gray;
+              border-bottom: 0px solid $white;
+          }
+        }
+      }
+    }
+  }
+}
+.exprence-nyc,.explore-nyc{
+  @extend .text-center ;
+  h1{
+     font-size: $font-24;
+     line-height: 3rem;
+      @include  media-breakpoint-up(md){
+          font-size: $font-200;
+             line-height: 3rem;
+      }
+     @include  media-breakpoint-up(lg){
+       font-size: $font-200;
+          line-height: 7rem;
+     }
+    }
+      padding: 7rem 0;
+      @include  media-breakpoint-up(lg){
+          padding: 16rem 0;
+      }
+
+    .btn-holder{
+      padding: 2.125rem 0;
+    }
+}
+.concierge{
+      @extend .row ;
+    
+      margin: 0 ;
+      
+
+    .contact-info{
+      @extend .col-md-8 ;
+     
+      .btn-holder{
+        padding: 2.125rem 0  1.125rem  2.125rem;
+      }
+      .contact{
+        color: $white;
+        background: $gray url(/images/home/arrrow.png)0px  no-repeat ;
+        
+        padding:1rem 0rem 1rem 3rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        word-wrap: break-word;
+
+        a{
+          color: $white;
+        }
+       @include  media-breakpoint-up(md){
+           padding:1rem 6rem ;
+           background: $gray url(/images/home/arrrow.png)42px  no-repeat ;
+       }
+      }
+       @include  media-breakpoint-down(md){
+         height: 400px;
+       }
+    }
+    .details{
+      @extend .col-md-4 ;
+      padding: 2rem 1rem  1rem 1rem;
+       @include  media-breakpoint-up(md){
+         padding: 4rem 3rem  1rem 4rem;
+       }
+      h2,p{
+        color:$white;
+      }
+
+    }
+}
