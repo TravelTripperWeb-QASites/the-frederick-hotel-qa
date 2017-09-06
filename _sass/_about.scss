@@ -197,7 +197,8 @@
         @include transition($global-transition);
       }
       .offer-img{
-        opacity: 1;
+        opacity: 1; 
+         @include transition($global-transition);
         position:relative;
         min-height: 475px;
         background-repeat: no-repeat;

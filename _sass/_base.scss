@@ -331,6 +331,13 @@ svg:not(:root) {
     }
   }
 }
+.btn-3-cta{
+  @extend .btn-2-cta;
+  color: $white;
+    &:before {
+      background-color: $white;
+    }
+}
 @keyframes type{ 
   from { width: 0; } 
 } 
