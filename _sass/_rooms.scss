@@ -70,3 +70,18 @@
       }
   }
 }
+.map-section {
+  background-color: $midnight-charcoal;
+  margin: 6.000rem 0 0 0;
+  .map-content {
+    padding-left: 6.938rem;
+    color: $white;
+    width: 84%;
+    h5 {
+      padding: 0 0 1.500rem 0;
+    }
+  }
+  .map-holder {
+    
+  }
+}
