@@ -19,8 +19,9 @@
 		left: auto;
 		top:auto;
 		bottom: 0;
-		opacity: 1; 
-		background-color: $light-slate-grey;
+		opacity: 1;  
+		background-color: $white;
+		color:$caption-hover !important;
 		.site-text{
 			opacity: 0;
 			position: absolute;
@@ -32,8 +33,8 @@
 		}
 		@include transition($global-transition);
 		&:hover{
-			background-color: $white;
-			color: $light-slate-grey;
+			background-color:$caption-hover;
+			color: $white !important;
 			.site-text{
 				opacity: 1;
 				color: $white;
@@ -276,8 +277,7 @@
 	   }
 	}
 }
-.exclusive-offers{
-	padding: 3.75rem 0;
+.exclusive-offers{ 
 	@extend .container-fluid;
 	background-color: $light-color;
 	background-image: url('/assets/images/bg-offers.jpg');

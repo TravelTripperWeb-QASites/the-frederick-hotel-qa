@@ -210,6 +210,10 @@ svg:not(:root) {
   line-height: 1.3rem;
   padding: 0.9rem 1.4rem 0.6rem 1.4rem;
   cursor: pointer;
+  &:hover{
+     outline: 0;
+     background-color: $slate-grey;
+  }
 }
 .btn-blue{
   @extend .btn-primary;
