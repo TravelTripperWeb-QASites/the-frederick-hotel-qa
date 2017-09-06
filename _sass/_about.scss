@@ -91,8 +91,16 @@
   .first-pic{
     @extend .col-md-4;
     @extend .text-left;
+    padding-left: 3rem;
     .btn-holder{
       padding: 1rem 0;
+    }
+    color:$white;
+
+     @include media-breakpoint-down(md){
+      img{
+        width: 100%;
+      }
     }
   }
 
@@ -100,6 +108,7 @@
     @extend .col-md-6;
     @extend .text-center;
     @extend .align-self-center;
+    
   }
   .last-pic{
     @extend .col-md-2;
@@ -129,6 +138,7 @@
     word-spacing: .8rem;
     letter-spacing: 0.2rem;
     line-height: 2rem;
+    color:$white;
     }
 
     .fr-logo{
@@ -143,6 +153,7 @@
       line-height: 1.5rem;
       font-size:$font-12;
       padding-bottom:2rem;
+      color:$white;
     }
 
    }

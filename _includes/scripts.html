@@ -1,12 +1,11 @@
-<script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 
 {% if site.data.api-keys.maps.google.enabled != false %}
     <script type="text/javascript" src="//maps.google.com/maps/api/js?key={{ site.data.api-keys.maps.google.api-key }}"></script>
 {% endif %}
-
+<script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="{{ 'assets/js/ie10-viewport-bug-workaround.js' | absolute_url }}"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI7H0FoK1wY-PGh0g7RmPT1TtrHc54BSI&callback=initMap"></script>
+<script src="{{ '/assets/js/ie10-viewport-bug-workaround.js' | absolute_url }}"></script>
+ 
