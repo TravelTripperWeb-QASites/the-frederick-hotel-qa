@@ -277,7 +277,8 @@
 	   }
 	}
 }
-.exclusive-offers{ 
+.exclusive-offers{
+	padding: 3.75rem 0 0 0;
 	@extend .container-fluid;
 	background-color: $light-color;
 	background-image: url('/assets/images/bg-offers.jpg');
