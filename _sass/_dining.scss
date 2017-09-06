@@ -2,7 +2,7 @@
   height: 477px;
 }
 .page-intro-headline {
-  padding: 4.250rem 4.250rem;
+  padding: 4.250rem 4.250rem 4.938rem 4.250rem;
   .container-fluid {
     padding: 0 1.875rem;
   }
@@ -13,14 +13,26 @@
 .page-intro {
   background-color: $midnight-charcoal;
   padding: 4.000rem 4.250rem;
-    .-left {
-      margin-right: -26px;
+      
       .left-content {
         padding-left: 1.875rem;
         width: 78%;
       }
-      .left-image {
+      .logo-wrap {
+        max-width: 273px;
+        margin: 0 auto;
+         img {
+           width: 100%;
+         }
+      }
+      .second-row {
+        @extend .row;
         padding-top: 3.250em;
+      }
+      .second-row-left {
+        margin-right: -26px;
+      }
+      .left-image {
          img {
            width: 100%;
          }
@@ -36,15 +48,40 @@
       .btn-holder {
         text-align: right;
       }
-    }
-    .-right {
-      margin-left: 26px;
-      .logo-wrap {
-        max-width: 273px;
-        margin: 0 auto;
-         img {
-           width: 100%;
-         }
+      .right-content {
+        padding: 2rem 0 0 0;
+        margin-left: 20%;
+        p {
+          width: 84%;
+        }
       }
+      .two-colo-img {
+        position: absolute;
+        margin-top: 4.5rem;
+      }
+}
+
+.page-content {
+  padding: 4.250rem 4.250rem;
+  .content {
+    padding-top: 3.500rem;
+    padding-left: 1.563rem;
+  }
+  h2 {
+    color: $midnight-charcoal;
+    line-height: 2rem;
+  }
+  h6 {
+    font-family: $medium;
+    font-weight: bold;
+    font-size: $font-12; 
+    color: $midnight-charcoal;
+    letter-spacing: 0.200rem;
+    line-height: 20px;
+  }
+  .image-content {
+    img {
+      width: 100%;
     }
+  } 
 }
