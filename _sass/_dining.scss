@@ -57,12 +57,15 @@
       }
       .two-colo-img {
         position: absolute;
-        margin-top: 4.5rem;
+        margin-top: 3rem;
+        img {
+          width: 100%;
+        }
       }
 }
 
 .page-content {
-  padding: 4.250rem 4.250rem;
+  padding: 8.625rem 4.250rem 5.625rem 4.250rem;
   .content {
     padding-top: 3.500rem;
     padding-left: 1.563rem;
