@@ -16,8 +16,19 @@
     @extend .row;
     padding:3.6rem 0;
     .heading{
-      @extend .col-md-5;
+      @extend .col-md-6;
       h1{text-transform:uppercase; color:$midnight-charcoal;}
+      h5{
+        a{
+          color:$light-slate-grey ;
+          @include transition($global-transition);
+          text-decoration: none;
+          padding: 0rem 0.2rem;
+          &:hover{
+            color:$primary-color ;
+          }
+        }
+      }
       &.heading-big{
         @extend .col-md-9;
       }
@@ -154,6 +165,13 @@
       font-size:$font-12;
       padding-bottom:2rem;
       color:$white;
+    }
+
+    .btn-white{
+      &:hover{
+        background: $slate-grey ;
+        border: none;
+      }
     }
 
    }

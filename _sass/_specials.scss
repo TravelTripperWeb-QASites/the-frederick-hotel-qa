@@ -29,7 +29,7 @@
 	}
 }
 
-.specials-list{
+/*.specials-list{
 	.specials-fluid{
 		@extend .container-fluid;
 		padding: 0px;
@@ -71,4 +71,46 @@
 			}
 		}
 	}
+}*/
+
+
+/* offers details */
+
+.special-info{
+	@extend .col-md-6;
+	padding: 3rem 4rem;
 }
+.special-img{
+	@extend .col-md-12;
+	@extend .no-gutters;
+	margin: 3rem 0rem;
+}
+
+.special-info-heading{
+	@extend .col-md-5;
+}
+.special-info-list{
+	@extend .col-md-7;
+	ul {
+		margin-top:2rem;
+		padding:0;
+		li{
+		  position:relative;
+		  padding-left: 2rem;
+		  margin-right: 14rem;
+		  line-height: 20px;
+		  padding-bottom: 0.3rem;
+		  &:before{
+		  position:absolute;
+		  content:"";
+		  width:4px;
+		  height:4px;
+		  top:7px;
+		  left:0;
+		  @include border-radius(50%);
+		  background:$midnight-charcoal;
+		  }
+		}
+		}
+}
+
