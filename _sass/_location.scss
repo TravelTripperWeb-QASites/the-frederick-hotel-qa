@@ -273,7 +273,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 
 /*Map*/
 .map-section{
-  #map{
+  #map, #map-canvas{
     background: url(/assets/images/map.jpg);
     background-size: cover;
     width: 100%;
