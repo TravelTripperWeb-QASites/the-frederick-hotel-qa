@@ -75,7 +75,9 @@
 
 
 /* offers details */
-
+.offers-nav{
+@extend .rooms
+}
 .special-info{
 	@extend .col-md-6;
 	padding: 3rem 4rem;

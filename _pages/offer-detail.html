@@ -1,15 +1,27 @@
 ---
 layout: default
-title: "location"
+title: "Offer-details"
 description: "Come join us at one of our events."
-permalink: /special-detail/
+permalink: /offer-detail/
 ---
 
 <section>
   <div class="inner-banner " style="background-image: url('/assets/images/specials/specials-details-banner.jpg')">
    </div>
 </section>
-
+<section class="offers-nav">
+<div class=" container-fluid p-0">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="/" title="Previous offer">Previous offer</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/" title="Next Offer">Next Offer</a>
+        </li>
+    </ul>
+  </div>
+</section>
 <section class="heading-section">
     <div class="heading-inner">
       <div class="heading">
@@ -57,6 +69,6 @@ permalink: /special-detail/
         </div>
         </div>
 </section>
-
+{% include more-rooms.html %}
 {% include exclusive-offers.html %}
 {% include instagram.html %}

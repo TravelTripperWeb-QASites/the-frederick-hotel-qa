@@ -28,6 +28,7 @@ $global-font-family         : $regular !default;
 $header-font-family         : $regular !default;
 $caption-font-family        : $italic !default;
 
+
 $font-icon                  : "ElegantIcons" !default; //font for icons
 
 /* type scale */
@@ -103,4 +104,4 @@ $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 
 $border-radius              : 4px !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$global-transition          : all 0.2s ease-in-out !default;
+$global-transition          : all 0.5s ease-in-out !default;
