@@ -805,3 +805,45 @@
 		margin-top: 1rem;
 	  }
 }
+ 
+// map infobox style
+.infoBox{
+   background-color: $midnight-charcoal;
+   color: $white;
+   font-family: $regular;
+   padding:0;
+   min-width: 190px;
+   &:before{
+   	 content: "\f0d9";
+   	 font: normal normal normal 14px/1 FontAwesome;
+   	 color: $midnight-charcoal;
+   	 position: absolute;
+   	 top: 11px;
+   	 left: -6px;
+   	 font-size: $font-24;
+   }
+   p{
+   	padding: 10px;
+   	text-align: center;
+   	font-size: $font-12;
+   	margin-bottom: 0;
+   	strong{
+	   	 text-transform: uppercase;
+	   }
+	}
+   .btn-direction{
+   	background-color: $primary-color;
+    	color: $white;
+   	 text-transform: uppercase;
+   	 padding: 8px;
+   	 text-align: center;
+   	 width: 100%;
+   	 display: block;
+   	 text-decoration: none;
+   	 @include transition($global-transition);
+   	 &:hover{
+   	 	background-color: $light-slate-grey ;
+
+   	 }
+   }
+}

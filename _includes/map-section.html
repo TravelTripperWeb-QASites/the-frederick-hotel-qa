@@ -2,24 +2,24 @@
 <section class="map-section">
   <ul class="map-nav nav nav-fill">
     <li class="map-item">
-      <a class="map-link " href="#"  >The Frederick</a>
+      <a class="map-link" onclick="filterMarkers('hotel');">The Frederick</a>
     </li>
     <li class="map-item">
-      <a class="map-link" href="#" >More Hotels</a>
+      <a class="map-link  {% if(page.url == '/')%}active{% endif %}" onclick="filterMarkers('hotels');">More Hotels</a>
     </li>
     <li class="map-item">
-      <a class="map-link active" href="#" >attractions</a>
+      <a class="map-link {% if(page.url == '/location/')%}active{% endif %}" onclick="filterMarkers('attractions');">attractions</a>
     </li>
     <li class="map-item">
-      <a class="map-link" href="#" >restaurant/bar</a>
+      <a class="map-link" onclick="filterMarkers('restaurants');">restaurant/bar</a>
     </li>
     <li class="map-item">
-      <a class="map-link" href="#" >Shops</a>
+      <a class="map-link" onclick="filterMarkers('shops');">Shops</a>
     </li>
     <li class="map-item">
-      <a class="map-link" href="#" >transport </a>
+      <a class="map-link" onclick="filterMarkers('transport');">transport </a>
     </li>
   </ul>
-  <div id="map">
+  <div id="map-canvas">
   </div>
 </section>
