@@ -328,7 +328,19 @@ svg:not(:root) {
              background-color: $slate-grey;
          }
   }
+  &.in-black-cta{
+    color: $white;
+    &:before{
+      background-color: $white;
+    }
+     @include  media-breakpoint-up(md){
+      color: inherit;
+      &:before{
+        background-color:$slate-grey;
+      }
+     }
 
+  }
   &.cat-white{
     color: $white;
     &:before{

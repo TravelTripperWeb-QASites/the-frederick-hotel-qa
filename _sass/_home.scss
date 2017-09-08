@@ -433,19 +433,7 @@
 				  }
 				h2{padding-top:3.438rem;}
 				h5{padding-bottom:2.2rem;}
-        .btn-2-cta{
-          color: $white;
-          &:before{
-            background-color: $white;
-          }
-           @include  media-breakpoint-up(md){
-            color: inherit;
-            &:before{
-              background-color:$slate-grey;
-            }
-           }
-
-        }
+        
 			}
 			.rooms-content{
 				@extend .col-md-6;
@@ -508,10 +496,12 @@
 		}
 	}
 }
-/*Dining section*/
-
+/*Dining section*/ 
 .dining-section{
-	background: linear-gradient(to left, transparent 50%, $midnight-charcoal 50%);
+	background:  $midnight-charcoal;
+   @include  media-breakpoint-up(md){
+    background: linear-gradient(to left, transparent 50%, $midnight-charcoal 50%);
+   }
 	margin-top:5.125rem;
 	margin-bottom:5.125rem;
     @extend .container-fluid ;
@@ -521,8 +511,8 @@
       .dining-phot-description{
         @extend .col-md-6; 
          text-align: right;
-         padding: 2.125rem 0rem 2.125rem 0rem;
-         @include  media-breakpoint-up(sm){
+         padding: 0rem 0rem 2.125rem 0rem;
+         @include  media-breakpoint-up(md){
            padding: 5.125rem 0rem 5.125rem 6rem;
          }
          figure{
@@ -547,21 +537,22 @@
         p{ 
           color: $white;
           max-width: 500px;
-          margin: 2rem 1rem 0rem 1;
-          text-align: center;
+          margin: 3rem 1rem 0rem 1.2rem; 
+          text-align: left;
           float: none;
-           @include  media-breakpoint-up(sm){
-                 margin: 5rem 4rem 1rem 0;
+           @include  media-breakpoint-up(md){
+                 margin: 5rem 4rem 1rem 2rem;
                   text-align: left;
                   float: right;
            }
         }
       }
       .gastronomic{
-        @extend .col-md-6; 
-         padding: 2.125rem 0rem 2.125rem 2rem;
+        @extend .col-md-6;  
+        color: $white;
          @include  media-breakpoint-up(md){
            padding: 5.125rem 0rem 5.125rem 6rem;
+           color: inherit;
          }
           figure{
            position: relative;
@@ -648,28 +639,31 @@
 /*location*/
 .location-section{
   @extend .container;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
+   @include  media-breakpoint-up(md){
+       margin-top: 5.5rem;
+   }
   .heading-sec{
-    @extend .row ;
+    @extend .row ; 
   }
   .heading{
       @extend .col-md-3;
      margin-top: 2.3rem;
   }
-  .photos{
-    @extend .col-md-9;
-    @extend .row ;
+  .photos{ 
+    @extend .col-md-9;  
     .photo{
-        @extend .col-md-6;
-          margin: 0rem;
+        @extend .col-md-6; 
+        padding: 15px 0;
+         @include  media-breakpoint-up(md){
+          padding:0 15px;
+         }
           img{
               @include  media-breakpoint-down(md){
-            width: 100%
+              width: 100%
            }
           }
-        @include  media-breakpoint-up(sm){
-        margin: 0.500rem 0;
-        }
+        
     }
     }
 }
@@ -701,7 +695,7 @@
          @extend .col-md-5 ;
          @extend .align-self-center ;
         p{
-            padding:-0rem;
+            padding:1rem 0;
             @include media-breakpoint-up(lg){
               padding:0rem 7rem 0rem 2.6rem;
           }
