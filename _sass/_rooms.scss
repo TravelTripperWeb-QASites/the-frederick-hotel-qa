@@ -1,0 +1,99 @@
+.rooms {
+  .rooms-tabs {
+    border: none;
+    .nav-link {
+      font-family: $regular;
+      color: $midnight-charcoal;
+      font-size: $font-16;
+      letter-spacing: 0.150rem;
+      text-transform: uppercase;
+      border: none;
+      display: block;
+      cursor: pointer;
+      letter-spacing: 0.150rem;
+      padding: 1.563em 1rem;
+      transition: $global-transition;
+      &:hover {
+        border: none;
+        background-color: $primary-color;
+        color: $white;
+        border-radius: 0px;
+      }
+      &.active {
+        background-color: $primary-color;
+        color: $white;
+        border: none;
+        border-radius: 0px;
+      }
+    }
+  }
+  .rooms-intro {
+    color: $midnight-charcoal;
+    padding: 3rem 15px 3rem 15px;
+    @include media-breakpoint-up(lg){
+      padding: 6.063rem 6.063rem 4.125rem 6.063rem;
+    }
+      .btn-holder {
+        padding-top: 2.063rem;
+      }
+  }
+  .room-item {
+    color: $midnight-charcoal;
+    @extend .row;
+    margin: 0 auto;
+    max-width: 1154px;
+    padding: 0 15px 4.125rem 15px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      .room-image {
+        img {
+          width: 100%;
+        }
+      }
+      .room-content {
+        padding: 3rem 0 0 0;
+        @include media-breakpoint-up(md){
+          padding: 0 30px;
+        }
+        @include media-breakpoint-up(lg){
+        width: 90%;
+        padding: 0 0 0 5.500rem;
+        }
+        h6 {
+          font-weight: bold;
+          letter-spacing: 0.200rem;
+          padding: 0 0 1.250rem 0;
+          a {
+            color: $primary-color;
+            display: inline-block;
+            border-bottom: solid 2px $primary-color;
+              &:hover {
+                text-decoration: none;
+              }
+          }
+        }
+        .btn-holder {
+          padding-top: 2.063rem;
+        } 
+      }
+  }
+}
+.map-section {
+  background-color: $midnight-charcoal;
+  margin: 6.000rem 0 0 0;
+  .map-content {
+    padding: 3rem 0 3rem 15px;
+    color: $white;
+    width: 84%;
+    @include media-breakpoint-up(lg){
+      padding: 3rem 0 3rem 6.938rem;
+    }
+    h5 {
+      padding: 0 0 1.500rem 0;
+    }
+  }
+  .map-holder {
+
+  }
+}

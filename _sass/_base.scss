@@ -169,7 +169,10 @@ svg:not(:root) {
   width: 100%;
   position: relative;
 }
-
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .white-bg{
   background-color: $white;  //white background color
 }
