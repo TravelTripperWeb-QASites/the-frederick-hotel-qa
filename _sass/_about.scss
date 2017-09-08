@@ -16,8 +16,19 @@
     @extend .row;
     padding:3.6rem 0;
     .heading{
-      @extend .col-md-5;
+      @extend .col-md-6;
       h1{text-transform:uppercase; color:$midnight-charcoal;}
+      h5{
+        a{
+          color:$light-slate-grey ;
+          @include transition($global-transition);
+          text-decoration: none;
+          padding: 0rem 0.2rem;
+          &:hover{
+            color:$primary-color ;
+          }
+        }
+      }
       &.heading-big{
         @extend .col-md-9;
       }
@@ -91,8 +102,16 @@
   .first-pic{
     @extend .col-md-4;
     @extend .text-left;
+    padding-left: 3rem;
     .btn-holder{
       padding: 1rem 0;
+    }
+    color:$white;
+
+     @include media-breakpoint-down(md){
+      img{
+        width: 100%;
+      }
     }
   }
 
@@ -100,6 +119,7 @@
     @extend .col-md-6;
     @extend .text-center;
     @extend .align-self-center;
+    
   }
   .last-pic{
     @extend .col-md-2;
@@ -129,6 +149,7 @@
     word-spacing: .8rem;
     letter-spacing: 0.2rem;
     line-height: 2rem;
+    color:$white;
     }
 
     .fr-logo{
@@ -143,6 +164,14 @@
       line-height: 1.5rem;
       font-size:$font-12;
       padding-bottom:2rem;
+      color:$white;
+    }
+
+    .btn-white{
+      &:hover{
+        background: $slate-grey ;
+        border: none;
+      }
     }
 
    }

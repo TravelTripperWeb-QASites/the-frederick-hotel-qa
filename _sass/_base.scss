@@ -218,6 +218,7 @@ svg:not(:root) {
   &:hover{
      outline: 0;
      background-color: $slate-grey;
+    text-decoration: none;
   }
 }
 .btn-blue{
@@ -239,6 +240,15 @@ svg:not(:root) {
     color: $white !important;
     border: 2px solid $black;
   }
+}
+.btn-white{
+    @extend .btn-primary;
+    color: $primary-color !important;
+    background-color: $white;
+     &:hover{
+        background-color: $black;
+        color: $white !important;
+      }
 }
 .btn-outline-arrow{
    @extend .btn-blue;

@@ -1,0 +1,160 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+$grid-columns: 12;
+
+.no-padding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.no-margin{
+	margin-left: 0px;
+	margin-right: 0px;	
+}
+
+.auto-margin{
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+@mixin transition-time($time) {
+	-webkit-transition: all $time;
+	-moz-transition: all $time;
+	-o-transition: all $time;
+	-ms-transition: all $time;
+	transition: all $time;
+}
+
+@mixin translate-text($left, $top) {
+	-webkit-transform: translate($left, $top);
+	-o-transform: translate($left, $top);
+	-moz-transform: translate($left, $top);
+	-ms-transform: translate($left, $top);
+	transform: translate($left, $top);
+}
+
+@mixin text-formatting($font-family, $font-size, $font-weight, $line-height, $letter-spacing, $text-transform, $font-color){
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	letter-spacing: $letter-spacing;
+	text-transform: $text-transform;
+	color: $font-color;
+	line-height: $line-height;
+}
+
+
+/* For background Images */
+
+.bg-center-center{
+	background-position: center center;
+}
+
+.bg-right-center{
+	background-position: right center;
+}
+
+.bg-left-center{
+	background-position: left center;
+}
+
+.bg-cover {
+	background-size: cover;
+}
+
+.bg-norepeat {
+	background-repeat: no-repeat;
+}
+
+
+.bg-styles{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+/* For background Images END */
+
+
+
+/* Positions */
+
+.absolute{
+	position: absolute;
+}
+.relative{
+	position: relative;
+}
+.static{
+	position: static;
+}
+.fixed{
+	position: fixed;
+}
+
+/* Positions End*/
+
+/*Banner center*/
+
+.banner-center{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 50%;
+	text-align: center;
+	@include translate-text(0, -50%);
+	margin: auto;
+}
+
+/*Banner center End*/
+
+/* Margin Top and Bottom */ /* Usage Example: m-b-60 m-t-75 */
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.m-b-#{$i} {
+			margin-bottom: #{$i}px;
+		}
+	}
+}
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.m-t-#{$i} {
+			margin-top: #{$i}px;
+		}
+	}
+}
+
+/* Margin Top and Bottom END */
+
+
+/* Padding Top and Bottom */ /* Usage Example: p-t-50 p-b-45 */
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.p-b-#{$i} {
+			padding-bottom: #{$i}px;
+		}
+	}
+}
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.p-t-#{$i} {
+			padding-top: #{$i}px;
+		}
+	}
+}
+
+/* Padding Top and Bottom END */
