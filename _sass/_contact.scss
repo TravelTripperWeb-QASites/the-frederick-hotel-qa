@@ -1,13 +1,12 @@
-.contact{
+.contact,.rfp{
     @extend .container ;
     padding: 1rem 0rem;
-    .contact-wrapper{
+    .contact-wrapper,.rfp-wrapper{
       @extend .row ;
       .address{
         @extend .col-md-5 ;
       }
       .contact-form{
-      
         @extend .col-md-7 ;
         form {
           @extend  .row ;
@@ -86,7 +85,18 @@
                
               }
            }
-       }
+          }
+           .rfp-form{
+           @extend form;
+            .first-name,
+            .last-name,
+            .email,
+            .company,
+            .phonenumber,.arrival,.departure,.rooms-per-night,.space,.type-of-meeting,.event-name,.type,.number-of-att,.message,.btn,.organiz{
+               @extend .col-sm-6 ;
+             }
+           }
+      
      }
   }
   
