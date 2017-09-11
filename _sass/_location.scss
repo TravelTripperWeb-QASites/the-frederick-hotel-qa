@@ -1,7 +1,7 @@
 .location{
   @extend .container ;
   @extend .row ;
-  margin: 2rem  auto 0 auto;
+  margin: 3rem  auto 0 auto;
   color:$midnight-charcoal;
     @include  media-breakpoint-up(md){
       margin: 6rem  auto 0 auto;
@@ -13,7 +13,9 @@
       @extend .col-md-5 ;
       img{
         width: 100%;
+        padding-top: 2rem;
         @include  media-breakpoint-up(lg){
+            padding-top:0;
             width: auto;
         }
       }
@@ -81,8 +83,13 @@
        }
     }
   .photo{
-    padding-top: 6rem;
-  
+    padding-top: 2rem; 
+    @include  media-breakpoint-up(md){
+      padding-top: 4rem; 
+    }
+    @include  media-breakpoint-up(xl){
+      padding-top: 6rem; 
+    }
       @extend .col-md-7 ;
       img{
         width: 100%;
@@ -100,11 +107,16 @@
 
       .p1{
           @extend .col-md-6 ;
-          padding-left:0; 
+          @include  media-breakpoint-up(md){
+            padding-left:0; 
+          }
       }
       .p2{
           @extend .col-md-6 ;
-          padding-right:0; 
+          
+          @include  media-breakpoint-up(md){
+            padding-right:0; 
+          }
       }
     }
     }
@@ -213,6 +225,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
     @extend .col-md-7 ;
     .carousel{
       width:100%;
+          .carousel-inner{ 
+              .carousel-item.active,
+              .carousel-item-next,
+              .carousel-item-prev{
+               display:block !important;
+              } 
+            }
       .carousel-caption{
         position: absolute;
           top: 20px;
@@ -247,18 +266,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 }
 .exprence-nyc{
   @extend .text-center ;
+  margin-bottom: 2rem;
   background-size: cover;
-  h1{
-     font-size: 5.125rem;
-     line-height: 3rem;
+  h3{
+     font-size: 2.225rem; 
      color:$white;
       @include  media-breakpoint-up(md){
-          font-size: 7.125rem;
-             line-height: 3rem;
+          font-size: 5.125rem; 
       }
      @include  media-breakpoint-up(lg){
        font-size:7.125rem;
-          line-height: 7rem;
+       line-height: 7rem;
      }
     }
       padding: 7rem 0;
