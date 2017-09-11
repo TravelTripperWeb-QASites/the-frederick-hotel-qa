@@ -27,7 +27,9 @@ $(document).ready(function(){
     $(window).resize(function() {
       setHeight();
     }); 
-      
+    
+    
+
    $('.homeintro').fadeIn('slow');
    $('.close-icon').click(function(){
      $('.homeintro').fadeOut('slow');

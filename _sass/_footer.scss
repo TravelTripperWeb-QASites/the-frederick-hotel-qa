@@ -50,6 +50,13 @@
   .copy-rights{
      @extend .container ;
      color: $white;
+     @include media-breakpoint-down(sm){
+      .text-left,  .text-right{
+        line-height: 26px;
+         text-align: center !important;
+      }
+            
+     }
   .wrapper{ 
     @extend .justify-content-between ;
     @extend .row ;

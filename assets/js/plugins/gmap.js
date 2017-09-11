@@ -4,37 +4,73 @@
 // mapstyler
 var mapstyle = [
     {
-        "featureType": "all",
+        "featureType": "administrative",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "saturation": 36
-            },
-            {
-                "color": "#333333"
-            },
-            {
-                "lightness": 40
+                "color": "#444444"
             }
         ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
+        "featureType": "landscape",
+        "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
-            },
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 16
+                "color": "#f2efea"
             }
         ]
     },
     {
-        "featureType": "all",
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#dadada"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "weight": "0.01"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
         "elementType": "labels.icon",
         "stylers": [
             {
@@ -43,140 +79,32 @@ var mapstyle = [
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#fefefe"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#fefefe"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f5f5f5"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f5f5f5"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#dedede"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
         "featureType": "transit",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#f2f2f2"
-            },
-            {
-                "lightness": 19
+                "visibility": "off"
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#c8d2d3"
+                "color": "#46bcec"
             },
             {
-                "lightness": 17
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ecf5fc"
             }
         ]
     }
@@ -190,13 +118,18 @@ var markers1 = [];
 // Our markers
 markers1 = [
   //hint ['serial id','title', lat,long, 'category','Marker label','map direction link' ]
-    ['0', 'THE FREDERICK HOTEL <br/>95 West Broadway, <br/> New York, NY 10007', 29.961781, -90.065895, 'hotel', '1','#'],  //property marker which can't be hidden on filter
-    ['1', 'Louis Armstrong Park', 29.962761, -90.067763, 'hotels', '1',''],
-    ['2', 'Bourbon Street ', 29.959248, -90.065091, 'hotels', '2',''],
+    ['0', 'THE FREDERICK HOTEL <br/>95 West Broadway, <br/> New York, NY 10007', 40.715475, -74.008909, 'hotel', '1','https://goo.gl/maps/xPhho9uYHnD2'],  //property marker which can't be hidden on filter
+    ['1', 'National September 11 Memorial & Museum, 180 Greenwich St,<br/> New York, NY 10007', 40.711415, -74.012479, 'attractions', '1',''],
+    ['2', 'HOTEL CHANDLER, <br /> 12 E 31st St,<br /> New York, NY 10016, USA ', 40.745934, -73.985187, 'hotels', '2','https://goo.gl/maps/9PVDjN4sAZx'],
     ['3', 'Jackson Square', 29.957444, -90.062935, 'restaurants', '1',''],
-    ['4', 'Original French Market ', 29.959283, -90.060688, 'shops','3', ''],
-    ['5', 'Esplanade Ave. Wharf ', 29.960339, -90.056938, 'attractions', '5',''],
-    ['6', 'Coop\'s Place ', 29.960159, -90.059867, 'transport','1','']
+    ['4', 'Original French Market ', 29.959283, -90.060688, 'shops','3', ''], 
+    ['6', 'Coop\'s Place ', 29.960159, -90.059867, 'transport','1',''],
+    ['7', 'WALL STREET STOCK EXCHANGE,<br>  New York, NY 10005', 40.706877, -74.011265, 'attractions','1','https://goo.gl/maps/PEewaqiETfz'],
+    ['8', 'TRINITY CHURCH,<br>  75 Broadway, New York, NY 10006', 40.708062, -74.012185, 'attractions','1','https://goo.gl/maps/qgFPaAYkaLr'],
+    ['9', 'BROOKLYN BRIDGE,<br>  New York, NY 10038', 40.706086, -73.996864, 'attractions','1','https://goo.gl/maps/NtGNzH963tG2'],
+    ['10','BROOKLSOUTH STREET SEA PORT MUSEUM,<br>  12 Fulton St, <br/> New York, NY 10038', 40.706562, -74.003710, 'attractions','1','https://goo.gl/maps/BcANXCKz1mv'],
+    ['11', 'WJ Hotel, <br />318 W 51st St, New York, <br /> NY 10019 ', 40.763309, -73.986814, 'hotels', '2','https://goo.gl/maps/A7k6NYaG3c12'],
+    ['12', 'Hotel Edison,<br />228 W 47th St, <br /> New York, NY 10036 ', 40.759648, -73.986132, 'hotels', '2','https://goo.gl/maps/WR2sym1X8ts']
 ];
 
 /**
@@ -204,9 +137,9 @@ markers1 = [
  */
 
 function initialize() {
-    var center = new google.maps.LatLng(29.961781, -90.065895);
+    var center = new google.maps.LatLng(40.715475, -74.008909);
     var mapOptions = {
-        zoom: 16,
+        zoom: 14,
         center: center,
         styles: mapstyle, 
         mapTypeId: google.maps.MapTypeId.TERRAIN

@@ -241,9 +241,19 @@
         opacity: 1; 
          @include transition($global-transition);
         position:relative;
-        min-height: 475px;
+        min-height: 260px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
+        @include media-breakpoint-up(md){
+            min-height: 275px;
+        }
+        @include media-breakpoint-up(lg){
+            min-height: 345px;
+        }
+        @include media-breakpoint-up(xl){
+            min-height: 475px;
+        }
         .img-bg{
           opacity: 0;
           background-color:rgba(255, 255, 255, 0.4);

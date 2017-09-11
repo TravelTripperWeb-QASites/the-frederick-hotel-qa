@@ -296,15 +296,30 @@
 }
 .exclusive-offers{
 	padding: 3.75rem 0 0 0;
-	@extend .container-fluid;
-	background-color: $light-color;
+	@extend .container-fluid; 
 	background-image: url('/assets/images/home/bg-lamp.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: bottom 580px right 0;
+	background-position: top 370px right 0;
 	color: $black;
+  @include media-breakpoint-up(md){
+    background-position: bottom 380px right 0;
+  }
+  @include media-breakpoint-up(lg){
+     background-position: bottom 460px right 0;
+  }
+  @include media-breakpoint-up(xl){
+      background-position: bottom 580px right 0;
+  }
 	.wrapper{
       @extend .row;
+      .caption{
+         display: block;
+         @include media-breakpoint-up(md){
+              display: inherit;
+         }
+
+      }
 	}
 	.detail{
 		 padding: 2rem;
@@ -342,10 +357,10 @@
 	}
 }
 .rooms-carousel{
-	background: linear-gradient(to left, $midnight-charcoal 50%, transparent 50%);
+  background: $midnight-charcoal;
 	padding-top:4.125rem;
 	margin-bottom:5.125rem;
-	@include  media-breakpoint-down(md){
+	@include  media-breakpoint-up(md){
 		background: linear-gradient(to left, $midnight-charcoal 50%, transparent 50%);
 	}
 	.rooms-carousel-container{
@@ -353,11 +368,17 @@
 			     padding: 0; 
 		.rooms-carousel-inner{
 			@extend .row; 
-              @extend .no-gutters; 
+       @extend .no-gutters;
+       .carousel-item.active,
+       .carousel-item-next,
+       .carousel-item-prev{
+        display:block !important;
+       } 
 			.carousel{
 				width:100%;
 				.carousel-item{
-					padding-top: 5rem;
+					padding-top: 5rem; 
+              
 				}
 				.carousel-caption{
 					position: absolute;
@@ -377,25 +398,42 @@
 					position:absolute;
 					color: $midnight-charcoal;
 					top:0px;
-					right:0px;
+					right:15px;
 					left:auto;
 					opacity:1;
+          @include media-breakpoint-up(xl){
+                  right:0px;
+          }
+          @include transition($global-transition);
+           &:hover{
+             background-color: $light-slate-grey;
+           }
 					i{
-						 
+						 @include transition($global-transition);
+             &:hover{
+             color: $white;
+           }
 					}
 					&.carousel-control-prev{
-						right: 33px;
+						right: 48px;
+            @include media-breakpoint-up(xl){
+              right: 33px;
+            }
 					}
 				}
 			}
 			.rooms-heading{
-				color: $midnight-charcoal;
+				color: $white;
+        @include  media-breakpoint-up(md){
+          color: $midnight-charcoal;
+        }
 				@extend .col-md-6;  
-				 @include  media-breakpoint-up(lg){
+				 @include  media-breakpoint-up(xl){
 				    padding: 0;
 				  }
 				h2{padding-top:3.438rem;}
 				h5{padding-bottom:2.2rem;}
+        
 			}
 			.rooms-content{
 				@extend .col-md-6;
@@ -421,12 +459,15 @@
 		@extend .row;
 		margin-left: 2.3rem;
 		@include  media-breakpoint-down(md){
-			margin-left: 0;
+			margin-left: -15px;
 		}
 		.left-part{
 			@extend .col-md-4;
-			h2{
-				padding-top:4.313rem;
+			h2{ 
+        padding-top:1rem;
+        @include  media-breakpoint-up(md){
+          padding-top:4.313rem;
+        }
 			}
 			p{ 
 				width:100%;
@@ -440,26 +481,27 @@
 			@extend .col-md-4;
 		}
 		.right-part{
-			@extend .col-md-4;
-			margin-top:3.875rem;
-			padding:0;
-			text-align: right; 
+			@extend .col-md-4; 
+			padding:15;
+			text-align: left; 
+       @include  media-breakpoint-up(md){
+           text-align: right; 
+           padding:0;
+           margin-top:3.875rem;
+       }
 			.btn-holder{
 				margin: 3.125rem 4rem 0 0;
-				@include  media-breakpoint-down(md){
-					margin: 0;
-					position: absolute;
-				    top: 20%;
-				    left: 15px;
-				}
+				 
 			}
 		}
 	}
 }
-/*Dining section*/
-
+/*Dining section*/ 
 .dining-section{
-	background: linear-gradient(to left, transparent 50%, $midnight-charcoal 50%);
+	background:  $midnight-charcoal;
+   @include  media-breakpoint-up(md){
+    background: linear-gradient(to left, transparent 50%, $midnight-charcoal 50%);
+   }
 	margin-top:5.125rem;
 	margin-bottom:5.125rem;
     @extend .container-fluid ;
@@ -469,8 +511,8 @@
       .dining-phot-description{
         @extend .col-md-6; 
          text-align: right;
-         padding: 2.125rem 0rem 2.125rem 0rem;
-         @include  media-breakpoint-up(sm){
+         padding: 0rem 0rem 2.125rem 0rem;
+         @include  media-breakpoint-up(md){
            padding: 5.125rem 0rem 5.125rem 6rem;
          }
          figure{
@@ -495,21 +537,22 @@
         p{ 
           color: $white;
           max-width: 500px;
-          margin: 2rem 1rem 0rem 1;
-          text-align: center;
+          margin: 3rem 1rem 0rem 1.2rem; 
+          text-align: left;
           float: none;
-           @include  media-breakpoint-up(sm){
-                 margin: 5rem 4rem 1rem 0;
+           @include  media-breakpoint-up(md){
+                 margin: 5rem 4rem 1rem 2rem;
                   text-align: left;
                   float: right;
            }
         }
       }
       .gastronomic{
-        @extend .col-md-6; 
-         padding: 2.125rem 0rem 2.125rem 2rem;
+        @extend .col-md-6;  
+        color: $white;
          @include  media-breakpoint-up(md){
            padding: 5.125rem 0rem 5.125rem 6rem;
+           color: inherit;
          }
           figure{
            position: relative;
@@ -596,28 +639,31 @@
 /*location*/
 .location-section{
   @extend .container;
-  margin-top: 5.5rem;
+  margin-top: 2rem;
+   @include  media-breakpoint-up(md){
+       margin-top: 5.5rem;
+   }
   .heading-sec{
-    @extend .row ;
+    @extend .row ; 
   }
   .heading{
       @extend .col-md-3;
      margin-top: 2.3rem;
   }
-  .photos{
-    @extend .col-md-9;
-    @extend .row ;
+  .photos{ 
+    @extend .col-md-9;  
     .photo{
-        @extend .col-md-6;
-          margin: 0rem;
+        @extend .col-md-6; 
+        padding: 15px 0;
+         @include  media-breakpoint-up(md){
+          padding:0 15px;
+         }
           img{
               @include  media-breakpoint-down(md){
-            width: 100%
+              width: 100%
            }
           }
-        @include  media-breakpoint-up(sm){
-        margin: 0.500rem 0;
-        }
+        
     }
     }
 }
@@ -649,7 +695,7 @@
          @extend .col-md-5 ;
          @extend .align-self-center ;
         p{
-            padding:-0rem;
+            padding:1rem 0;
             @include media-breakpoint-up(lg){
               padding:0rem 7rem 0rem 2.6rem;
           }

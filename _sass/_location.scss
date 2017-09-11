@@ -277,7 +277,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
     background: url(/assets/images/map.jpg);
     background-size: cover;
     width: 100%;
-    min-height: 400px;
+    min-height: 520px;
     @include  media-breakpoint-up(md){
         min-height: 600px;
     }
@@ -286,27 +286,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   .map-nav{
       @extend .row ;
     border: 1px solid  $midnight-charcoal;
-    max-width: 920px;
+    max-width:910px;
     margin:4rem auto;
     position: absolute;
     left: 0;
     right: 0;
-    padding: 20px 15px;
+    padding: 10px;
     z-index: 3;
    .map-item{
      text-align: center;
-     text-transform: uppercase;
-     margin-bottom: 0;
+     text-transform: uppercase; 
      position: relative;
+     margin: 9px 0px;
     .map-link{
+          cursor: pointer;
           border-radius: 0;
-          border:0px;
-          margin: 10px 0;
+          border:0px; 
           background: $midnight-charcoal;
           padding: 0.8em 1.68em;
           font-size: $font-14 ;
           letter-spacing: 2px;
           color: $white;
+           @include  media-breakpoint-up(md){
+            letter-spacing: 2px;
+            margin: 10px 0;
+           }
           @include transition($global-transition);
           &:hover{
             background-color:$primary-color;
@@ -321,4 +325,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
    }
   }
   }
-  
