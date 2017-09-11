@@ -4,8 +4,11 @@
     height: 477px;
   }
 }
-.page-intro-headline {
-  padding: 4.250rem 4.250rem 4.938rem 4.250rem;
+.page-intro-headline { 
+  padding: 3.250rem 0 1.5rem 0;
+  @include media-breakpoint-up(lg){
+   padding: 4.250rem 4.250rem 4.938rem 4.250rem;
+  }
   .container-fluid {
     padding: 0 1.875rem;
   }
@@ -15,11 +18,20 @@
 }
 .page-intro {
   background-color: $midnight-charcoal;
-  padding: 4.000rem 4.250rem;
-  color: $white;    
+  padding: 2rem 0;
+  color: $white; 
+  @include media-breakpoint-up(md){
+     padding: 2rem;
+  }   
+  @include media-breakpoint-up(lg){
+     padding: 4.000rem 4.250rem;
+  }  
       .left-content {
         padding-left: 1.875rem;
-        width: 78%;
+        width: 100%;
+         @include media-breakpoint-up(lg){
+          width: 78%;
+         }
       }
       .logo-wrap {
         max-width: 273px;
@@ -33,11 +45,17 @@
         padding-top: 3.250em;
       }
       .second-row-left {
-        margin-right: -26px;
+        @include media-breakpoint-up(md){
+          margin-right: -26px;
+        }
       }
       .left-image {
+        padding: 2rem;
+           @include media-breakpoint-up(md){
+                    padding: 0;
+           }
          img {
-           width: 100%;
+           width: 100%; 
          }
          span {
            display: block;
@@ -49,18 +67,35 @@
          }
       }
       .btn-holder {
-        text-align: right;
+        padding: 0 2rem;
+         @include media-breakpoint-up(md){
+          text-align: right;
+          padding: 0;
+         }
       }
       .right-content {
-        padding: 2rem 0 0 0;
-        margin-left: 20%;
-        p {
-          width: 84%;
+        padding: 2rem; 
+         @include media-breakpoint-up(md){
+          margin-left: 20%;
+          padding: 2rem 0 0 0;
+         }
+        p { 
+          @include media-breakpoint-up(md){
+            width: 100%;
+          }
+          @include media-breakpoint-up(xl){
+            width: 84%;
+          }
         }
       }
       .two-colo-img {
-        position: absolute;
-        margin-top: 3rem;
+         @include media-breakpoint-up(md){
+          
+        }
+         @include media-breakpoint-up(lg){ 
+          position: absolute; 
+          margin-top: 3rem;
+        }
         img {
           width: 100%;
         }
@@ -68,7 +103,11 @@
 }
 
 .page-content {
-  padding: 8.625rem 4.250rem 5.625rem 4.250rem;
+  padding: 2rem 0;
+  @include media-breakpoint-up(lg){
+    padding: 8.625rem 4.250rem 5.625rem 4.250rem;
+  }
+
   .content {
     padding-top: 3.500rem;
     padding-left: 1.563rem;

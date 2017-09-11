@@ -77,8 +77,10 @@
 /* offers details */
 
 .special-info{
-	@extend .col-md-6;
-	padding: 3rem 4rem;
+	@extend .col-md-6; 
+	 @include  media-breakpoint-up(md){
+		padding: 3rem 4rem;
+	}
 }
 .special-img{
 	@extend .col-md-12;
@@ -96,9 +98,9 @@
 		padding:0;
 		li{
 		  position:relative;
-		  padding-left: 2rem;
-		  margin-right: 14rem;
+		  padding-left: 2rem; 
 		  line-height: 20px;
+		  padding-right: 2rem;
 		  padding-bottom: 0.3rem;
 		  &:before{
 		  position:absolute;
