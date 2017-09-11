@@ -28,7 +28,7 @@
 
 
 //icons style
-.social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_instagram
+.social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_instagram, .icon-star
 {
 	font-family: 'ElegantIcons';
 	speak: none;
@@ -53,4 +53,7 @@
 }
 .social_instagram:before {
 	content: "\e09a";
+}
+.icon-star:before {
+	content: "\e033";
 }

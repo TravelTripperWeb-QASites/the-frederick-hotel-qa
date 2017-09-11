@@ -1,0 +1,92 @@
+.contact{
+    @extend .container ;
+    padding: 1rem 0rem;
+    .contact-wrapper{
+      @extend .row ;
+      .address{
+        @extend .col-md-5 ;
+      }
+      .contact-form{
+      
+        @extend .col-md-7 ;
+        form {
+          @extend  .row ;
+          h3{
+            text-align: center;
+            padding: 2rem 0;
+            width: 100%;
+          }
+          .first-name,
+          .last-name,
+          .email,
+          .company,
+          .phonenumber,.arrival,.departure,.rooms-per-night,.space,.type-of-meeting,.event-name,.type,.number-of-att,.message,.btn,.organiz{
+          @extend .col-sm-12 ;
+          margin: 0.625rem 0rem;
+          text-align: left;
+          input [type="radio"]{
+            margin: 1rem 0;
+          }
+            textarea{
+              height: 120px;
+              margin: 0.625rem 0rem;
+            }
+  
+            button{
+              width: auto;
+              background: $primary-color ;
+              border: none;
+              font-weight: bold;
+              color:$white;
+              font-family: $medium;
+              margin: 0 0;
+              i{
+                padding-bottom: 0rem;
+              }
+              &:hover,
+              &:focus{
+                background: $slate-grey;
+                outline: 0;
+                box-shadow: none;
+              }
+            }
+            }
+            .email-control{
+                @include border-radius(0);
+                padding: 1.25rem 0.9375rem ;
+                font-family: $regular;
+                background:$slate-grey;
+                border:1px solid $slate-grey;
+                color:$white;
+                width:100%;
+                &:focus {
+                  outline: 0;
+                }
+                
+              }
+            .form-control{
+              @include border-radius(0);
+              padding: 0.9375rem;
+              font-family: $regular;
+              background:$slate-grey;
+              border:1px solid $slate-grey;
+              color:$white;
+              &:focus {
+                outline: 0;
+              }
+            }
+              ::-webkit-input-placeholder { /* Chrome */
+                color: $white;
+              }
+              :-ms-input-placeholder { /* IE 10+ */
+                color: $white;
+              }
+              ::-moz-placeholder { /* Firefox 19+ */
+                color: $white;
+               
+              }
+           }
+       }
+     }
+  }
+  
