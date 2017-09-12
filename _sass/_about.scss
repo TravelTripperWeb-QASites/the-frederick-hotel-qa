@@ -13,7 +13,7 @@
 
 .heading-section{
   @extend .container;
-  @include  media-breakpoint-up(lg){
+  @include  media-breakpoint-up(xl){
      padding: 0;
   }
   .heading-inner{
@@ -50,16 +50,26 @@
   font-weight:bold;
   color:$white;
   font-size:$font-16;
+  text-transform: uppercase;
   }
   .why-pic{
   @extend .col-md-5;
   padding-top: 2rem;
   padding-left:0; 
+   @include  media-breakpoint-down(sm){
+     padding-right:0; 
+   }
   }
   .why-content{
-    @extend .col-md-5;
+    @extend .col-md-7;
     p{
-      padding: 1.5rem 0rem 1rem 5rem;
+      padding: 2rem 0rem;
+      color: $white;
+      max-width: 42.5rem;
+      line-height: 2.2rem;
+       @include  media-breakpoint-up(md){
+           padding: 1.5rem 3rem 1rem 5rem;
+       }
     }
     }
 
@@ -105,16 +115,18 @@
   padding:3.5rem 0;
   .first-pic{
     @extend .col-md-4;
-    @extend .text-left;
-    padding-left: 3rem;
+    @extend .text-left; 
+    @include media-breakpoint-up(md){
+      padding-left: 3rem; 
+    }
     .btn-holder{
       padding: 1rem 0;
     }
     color:$white;
-
      @include media-breakpoint-down(xl){
       img{
         width: 100%;
+        padding-bottom: 2rem;
       }
     }
   }
@@ -134,9 +146,10 @@
     @extend .col-md-2;
     @extend .text-right;
     padding:0;
-    @include media-breakpoint-down(sm){
-      display: none;
-    }
+    display: none;
+    @include media-breakpoint-up(md){
+     display: block;
+    } 
   }
 }
 .old-newyork{

@@ -240,3 +240,10 @@ $('.map-nav a').click(function(){
 });
 // Init map
 initialize();
+
+actionMarkers = function (markerID) { 
+    $('.attraction-list a').removeClass('active');
+       google.maps.event.trigger(gmarkers1[markerID], 'click'); 
+       $(this).addClass('active');
+      return false; 
+    }
