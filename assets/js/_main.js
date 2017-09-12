@@ -134,7 +134,40 @@ $(".filter").on("click", function () {
          });
 
 
+/*Date picket js*/
 
+      // $("#input_8").datepicker();
+      // $("#input_9").datepicker();
+
+      $("#input_8").datepicker({
+        dateFormat: "yy-mm-dd",
+  altField  : '#input_8',
+  altFormat : 'yy-mm-dd',
+        minDate: 0,
+        onSelect: function (date) {
+            var date2 = $('#input_8').datepicker('getDate');
+            date2.setDate(date2.getDate() + 1);
+            $('#input_9').datepicker('setDate', date2);
+            //sets minDate to dt1 date + 1
+            $('#input_9').datepicker('option', 'minDate', date2);
+        }
+    });
+    $('#input_9').datepicker({
+        dateFormat: "yy-mm-dd",
+  altField  : '#input_9',
+  altFormat : 'yy-mm-dd',
+        onClose: function () {
+            var dt1 = $('#input_9').datepicker('getDate');
+            console.log(dt1);
+            var dt2 = $('#input_9').datepicker('getDate');
+            if (dt2 <= dt1) {
+                var minDate = $('#input_9').datepicker('option', 'minDate');
+                $('#input_9').datepicker('setDate', minDate);
+            }
+        }
+    });
+  
+ /*Date picket js end*/
 
   //plus minus
   $(".incr-btn").on("click", function (e) {
