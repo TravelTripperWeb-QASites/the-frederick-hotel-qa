@@ -323,10 +323,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
           background: $midnight-charcoal;
           padding: 0.8em 1.68em;
           font-size: $font-14 ;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           color: $white;
            @include  media-breakpoint-up(md){
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             margin: 10px 0;
            }
           @include transition($global-transition);
