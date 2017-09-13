@@ -373,10 +373,8 @@ svg:not(:root) {
   100%{ width: 100; } 
 } 
 
-.bsHCarousel {
-  float: left;
-  overflow: hidden;
-  padding: 15px;
+.bsHCarousel { 
+  overflow: hidden; 
   width: 100%;
   position: relative;
   .carousel-inner{ 
@@ -388,33 +386,49 @@ svg:not(:root) {
     }
   .carousel-inner {
     transition: 1s ease all;
-    float: left;
+    //float: left;
     display: block;
     .carousel-item {
       display: block;
       float: left;
-      > div {
-        text-align: center;
-        padding: 10px;
-        margin: 10px;
-        background: #f1f1f1;
-        color: #666;
-      }
+       
     }
   }
-  .leftLst, .rightLst {
-    position: absolute;
-    border-radius: 50%;
-    top: calc(50% - 20px);
-  }
-  .leftLst {
-    left: 0;
-  }
-  .rightLst {
-    right: 0;
-  }
-  .leftLst.over, .rightLst.over {
-    pointer-events: none;
-    background: #ccc;
-  }
+    a.carousel-control-prev, a.carousel-control-next{
+            width:31px;
+            height:31px;
+            background:$white ;
+            position:absolute;
+            color: $midnight-charcoal;
+            top:0px;
+            right:15px;
+            left:auto;
+            opacity:1;
+            @include media-breakpoint-up(xl){
+                    right:0px;
+            }
+            @include transition($global-transition);
+             &:hover{
+               background-color: $light-slate-grey;
+             }
+            i{
+               @include transition($global-transition);
+               &:hover{
+               color: $white;
+             }
+            }
+            &.carousel-control-prev{
+              right: 48px;
+              @include media-breakpoint-up(xl){
+                right: 33px;
+              }
+            }
+            &.over {
+                pointer-events: none;
+                cursor: none;
+                background-color: $light-slate-grey;
+                color: $white !important;
+              }
+          }
+   
 }

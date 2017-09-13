@@ -2,7 +2,7 @@ $(document).ready(function () {
     var itemsMainDiv = ('.bsHCarousel');
     var itemsDiv = ('.carousel-inner');
     var itemWidth = "";
-
+    
     $('.leftLst, .rightLst').click(function () {
         var condition = $(this).hasClass("leftLst");
         if (condition)
@@ -10,9 +10,11 @@ $(document).ready(function () {
         else
             click(1, this)
     });
-
+   
     ResCarouselSize();
-
+    setTimeout(function(){
+        $('.bsHCarousel').css('display','block');
+    },400);
 
 
 
@@ -74,8 +76,24 @@ $(document).ready(function () {
         var divStyle = $(el + ' ' + itemsDiv).css('transform');
         var values = divStyle.match(/-?[\d\.]+/g);
         var xds = Math.abs(values[4]);
+
+         var bodyWidth = $('body').width();
+         itemsSplit = s.split(','); 
+         var slideto = 1;
+          if (bodyWidth >= 1200) {
+            slideto = itemsSplit[3];
+          }
+          else if (bodyWidth >= 992) {
+            slideto = itemsSplit[2];
+          }
+          else if (bodyWidth >= 768) {
+            slideto = itemsSplit[1];
+          }
+          else{
+               slideto = itemsSplit[0];
+          } 
         if (e == 0) {
-            translateXval = parseInt(xds) - parseInt(itemWidth * s);
+            translateXval = parseInt(xds) - parseInt(itemWidth * slideto);
             $(el + ' ' + rightBtn).removeClass("over");
 
             if (translateXval <= itemWidth / 2) {
@@ -85,7 +103,7 @@ $(document).ready(function () {
         }
         else if (e == 1) {
             var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
-            translateXval = parseInt(xds) + parseInt(itemWidth * s);
+            translateXval = parseInt(xds) + parseInt(itemWidth * slideto);
             $(el + ' ' + leftBtn).removeClass("over");
 
             if (translateXval >= itemsCondition - itemWidth / 2) {
