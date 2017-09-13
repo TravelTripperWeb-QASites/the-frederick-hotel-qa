@@ -58,9 +58,11 @@ description: "Come join us at one of our events."
       </div>
     </div>
 
-    <div class="special-info-list">
-      {{ offers.terms_list }}
-    </div>
+    {% if offers.terms_list %}
+      <div class="special-info-list">
+        {{ offers.terms_list }}
+      </div>
+    {% endif %}
 
   </div>
 </section>
