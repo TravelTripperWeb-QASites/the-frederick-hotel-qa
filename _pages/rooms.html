@@ -54,7 +54,7 @@ parent: rooms
         <div class="room-item">
           <div class="col-md-7 p-0">
             <div class="room-image">
-              <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+              <img src="{% if room.excerpt_image %}{{ room.excerpt_image.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt_image %}{{ room.excerpt_image.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
             </div>
           </div>
           <div class="col-md-5 p-0 align-self-center">
@@ -76,77 +76,59 @@ parent: rooms
 
     <div class="tab-pane" id="rooms" role="tabpanel">
 
-      <div class="room-item">
-        <div class="col-md-7 p-0">
-          <div class="room-image"><img src="/assets/images/rooms/room-1.jpg" alt="Superior King"></div>
-        </div>
-        <div class="col-md-5 p-0 align-self-center">
-          <div class="room-content">
-            <h2>Superior King</h2>
-            <h6>Tonight's Rate <a href="">$385</a></h6>
-            <p>Relax in One Comfortable Double Bed with luxury Frette linens, custom furnishing, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.</p>
-            <a href="" class="btn btn-2-cta">View Room</a>
-            <div class="btn-holder">
-              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% for room in rooms %}
+        {% if room.category == 'room' %}
 
-      <div class="room-item">
-        <div class="col-md-7 p-0">
-          <div class="room-image"><img src="/assets/images/rooms/room-2.jpg" alt="Superior King"></div>
-        </div>
-        <div class="col-md-5 p-0 align-self-center">
-          <div class="room-content">
-            <h2>Deluxe Queen</h2>
-            <h6>Tonight's Rate <a href="">$385</a></h6>
-            <p>Deluxe King Rooms at the Cosmopolitan Hotel - TriBeCa offer one king bed and accommodate up to two guests. Live like the King of New York in our largest beds, with modern amenities.</p>
-            <a href="" class="btn btn-2-cta">View Room</a>
-            <div class="btn-holder">
-              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <div class="room-item">
+            <div class="col-md-7 p-0">
+              <div class="room-image">
+                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+              </div>
+            </div>
+            <div class="col-md-5 p-0 align-self-center">
+              <div class="room-content">
+                <h2>{{ room.title }}</h2>
+                <h6>Tonight's Rate <a href="">$385</a></h6>
+                <p>{{ room.description }}</p>
+                <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+                <div class="btn-holder">
+                  <a href="#" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="room-item">
-        <div class="col-md-7 p-0">
-          <div class="room-image"><img src="/assets/images/rooms/room-3.jpg" alt="Superior King"></div>
-        </div>
-        <div class="col-md-5 p-0 align-self-center">
-          <div class="room-content">
-            <h2>Deluxe Double Double</h2>
-            <h6>Tonight's Rate <a href="">$385</a></h6>
-            <p>Two Double Beds Accommodate Up to Four Guests. Ideal for a family, these accommodations provide space and comfort, along with luxury amenities.</p>
-            <a href="" class="btn btn-2-cta">View Room</a>
-            <div class="btn-holder">
-              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+        {% endif %}
+      {% endfor %}
 
     </div>
 
     <div class="tab-pane" id="suites" role="tabpanel">
 
-      <div class="room-item">
-        <div class="col-md-7 p-0">
-          <div class="room-image"><img src="/assets/images/rooms/room-4.jpg" alt="Superior King"></div>
-        </div>
-        <div class="col-md-5 p-0 align-self-center">
-          <div class="room-content">
-            <h2>Junior Suites</h2>
-            <h6>Tonight's Rate <a href="">$385</a></h6>
-            <p>Junior Suites offer one king bed and a pullout sofa bed, and can accommodate up to four guests. Spare no expense for the best stay in the city.</p>
-            <a href="" class="btn btn-2-cta">View Room</a>
-            <div class="btn-holder">
-              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      {% for room in rooms %}
+        {% if room.category == 'suite' %}
+
+          <div class="room-item">
+            <div class="col-md-7 p-0">
+              <div class="room-image">
+                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+              </div>
+            </div>
+            <div class="col-md-5 p-0 align-self-center">
+              <div class="room-content">
+                <h2>{{ room.title }}</h2>
+                <h6>Tonight's Rate <a href="">$385</a></h6>
+                <p>{{ room.description }}</p>
+                <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+                <div class="btn-holder">
+                  <a href="#" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+
+        {% endif %}
+      {% endfor %}
 
     </div>
 
