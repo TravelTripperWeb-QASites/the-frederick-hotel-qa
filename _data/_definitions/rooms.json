@@ -3,7 +3,7 @@
     "required": true,
     "placeholder": "Superior King"
   },
-  "sort_order": {
+  "order": {
     "type": "integer",
     "instructions": "Used to order the rooms on the main /rooms page. If not used rooms will be listed in the order they were added."
   },

@@ -3,7 +3,7 @@ title_localized:
   en: The Frederick Hotel
 excerpt: The Frederick Hotel
 label_localized:
-  en: 
+  en:
 layout_localized:
   en: default
 permalink_localized:
@@ -15,188 +15,213 @@ meta_keywords_localized:
 parent: rooms
 ---
 
+{% assign rooms = site.data._models.rooms | sort: 'order' %}
+
 <div class="inner-page-banner bg-image-cover" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');"></div>
 
 <section class="rooms">
-    <div class="container-fluid p-0">
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab"  data-target="#all" role="tab">All</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" data-target="#rooms" role="tab">Rooms</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab"  data-target="#suites" role="tab">Suites</a>
-          </li>
-      </ul>
+
+  <div class="container-fluid p-0">
+    <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" data-target="#all" role="tab">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" data-target="#rooms" role="tab">Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" data-target="#suites" role="tab">Suites</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="rooms-intro">
+    <h6>Many unique stay options</h6>
+    <h1>Classic rooms & Suites</h1>
+    <p>Explore our classic guest rooms and suite types below.</p>
+    <a href="/gallery/" class="btn btn-2-cta">Take a visual tour</a>
+    <div class="btn-holder">
+      <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
     </div>
+  </div>
 
-    <div class="rooms-intro">
-      <h6>Many unique stay options</h6>
-      <h1>Classic rooms & Suites</h1>
-      <p>Explore our classic guest rooms and suite types below.</p>
-      <a href="/gallery/" class="btn btn-2-cta">Take a visual tour</a>
-      <div class="btn-holder">
-          <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-    </div>
+  <div class="tab-content">
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="all" role="tabpanel">
-          <div class="room-item">
-            <div class="col-md-7 p-0">
-              <div class="room-image"><img src="/assets/images/rooms/room-1.jpg" alt="Superior King"></div>
+    <div class="tab-pane fade show active" id="all" role="tabpanel">
+
+      {% for room in rooms %}
+
+        <div class="room-item">
+          <div class="col-md-7 p-0">
+            <div class="room-image">
+              <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
             </div>
-            <div class="col-md-5 p-0 align-self-center">
-              <div class="room-content">
-                <h2>Superior King</h2>
-                <h6>Tonight's Rate <a href="">$385</a></h6>
-                <p>Relax in One Comfortable Double Bed with luxury Frette linens, custom furnishing, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.</p>
-                <a href="" class="btn btn-2-cta">View Room</a>
-                <div class="btn-holder">
-                    <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                    </div>
+          </div>
+          <div class="col-md-5 p-0 align-self-center">
+            <div class="room-content">
+              <h2>{{ room.title }}</h2>
+              <h6>Tonight's Rate <a href="">$385</a></h6>
+              <p>{{ room.description }}</p>
+              <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+              <div class="btn-holder">
+                <a href="#" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
-          <div class="room-item">
-              <div class="col-md-7 p-0">
-                <div class="room-image"><img src="/assets/images/rooms/room-2.jpg" alt="Superior King"></div>
-              </div>
-              <div class="col-md-5 p-0 align-self-center">
-                <div class="room-content">
-                  <h2>Deluxe Queen</h2>
-                  <h6>Tonight's Rate <a href="">$385</a></h6>
-                  <p>Deluxe King Rooms at the Cosmopolitan Hotel - TriBeCa offer one king bed and accommodate up to two guests. Live like the King of New York in our largest beds, with modern amenities.</p>
-                  <a href="" class="btn btn-2-cta">View Room</a>
-                  <div class="btn-holder">
-                      <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="room-item">
-                <div class="col-md-7 p-0">
-                  <div class="room-image"><img src="/assets/images/rooms/room-3.jpg" alt="Superior King"></div>
-                </div>
-                <div class="col-md-5 p-0 align-self-center">
-                  <div class="room-content">
-                    <h2>Deluxe Double Double</h2>
-                    <h6>Tonight's Rate <a href="">$385</a></h6>
-                    <p>Two Double Beds Accommodate Up to Four Guests. Ideal for a family, these accommodations provide space and comfort, along with luxury amenities.</p>
-                    <a href="" class="btn btn-2-cta">View Room</a>
-                    <div class="btn-holder">
-                        <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-              <div class="room-item">
-                  <div class="col-md-7 p-0">
-                    <div class="room-image"><img src="/assets/images/rooms/room-4.jpg" alt="Superior King"></div>
-                  </div>
-                  <div class="col-md-5 p-0 align-self-center">
-                    <div class="room-content">
-                      <h2>Junior Suites</h2>
-                      <h6>Tonight's Rate <a href="">$385</a></h6>
-                      <p>Junior Suites offer one king bed and a pullout sofa bed, and can accommodate up to four guests. Spare no expense for the best stay in the city.</p>
-                      <a href="" class="btn btn-2-cta">View Room</a>
-                      <div class="btn-holder">
-                          <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                          </div>
-                    </div>
-                  </div>
-                </div>
         </div>
-        <div class="tab-pane" id="rooms" role="tabpanel">
-            <div class="room-item">
-                <div class="col-md-7 p-0">
-                  <div class="room-image"><img src="/assets/images/rooms/room-1.jpg" alt="Superior King"></div>
-                </div>
-                <div class="col-md-5 p-0 align-self-center">
-                  <div class="room-content">
-                    <h2>Superior King</h2>
-                    <h6>Tonight's Rate <a href="">$385</a></h6>
-                    <p>Relax in One Comfortable Double Bed with luxury Frette linens, custom furnishing, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.</p>
-                    <a href="" class="btn btn-2-cta">View Room</a>
-                    <div class="btn-holder">
-                        <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-              <div class="room-item">
-                  <div class="col-md-7 p-0">
-                    <div class="room-image"><img src="/assets/images/rooms/room-2.jpg" alt="Superior King"></div>
-                  </div>
-                  <div class="col-md-5 p-0 align-self-center">
-                    <div class="room-content">
-                      <h2>Deluxe Queen</h2>
-                      <h6>Tonight's Rate <a href="">$385</a></h6>
-                      <p>Deluxe King Rooms at the Cosmopolitan Hotel - TriBeCa offer one king bed and accommodate up to two guests. Live like the King of New York in our largest beds, with modern amenities.</p>
-                      <a href="" class="btn btn-2-cta">View Room</a>
-                      <div class="btn-holder">
-                          <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="room-item">
-                    <div class="col-md-7 p-0">
-                      <div class="room-image"><img src="/assets/images/rooms/room-3.jpg" alt="Superior King"></div>
-                    </div>
-                    <div class="col-md-5 p-0 align-self-center">
-                      <div class="room-content">
-                        <h2>Deluxe Double Double</h2>
-                        <h6>Tonight's Rate <a href="">$385</a></h6>
-                        <p>Two Double Beds Accommodate Up to Four Guests. Ideal for a family, these accommodations provide space and comfort, along with luxury amenities.</p>
-                        <a href="" class="btn btn-2-cta">View Room</a>
-                        <div class="btn-holder">
-                            <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-        </div>
-        <div class="tab-pane" id="suites" role="tabpanel">
-            <div class="room-item">
-                <div class="col-md-7 p-0">
-                  <div class="room-image"><img src="/assets/images/rooms/room-4.jpg" alt="Superior King"></div>
-                </div>
-                <div class="col-md-5 p-0 align-self-center">
-                  <div class="room-content">
-                    <h2>Junior Suites</h2>
-                    <h6>Tonight's Rate <a href="">$385</a></h6>
-                    <p>Junior Suites offer one king bed and a pullout sofa bed, and can accommodate up to four guests. Spare no expense for the best stay in the city.</p>
-                    <a href="" class="btn btn-2-cta">View Room</a>
-                    <div class="btn-holder">
-                        <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </div>
-  </section>
 
-  <section class="map-section">
-    <div class="container-fluid">
-      <div class="row">
+      {% endfor %}
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-2.jpg" alt="Superior King"></div>
+        </div>
         <div class="col-md-5 p-0 align-self-center">
-          <div class="map-content">
+          <div class="room-content">
+            <h2>Deluxe Queen</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Deluxe King Rooms at the Cosmopolitan Hotel - TriBeCa offer one king bed and accommodate up to two guests. Live like the King of New York in our largest beds, with modern amenities.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-3.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Deluxe Double Double</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Two Double Beds Accommodate Up to Four Guests. Ideal for a family, these accommodations provide space and comfort, along with luxury amenities.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-4.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Junior Suites</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Junior Suites offer one king bed and a pullout sofa bed, and can accommodate up to four guests. Spare no expense for the best stay in the city.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tab-pane" id="rooms" role="tabpanel">
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-1.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Superior King</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Relax in One Comfortable Double Bed with luxury Frette linens, custom furnishing, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-2.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Deluxe Queen</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Deluxe King Rooms at the Cosmopolitan Hotel - TriBeCa offer one king bed and accommodate up to two guests. Live like the King of New York in our largest beds, with modern amenities.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-3.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Deluxe Double Double</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Two Double Beds Accommodate Up to Four Guests. Ideal for a family, these accommodations provide space and comfort, along with luxury amenities.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tab-pane" id="suites" role="tabpanel">
+
+      <div class="room-item">
+        <div class="col-md-7 p-0">
+          <div class="room-image"><img src="/assets/images/rooms/room-4.jpg" alt="Superior King"></div>
+        </div>
+        <div class="col-md-5 p-0 align-self-center">
+          <div class="room-content">
+            <h2>Junior Suites</h2>
+            <h6>Tonight's Rate <a href="">$385</a></h6>
+            <p>Junior Suites offer one king bed and a pullout sofa bed, and can accommodate up to four guests. Spare no expense for the best stay in the city.</p>
+            <a href="" class="btn btn-2-cta">View Room</a>
+            <div class="btn-holder">
+              <a href="" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="map-section">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-5 p-0 align-self-center">
+        <div class="map-content">
           <h2>Have It All</h2>
           <h5>Tribeca -  New York City</h5>
-          <p> If eating and drinking well is your thing, Tribeca is where you want to be. With its innovative chefs, design-forward enclaves, and repurposed turn-of-the-century factories, Tribeca is what is happening in New York City.  </p>
+          <p> If eating and drinking well is your thing, Tribeca is where you want to be. With its innovative chefs, design-forward enclaves, and repurposed turn-of-the-century factories, Tribeca is what is happening in New York City. </p>
           <a href="/location/" class="btn btn-3-cta">Get Directions</a>
-          </div>
-        </div>
-        <div class="col-md-7 p-0">
-          <div class="map-holder"><img src="/assets/images/rooms/map.jpg" alt="The Frederick hotel" style="width:100%;"></div>
         </div>
       </div>
-    </div>
-  </section>
 
+      <div class="col-md-7 p-0">
+        <div class="map-holder"><img src="/assets/images/rooms/map.jpg" alt="The Frederick hotel" style="width:100%;"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
