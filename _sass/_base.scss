@@ -372,3 +372,49 @@ svg:not(:root) {
   50%{width: 0;}
   100%{ width: 100; } 
 } 
+
+.bsHCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  .carousel-inner{ 
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev{
+       display:inline-block !important;
+      } 
+    }
+  .carousel-inner {
+    transition: 1s ease all;
+    float: left;
+    display: block;
+    .carousel-item {
+      display: block;
+      float: left;
+      > div {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background: #f1f1f1;
+        color: #666;
+      }
+    }
+  }
+  .leftLst, .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+  }
+  .leftLst {
+    left: 0;
+  }
+  .rightLst {
+    right: 0;
+  }
+  .leftLst.over, .rightLst.over {
+    pointer-events: none;
+    background: #ccc;
+  }
+}
