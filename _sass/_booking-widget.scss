@@ -1,0 +1,544 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("/assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("/assets/fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("/assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("/assets/fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("/assets/fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("/assets/fonts/OpenSans/OpenSans-SemiboldItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("/assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("/assets/fonts/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extra Bold"), local("OpenSans-ExtraBold"), url("/assets/fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans Extra Bold Italic"), local("OpenSans-ExtraBoldItalic"), url("/assets/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Elegant Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/ElegantIcons.ttf") format("truetype");
+}
+
+
+.elegant-icon {
+  font-family: "Elegant Icons";
+}
+
+.ttweb-booking-widget {
+  box-sizing: border-box;
+  font-family: "Open Sans","Arial";
+  font-size: 14px;
+  position: fixed;
+  z-index: 1000000000;
+  top: 0;
+  bottom: 0;
+  right: -320px;
+  width: 320px;
+  background: #fff;
+  -webkit-transition: right 0.4s, box-shadow 0.4s;
+  transition: right 0.4s, box-shadow 0.4s;
+  overflow: hidden;
+  * {
+    box-sizing: border-box;
+  }
+  &.show {
+    right: 0;
+    box-shadow: 0 0 75px 15px rgba(0, 0, 0, 0.25);
+  }
+  .special_rate_input{
+    display: none;
+    width: 100%;
+  }
+}
+
+.ttweb-booking-widget__header, .ttweb-booking-widget__body, .ttweb-booking-widget__footer {
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ttweb-booking-widget__header {
+  height: 58px;
+  top: 0;
+  position: absolute;
+  background: #262626;
+  color: #fff;
+}
+
+.ttweb-booking-widget__header__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  text-align: center;
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.ttweb-booking-widget__header__title {
+  font-size: 20px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.ttweb-booking-widget__footer {
+  position: absolute;
+  bottom: 0;
+  height: 110px;
+  z-index: 3;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ttweb-booking-widget__body {
+  position: absolute;
+  top: 58px;
+  bottom: 110px;
+  padding: 0;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.ttweb-booking-widget__body__flex-dates {
+  text-transform: uppercase;
+  padding: 0 15px;
+  margin: 1em 0;
+  height: 28px;
+  a {
+    color: #262626;
+    text-decoration: none;
+    &:hover, &:active, &:visited {
+      color: #262626;
+      text-decoration: none;
+    }
+  }
+}
+
+.ttweb-booking-widget__body__flex-dates__link:after {
+  content: "";
+  clear: both;
+}
+
+.ttweb-booking-widget__body__flex-dates__link__label, .ttweb-booking-widget__body__flex-dates__link .elegant {
+  float: left;
+  height: 28px;
+}
+
+.ttweb-booking-widget__body__flex-dates__link__label {
+  line-height: 2em;
+}
+
+.ttweb-booking-widget__body__flex-dates__link .elegant-icon {
+  font-size: 1.5em;
+  line-height: 28px;
+  margin-left: 1em;
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates {
+  overflow: hidden;
+  margin: 10px 10px;
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date {
+  float: left;
+  width: 42%;
+  font-weight: 600;
+  margin: 0;
+  background: #f8f8f8;
+  padding: 1em 0;
+  line-height: 16px;
+  height: calc(16px + 2em);
+  .elegant-icon {
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date__label, .ttweb-booking-widget__body__date-selection__selected-dates__selected-date .elegant-icon {
+  display: none;
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date__display {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin {
+  width: 58%;
+  &:after {
+    content: "through";
+    display: block;
+    float: left;
+    line-height: 16px;
+    width: 27%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin__display {
+  width: 73%;
+}
+
+.ttweb-booking-widget__body__date-selection__calendar {
+  width: 100%;
+  background: #f8f8f8;
+  .calendar-month__header {
+    height: 52px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .calendar-month__header__control, .calendar-month__header__name, .ui-datepicker-title {
+    float: left;
+    text-align: center;
+  }
+  .calendar-month__header__control {
+    cursor: pointer;
+    line-height: 1em;
+    height: 52px;
+    width: 20%;
+    padding: 13px;
+    font-size: 26px;
+  }
+  .calendar-month__header__control--disabled {
+    cursor: default;
+    color: #efefef;
+  }
+  .calendar-month__header__name, .ui-datepicker-title {
+    width: 60%;
+    font-size: 17px;
+    height: 52px;
+    line-height: 52px;
+  }
+  .calendar-month table.calendar-month__grid {
+    width: 100%;
+    border-spacing: 6px;
+    th, td {
+      text-align: center;
+      height: 3em;
+    }
+    th {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    .calendar-month__grid__date {
+      cursor: pointer;
+      width: calc(100% / 7);
+    }
+    .calendar-month__grid__date--not-available, .calendar-month__grid__date--past-date {
+      background: #efefef;
+      color: #6b6b6b;
+    }
+    .calendar-month__grid__date--other-month {
+      color: #a8a8a8;
+    }
+    .calendar-month__grid__date--in-selection {
+      background: #197db2;
+      color: #fff;
+    }
+    .calendar-month__grid__date__number {
+      display: block;
+      width: 100%;
+    }
+    .calendar-month__grid__date__rate {
+      display: none;
+    }
+  }
+  .calendar-month--with-rates table.calendar-month__grid .calendar-month__grid__date__rate {
+    display: block;
+    font-size: 10px;
+  }
+}
+
+.ttweb-booking-widget__body__people {
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.ttweb-booking-widget__body__people__selector {
+  width: 50%;
+  float: left;
+  select {
+    text-align: center;
+    font-size: 17px;
+    height: 3em;
+    margin: 0 10px;
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    background: #f8f8f8;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f8f8f8 url("../images/arrow-bottom.svg") no-repeat;
+    background-size: 11px 9px;
+    background-position: calc(100% - 10px) center;
+    font-weight: lighter;
+  }
+}
+
+.ttweb-booking-widget__body__people__selector__description {
+  font-size: 11px;
+  color: #6b6b6b;
+  font-style: italic;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+.ttweb-booking-widget__body__specials {
+  margin: 10px 10px;
+  padding: 10px;
+  background: #f8f8f8;
+}
+
+.ttweb-booking-widget__body__specials__title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 0;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ttweb-booking-widget__body__specials__title__icon {
+  position: absolute;
+  top: 50%;
+  font-size: 21px;
+  font-weight: 400;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.ttweb-booking-widget__body__specials__title__icon--up {
+  display: none;
+}
+
+.ttweb-booking-widget__body__specials.show {
+  .ttweb-booking-widget__body__specials__title__icon--up {
+    display: block;
+  }
+  .ttweb-booking-widget__body__specials__title__icon--down {
+    display: none;
+  }
+  .ttweb-booking-widget__body__specials__rates {
+    display: block;
+  }
+}
+
+.ttweb-booking-widget__body__specials__rates {
+  display: none;
+}
+
+.ttweb-booking-widget__body__specials__rates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ttweb-booking-widget__body__specials__rates__list__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.ttweb-booking-widget__body__specials__rates__list__item__radio {
+  position: relative;
+  input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked + .ttweb-booking-widget__body__specials__rates__list__item__radio__icon:before {
+      visibility: visible;
+    }
+  }
+}
+
+.ttweb-booking-widget__body__specials__rates__list__item__radio__icon {
+  float: left;
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #262626;
+  position: relative;
+  &:before {
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #197db2;
+  }
+}
+
+.ttweb-booking-widget__body__specials__rates__list__item__radio__title {
+  float: left;
+  margin-left: 10px;
+  line-height: 1.6em;
+ 
+}
+
+.ttweb-booking-widget__footer__error {
+  height: 50px;
+  text-align: center;
+  color: red;
+  padding: 0 10px;
+  margin: 11px 0 0;
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.ttweb-booking-widget__footer__rate {
+  overflow: hidden;
+  height: 50px;
+  margin: 11px 0 0;
+}
+
+.ttweb-booking-widget__footer__rate__label, .ttweb-booking-widget__footer__rate__cost {
+  display: none;
+  float: left;
+  width: 50%;
+  height: 50px;
+}
+
+.ttweb-booking-widget__footer__rate {
+  &.hide {
+    display: none;
+  }
+  &.show {
+    .ttweb-booking-widget__footer__rate__label, .ttweb-booking-widget__footer__rate__cost {
+      display: block;
+    }
+  }
+}
+
+.ttweb-booking-widget__footer__rate__label {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px 20px 0;
+  font-size: 18px;
+}
+
+.ttweb-booking-widget__footer__rate__cost {
+  line-height: 1em;
+  font-size: 50px;
+}
+
+.ttweb-booking-widget__footer__powered-by {
+  text-align: center;
+  height: 38px;
+  margin: 11px 0 0;
+  span {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  img {
+    margin-left: 5px;
+    width: 120px;
+    vertical-align: middle;
+  }
+}
+
+.ttweb-booking-widget button.ttweb-booking-widget__submit {
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 1em;
+  color: #fff;
+  border: 0;
+  padding: 1em 0;
+  height: 51px;
+  text-transform: uppercase;
+  margin: 11px 0 0;
+  font-family: "Open Sans";
+  background-color: #2b337e;
+  &:active {
+    background-color: #063249;
+  }
+}
+
+/*# sourceMappingURL=booking-widget.css.map */

@@ -1,0 +1,135 @@
+<div class="ttweb-booking-widget">
+      <form action="https://gc.synxis.com/rez.aspx?" method="get" target="_blank">
+        <input type="hidden" name="hotel" value="16065" />
+        <input type="hidden" name="chain" value="16087" />
+        <input type="hidden" name="shell" value="GCF3" />
+        <input type="hidden" name="start" value="availresults">
+        <div class="ttweb-booking-widget__header">
+          <div class="ttweb-booking-widget__header__close">
+            <span class="elegant-icon">M</span>
+          </div>
+          <div class="ttweb-booking-widget__header__title">Your Booking</div>
+        </div>
+        <div class="ttweb-booking-widget__body">
+          <div class="ttweb-booking-widget__body__flex-dates">
+            <a href="https://gc.synxis.com/rez.aspx?shell=GCF3&chain=16087&hotel=16065" class="ttweb-booking-widget__body__flex-dates__link">
+              <span class="ttweb-booking-widget__body__flex-dates__link__label">Flexible Dates</span>
+              <span class="elegant-icon"></span>
+            </a>
+          </div>
+          <div class="ttweb-booking-widget__body__date-selection">
+            <div class="ttweb-booking-widget__body__date-selection__selected-dates">
+              <div class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin">
+                <span class="elegant-icon"></span>
+                <span class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date__label">
+                  Check In
+                </span>
+                <span id="arrival_input"  class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date__display ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkin__display "></span>
+                <!-- <input type="hidden" name="arrival_date" value="2017-09-19"> -->
+              </div>
+              <div class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkout">
+                <span class="elegant-icon"></span>
+                <span class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date__label">
+                  Check Out
+                </span>
+                <span id="departure_input" class="ttweb-booking-widget__body__date-selection__selected-dates__selected-date__display ttweb-booking-widget__body__date-selection__selected-dates__selected-date--checkout__display"></span>
+                <!-- <input type="hidden" name="departure_date" value=""> -->
+              </div>
+            </div>
+            <div class="ttweb-booking-widget__body__date-selection__calendar">
+                <input type="text" id="arrival_dates" name="arrive"   style="display:none;">
+                <input type="text" id="departure_dates" name="depart"  style="display:none;">
+                <div class="date-widget"></div>
+            </div>
+          </div>
+
+          <!-- Rooms, Adults, Children -->
+          <div class="ttweb-booking-widget__body__people">
+            <div class="ttweb-booking-widget__body__people__selector ttweb-booking-widget__body__people__selector--adults">
+              <select name="adult">
+                <option value="1">1 Adult</option>
+                <option value="2" selected="">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+              </select>
+            </div>
+            <div class="ttweb-booking-widget__body__people__selector" ttweb-booking-widget__body__people__selector--children"="">
+              <select name="child">
+                <option value="0">0 Children</option>
+                <option value="1">1 Children</option>
+                <option value="2">2 Children</option>
+                <option value="3">3 Children</option>
+                <option value="4">4 Children</option>
+              </select>
+              <p class="ttweb-booking-widget__body__people__selector__description">*under the age of 12</p>
+            </div>
+          </div>
+
+          <!-- View Special Rates -->
+          <div class="ttweb-booking-widget__body__specials"><div class="ttweb-booking-widget__body__specials__title">
+              View Special Codes
+              <span class="elegant-icon ttweb-booking-widget__body__specials__title__icon ttweb-booking-widget__body__specials__title__icon--up">
+                
+              </span>
+              <span class="elegant-icon ttweb-booking-widget__body__specials__title__icon ttweb-booking-widget__body__specials__title__icon--down">
+                
+              </span>
+            </div>
+            <div class="ttweb-booking-widget__body__specials__rates">
+    			<ul class="ttweb-booking-widget__body__specials__rates__list">
+                
+                  <li class="ttweb-booking-widget__body__specials__rates__list__item">
+                    <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
+                      <input type="radio" name="rate_code" value="group">
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Group Code</span>
+                    </label>
+                    <input type="text" id="group" class="special_rate_input" name="group" placeholder="Enter Your Group Code" disabled>
+                  </li>
+                
+                  <li class="ttweb-booking-widget__body__specials__rates__list__item">
+                    <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
+                      <input type="radio" name="rate_code" value="promo">
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Promo Code</span>
+                    </label>
+                    <input type="text" id="promo" class="special_rate_input" name="group" placeholder="Enter Your Promo Code" disabled>
+                  </li>
+                
+                  <li class="ttweb-booking-widget__body__specials__rates__list__item">
+                    <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
+                      <input type="radio" name="rate_code" value="corporate">
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span> 
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Corporate Code</span>
+                    </label>
+                    <input type="text" id="corporate" class="special_rate_input" name="corporate" placeholder="Enter Your Corporate Code" disabled>
+                  </li>
+                
+                  <li class="ttweb-booking-widget__body__specials__rates__list__item">
+                    <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
+                      <input type="radio" name="rate_code" value="iata">
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
+                      <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Travel Agent Id</span>
+                    </label>
+                    <input type="text" id="iata" class="special_rate_input" name="iata" placeholder="Enter Your Travel Agent Id" disabled>
+                  </li>
+                
+                  
+                
+              </ul>
+            </div></div>
+        </div>
+        <div class="ttweb-booking-widget__footer">
+          <div class="ttweb-booking-widget__footer__error"></div>
+
+          <!-- Rates -->
+          
+          <button type="submit" class="ttweb-booking-widget__submit">Book now</button>
+          <div class="ttweb-booking-widget__footer__powered-by">
+                <span>powered by</span>
+                <img src="/assets/images/tt-logo-grey-highres.png" alt="Travel Tripper">
+          </div>
+        </div>
+
+      </form>
+    </div>

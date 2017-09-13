@@ -372,3 +372,63 @@ svg:not(:root) {
   50%{width: 0;}
   100%{ width: 100; } 
 } 
+
+.bsHCarousel { 
+  overflow: hidden; 
+  width: 100%;
+  position: relative;
+  .carousel-inner{ 
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev{
+       display:inline-block !important;
+      } 
+    }
+  .carousel-inner {
+    transition: 1s ease all;
+    //float: left;
+    display: block;
+    .carousel-item {
+      display: block;
+      float: left;
+       
+    }
+  }
+    a.carousel-control-prev, a.carousel-control-next{
+            width:31px;
+            height:31px;
+            background:$white ;
+            position:absolute;
+            color: $midnight-charcoal;
+            top:0px;
+            right:15px;
+            left:auto;
+            opacity:1;
+            @include media-breakpoint-up(xl){
+                    right:0px;
+            }
+            @include transition($global-transition);
+             &:hover{
+               background-color: $light-slate-grey;
+             }
+            i{
+               @include transition($global-transition);
+               &:hover{
+               color: $white;
+             }
+            }
+            &.carousel-control-prev{
+              right: 48px;
+              @include media-breakpoint-up(xl){
+                right: 33px;
+              }
+            }
+            &.over {
+                pointer-events: none;
+                cursor: none;
+                background-color: $light-slate-grey;
+                color: $white !important;
+              }
+          }
+   
+}
