@@ -23,10 +23,14 @@
   },
   "description": {
     "required": true,
-    "type": "text"
+    "type": "richtext"
   },
   "details_image": {
     "type": "image",
-    "instructions": "This image will below the the description, above the amenities list."
+    "instructions": "This image will below the the description, above the terms list."
+  },
+  "terms_list": {
+    "required": true,
+    "type": "richtext"
   }
 }
