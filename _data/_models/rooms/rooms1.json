@@ -1,0 +1,27 @@
+{
+  "title": "Superior Single",
+  "description": "Relax in One Comfortable Double Bed with luxury Frette linens, custom furnishing, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.",
+  "amenities_list": "<ul>\n<li>One double bed</li>\n<li>Accommodates 1-2 guests</li>\n<li>Complimentary Wi-Fi</li>\n<li>Work Desk</li>\n<li>Flat-screen TV</li>\n<li>Hair Dryer</li>\n<li>C.O. Bigelow bath amenities</li>\n<li>Frette luxury linens and towels</li>\n<li>iPod docking station</li>\n<li>Cordless telephone</li>\n<li>Valet Laundry</li>\n<li>Movies on-demand</li>\n<li>Iron and ironing board</li>\n<li>Current copy of Time Out Magazine</li>\n<li>In room safe</li>\n</ul>",
+  "occupancy": "1-2",
+  "banner_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/Superior-Single.jpg",
+    "name": "Superior-Single",
+    "file_name": "Superior-Single.jpg",
+    "file_type": "image/jpeg",
+    "date_added": "2017-09-13 15:54:05",
+    "tags": "",
+    "file_size": 264763,
+    "width": 1920,
+    "height": 1080,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/large_Superior-Single.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/medium_Superior-Single.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/small_Superior-Single.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/xsmall_Superior-Single.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/thumb_Superior-Single.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/Superior-Single.jpg",
+    "alt": "Superior Single"
+  },
+  "url_friendly_name": "superior-single",
+  "category": "room"
+}
