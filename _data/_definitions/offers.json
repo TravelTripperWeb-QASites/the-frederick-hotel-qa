@@ -30,7 +30,6 @@
     "instructions": "This image will below the the description, above the terms list."
   },
   "terms_list": {
-    "required": true,
     "type": "richtext"
   }
 }
