@@ -3,24 +3,20 @@
     padding: 1rem 0rem;
     .contact-wrapper,.rfp-wrapper{
       @extend .row ;
+      margin: 0 auto;
       @extend .justify-content-center ;
       .address{
         @extend .col-md-5 ;
+     
       }
       .contact-form{
         @extend .col-md-7 ;
         form {
-          @extend  .row ;
-          h3{
-            text-align: center;
-            padding: 2rem 0;
-            width: 100%;
-          }
+          @extend .row;
           .first-name,
           .last-name,
           .email,
-          .company,
-          .phonenumber,.arrival,.departure,.rooms-per-night,.space,.type-of-meeting,.event-name,.type,.number-of-att,.message,.btn,.organiz{
+          .phonenumber,.message,.btn{
           @extend .col-sm-12 ;
           margin: 0.625rem 0rem;
           text-align: left;
