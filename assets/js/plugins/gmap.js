@@ -129,7 +129,23 @@ markers1 = [
     ['9', 'BROOKLYN BRIDGE,<br>  New York, NY 10038', 40.706086, -73.996864, 'attractions','1','https://goo.gl/maps/NtGNzH963tG2'],
     ['10','BROOKLSOUTH STREET SEA PORT MUSEUM,<br>  12 Fulton St, <br/> New York, NY 10038', 40.706562, -74.003710, 'attractions','1','https://goo.gl/maps/BcANXCKz1mv'],
     ['11', 'WJ Hotel, <br />318 W 51st St, New York, <br /> NY 10019 ', 40.763309, -73.986814, 'hotels', '2','https://goo.gl/maps/A7k6NYaG3c12'],
-    ['12', 'Hotel Edison,<br />228 W 47th St, <br /> New York, NY 10036 ', 40.759648, -73.986132, 'hotels', '2','https://goo.gl/maps/WR2sym1X8ts']
+    ['12', 'Hotel Edison,<br />228 W 47th St, <br /> New York, NY 10036 ', 40.759648, -73.986132, 'hotels', '2','https://goo.gl/maps/WR2sym1X8ts'],
+    ['13', 'Salaam Bombay,<br>319 Greenwich St<br>New York, NY 10013 ', 40.717044, -74.010526, 'restaurants', '1','https://goo.gl/maps/XrscnR4Whzt'],
+    ['14', 'Landmarc Tribica,<br>179 W Broadway,<br> New York,NY 10013 ', 40.717901, -74.007085, 'restaurants', '1','https://goo.gl/maps/CeZUQXEMFUt'],
+    ['15', 'The Odeon,<br>145 W Broadway,<br>New York, NY 10013 ', 40.716980, -74.007834, 'restaurants', '1','https://goo.gl/maps/6H3zDLnRsH62'],
+    ['16', 'Khe-Yo,<br>157 Duane St,<br>New York, NY 10013 ', 40.716826, -74.008605, 'restaurants', '1','https://goo.gl/maps/FGCuWZNzgV52'],
+    ['17', 'Marc Forgione,<br>134 Reade St,<br>New York, NY 10013 ', 40.716494, -74.009607, 'restaurants', '1','https://goo.gl/maps/PYrJiPsxmMp'],
+    ['18', 'Nobu Fifty Seven,<br>40 W 57th St,<br>New York, NY 10019 ', 40.763575, -73.976455, 'restaurants', '1','https://goo.gl/maps/nQXvKRVB6mx'],
+    ['19', 'Ecco,<br>40 124 Chambers St,<br>New York, NY 10007 ', 40.715184, -74.008808, 'restaurants', '1','https://goo.gl/maps/nH7LL5FdwxT2'],
+    ['20', 'Gran Morsi,<br>22 Warren St,<br>New York, NY 10007 ', 40.714323, -74.007767, 'restaurants', '1','https://goo.gl/maps/SHQAQk8tsjs'],
+    ['21', 'Kaffe1668 South,<br>275 Greenwich St,<br>New York, NY 10007 ', 40.715139, -74.011089, 'shops', '3','https://goo.gl/maps/zPmKvPh3BWr'],
+    ['22', 'Laughing Man Coffee & Tea,<br>184 Duane St,<br>New York, NY 10007 ', 40.717273, -74.010125, 'shops', '3','https://goo.gl/maps/7hDyb6P5xFE2'],
+    ['23', 'Zuckers Bagels & Smoked Fish,<br>146 Chambers St,<br>New York, NY 10007 ', 40.715619, -74.009838, 'shops', '3','https://goo.gl/maps/rYwYxQfMTFF2'],
+    ['24', 'Tribeca Treats,<br>94 Reade St # 1,<br>New York, NY 10013 ', 40.715732, -74.007864, 'shops', '3','https://goo.gl/maps/LJpDixeU1S62'],
+    ['25', 'Starbucks,<br>125 Chambers St,<br>New York, NY 10007 ', 40.715570, -74.008868, 'shops', '3','https://goo.gl/maps/LFRqGoDhWaJ2'],
+    ['26', 'Le Pain Quotidien,<br>81 W Broadway,<br>New York, NY 10007 ', 40.714993, -74.009324, 'shops', '3','https://goo.gl/maps/v72X3eDrHHK2']
+    
+    
 ];
 
 /**
