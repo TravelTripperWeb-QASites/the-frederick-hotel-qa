@@ -4,11 +4,11 @@ title: "Room Details"
 description: "Come join us at one of our events."
 ---
 
-{% assign room = page %}
+{% assign rooms = page %}
 {% assign model = page %}
 
 <section>
-  <div class="inner-banner " style="background-image: url('{{ room.banner_image.url }}')"></div>
+  <div class="inner-banner " style="background-image: url('{{ rooms.banner_image.url }}')"></div>
 </section>
 
 <section class="offers-nav">
@@ -29,14 +29,14 @@ description: "Come join us at one of our events."
 
     <div class="heading">
       <h3>TONIGHT'S RATE <a href="" title="rate">$385</a></h3>
-      <h1>{{ room.title   }}</h1>
+      <h1>{{ rooms.title   }}</h1>
       <div class="btn-holder">
         <a href="#" title="Book now" class="btn btn-blue">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
     </div>
 
     <div class="special-info">
-      <p>{{ room.description }}</p>
+      <p>{{ rooms.description }}</p>
     </div>
 
     <div class="search-widgt">
@@ -94,19 +94,19 @@ description: "Come join us at one of our events."
     </div>
 
     <div class="special-info-list">
-      {{ room.amenities_list }}
+      {{ rooms.amenities_list }}
     </div>
 
   </div>
 
   <div class="room-images">
 
-    <div class="photo-full"><img src="/assets/images/rooms/details-2.jpg" alt="{{ room.title }} Gallery Image" class="img-fluid"></div>
+    <div class="photo-full"><img src="/assets/images/rooms/details-2.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
 
     <div class="photo-half">
       <div class="row">
-        <div class="photo-half-1"><img src="/assets/images/rooms/details-3.jpg" alt="{{ room.title }} Gallery Image" class="img-fluid"></div>
-        <div class="photo-half-2"><img src="/assets/images/rooms/details-4.jpg" alt="{{ room.title }} Gallery Image" class="img-fluid"></div>
+        <div class="photo-half-1"><img src="/assets/images/rooms/details-3.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
+        <div class="photo-half-2"><img src="/assets/images/rooms/details-4.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
       </div>
     </div>
 

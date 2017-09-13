@@ -85,7 +85,7 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #   sort_reverse: true
 
 page_gen:
-  - data: 'room'
+  - data: 'rooms'
     template: 'single-room'
     dir: 'rooms'
   # - data: 'attractions'
