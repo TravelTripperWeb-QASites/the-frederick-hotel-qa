@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Error"
+description: ""
+permalink: /error-page/
+---
+{% assign menuitems = site.data.navigation.main %}
+<section>
+  <div class="inner-banner" style="background-image: url('/assets/images/hotel-hero-photo.jpg')">
+   </div>
+</section>
+
+<section class="heading-section">
+  <div class="heading-inner">
+    <div class="heading">
+      
+      <h1>404<br>Page not found </h1>
+  </div>
+  </div>
+</section>
+<section class="contact ">
+    
+
+                <h2 class="text-left mb-3">Sitemap</h2>
+                <ul class="sitemap">
+                    {% for item in menuitems[0].left %}
+                        <li class="nav-item {% if page.url == item.url %}active{% endif%}">
+                        <a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+                        </li>
+                    {% endfor %}
+                    {% for item in  menuitems[1].right %}
+                    <li class="nav-item {% if page.url == item.url %}active{% endif%}">
+                    <a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+                    </li>
+                   {% endfor %}
+                   <li class="nav-item"><a class="nav-link" href="/rfp/" title="Group & Corporate travel"> Group & Corporate travel  </a></li>
+                   <li class="nav-item"><a class="nav-link" href="http://www.triumphhotels.com/careers/" target="_blank" title="Careers">Careers </a></li>
+                   <li class="nav-item"><a  class="nav-link"href="/privacypolicy/" title="Privacy & Site Security"> Privacy & Site Security </a></li>
+                   <li class="nav-item"><a class="nav-link" href="/faq/" title="faq">FAQ </a></li>
+                </ul>
+ 
+</section>
+{% include instagram.html %}
