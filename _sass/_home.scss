@@ -354,6 +354,20 @@
 				right: 10%
 			}
 		}
+  }
+	.left-image {
+		.caption-90{
+			font-family: $caption-font-family;
+			font-size: $type-size-7;
+			@include rotate(-90);
+			@include transform-origin(right bottom);
+			position: absolute;
+			right: 49%;
+			top: 8%;
+			@include media-breakpoint-down(xs){
+				right: 10%
+			}
+		}
 	}
 }
 .rooms-carousel{
