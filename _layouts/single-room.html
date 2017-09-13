@@ -99,18 +99,20 @@ description: "Come join us at one of our events."
 
   </div>
 
-  <div class="room-images">
+  {% if rooms.gallery1 and rooms.gallery2 and rooms.gallery3 %}
+    <div class="room-images">
 
-    <div class="photo-full"><img src="/assets/images/rooms/details-2.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
+      <div class="photo-full"><img src="{{ rooms.gallery1.url }}" alt="{{ rooms.gallery1.alt }}" class="img-fluid"></div>
 
-    <div class="photo-half">
-      <div class="row">
-        <div class="photo-half-1"><img src="/assets/images/rooms/details-3.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
-        <div class="photo-half-2"><img src="/assets/images/rooms/details-4.jpg" alt="{{ rooms.title }} Gallery Image" class="img-fluid"></div>
+      <div class="photo-half">
+        <div class="row">
+          <div class="photo-half-1"><img src="{{ rooms.gallery2.url }}" alt="{{ rooms.gallery2.alt }}" class="img-fluid"></div>
+          <div class="photo-half-2"><img src="{{ rooms.gallery3.url }}" alt="{{ rooms.gallery3.alt }}" class="img-fluid"></div>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </div>
+  {% endif %}
 
 </section>
 
