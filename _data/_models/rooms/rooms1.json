@@ -22,5 +22,6 @@
     "path": "https://cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/Superior-Single.jpg",
     "alt": "Superior Single"
   },
-  "url_friendly_name": "superior-single"
+  "url_friendly_name": "superior-single",
+  "category": "room"
 }
