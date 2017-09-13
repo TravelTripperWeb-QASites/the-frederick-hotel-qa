@@ -1,0 +1,306 @@
+.inner-banner{
+
+  height: 250px;
+  @include media-breakpoint-up(md){
+    height:477px;
+  }
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.heading-section{
+  @extend .container;
+  @include  media-breakpoint-up(xl){
+     padding: 0;
+  }
+  .heading-inner{
+    @extend .row;
+    padding:3.6rem 0;
+    .heading{
+      @extend .col-md-6;
+      h1{text-transform:uppercase; color:$midnight-charcoal;}
+      h5{
+        a{
+          color:$light-slate-grey ;
+          @include transition($global-transition);
+          text-decoration: none;
+          padding: 0rem 0.2rem;
+          &:hover{
+            color:$primary-color ;
+          }
+        }
+      }
+      &.heading-big{
+        @extend .col-md-9;
+      }
+    }
+   
+  }
+}
+.whyus{
+  @extend .row-full;
+  background:$light-slate-grey; 
+  padding-top:4rem;
+  .heading{
+  font-weight:bold;
+  color:$white;
+  font-size:$font-16;
+  text-transform: uppercase;
+  }
+  .why-pic{
+  @extend .col-md-5;
+  padding-top: 2rem;
+  padding-left:0; 
+   @include  media-breakpoint-down(sm){
+     padding-right:0; 
+   }
+  }
+  .why-content{
+    @extend .col-md-7;
+    p{
+      padding: 2rem 0rem;
+      color: $white;
+      max-width: 42.5rem;
+      line-height: 2.2rem;
+       @include  media-breakpoint-up(md){
+           padding: 1.5rem 3rem 1rem 5rem;
+       }
+    }
+      .btn-holder{
+        margin: 1.5rem  0rem;
+        padding: 1rem 0;
+        @include  media-breakpoint-up(md){
+          margin: 1.5rem 3rem 1rem 5rem;
+        }
+      }
+    }
+
+}
+
+.amenites{
+  @extend .container;
+  margin :4rem auto;
+  .amienites-pic{
+    @extend .col-md-6;
+    }
+  .amienites-list{
+    @extend .col-md-6;
+    color:$midnight-charcoal;
+    padding-left:3rem;
+    padding-top:1rem;
+    ul {
+    margin-top:1rem;
+    padding:0;
+    li{
+      position:relative;
+       padding-left:2rem;
+      &:before{
+      position:absolute;
+      content:"";
+      width:4px;
+      height:4px;
+      top:35%;
+      left:0;
+      @include border-radius(50%);
+      background:$midnight-charcoal;
+      }
+    }
+    }
+    .btn-holder{
+      padding: 1rem 0;
+    }
+    }
+}
+.history{
+  @extend .row-full;
+  background:$midnight-charcoal;
+  padding:3.5rem 0;
+  .first-pic{
+    @extend .col-md-4;
+    @extend .text-left; 
+    @include media-breakpoint-up(md){
+      padding-left: 3rem; 
+    }
+    .btn-holder{
+      padding: 1rem 0;
+    }
+    color:$white;
+     @include media-breakpoint-down(xl){
+      img{
+        width: 100%;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .middle-pic{
+    @extend .col-md-6;
+    @extend .text-center;
+    @extend .align-self-center;
+    @include media-breakpoint-down(md){
+      img{
+        width: 100%;
+      }
+    }
+    
+  }
+  .last-pic{
+    @extend .col-md-2;
+    @extend .text-right;
+    padding:0;
+    display: none;
+    @include media-breakpoint-up(md){
+     display: block;
+    } 
+  }
+}
+.old-newyork{
+	width:100%;
+	img{
+		width:100%;
+		}
+}
+
+.book-now-sec{
+    background-size:cover;
+   .inner-content{
+    text-align:center;
+    max-width:370px;
+    margin:auto;
+    background:$primary-color;
+    padding:6rem 0rem;
+
+    h5{
+    font-size:1.813rem;
+    font-family:$medium;
+    word-spacing: .8rem;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    color:$white;
+    }
+
+    .fr-logo{
+      margin:3rem 0;
+      
+    }
+
+    h6{
+      font-family:$medium;
+      word-spacing: .1rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.5rem;
+      font-size:$font-12;
+      padding-bottom:2rem;
+      color:$white;
+    }
+
+    .btn-white{
+      &:hover{
+        background: $slate-grey ;
+        border: none;
+      }
+    }
+
+   }
+}
+.exclusive-offers-sec{
+  .heading-sec{
+    margin: 3rem auto 4rem auto;
+    @extend .container;
+    max-width:1123px;
+    @include  media-breakpoint-down(md){
+      margin-top: 0rem;
+    }
+    .btn-holder{
+      margin-top: 3rem;
+      @include  media-breakpoint-down(md){
+        margin-top: 2rem;
+      }
+    }
+  }
+  .offers-wrap{
+    @extend .row-full;
+    .offer-sec{
+      position:relative;
+      cursor:pointer;
+      @extend .col-md-3;
+      padding:0;
+      .offer-heading{
+        position:relative;
+        height:8.75rem;
+        @include transition($global-transition);
+        h6{
+          font-family:$medium ;
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          top: 40%;
+          text-align: center;
+          margin: auto;
+          letter-spacing:0.2rem;
+          color:$midnight-charcoal;
+          @include transition($global-transition);
+        }
+      }
+      .btn-holder{ 
+        opacity: 0;
+        position:absolute; 
+        left:0%;
+        top:40%;
+        right: 0%;
+        margin: auto;
+        text-align: center;
+        @include transition($global-transition);
+      }
+      .offer-img{
+        opacity: 1; 
+         @include transition($global-transition);
+        position:relative;
+        min-height: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include media-breakpoint-up(md){
+            min-height: 275px;
+        }
+        @include media-breakpoint-up(lg){
+            min-height: 345px;
+        }
+        @include media-breakpoint-up(xl){
+            min-height: 475px;
+        }
+        .img-bg{
+          opacity: 0;
+          background-color:rgba(255, 255, 255, 0.4);
+          position:absolute;
+          top:0;
+          bottom:0;
+          right:0;
+          left:0px; 
+          @include transition($global-transition);
+        }
+        img{
+          width: 100%;
+        }
+      }
+      &:hover{
+        .btn-holder{opacity: 1;}
+        .offer-heading{
+        background-color:$primary-color;
+          h6{color:$white;}
+          transition: $global-transition;
+        }
+        .offer-img{
+          .img-bg{ 
+             opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+

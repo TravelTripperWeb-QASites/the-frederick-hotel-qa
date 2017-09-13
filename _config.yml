@@ -41,6 +41,7 @@ exclude:
   - README
   - sitemap.json
   - tmp
+  - gulpfile.js
 keep_files:
   - .git
   - assets

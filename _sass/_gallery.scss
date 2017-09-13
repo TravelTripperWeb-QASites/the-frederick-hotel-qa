@@ -1,0 +1,127 @@
+
+.gallery{
+	
+	padding: 2rem 0rem;
+	 @include media-breakpoint-up(md){
+			padding-top: 5rem 0rem;
+	 	}
+	.heading-nav{
+		@extend .row;
+        @extend .container;
+        margin: auto;
+		.head{
+			@extend .col-md-5;
+			h1,h5{
+				
+				width: 100%;
+				text-transform: uppercase;
+			}
+		}
+	nav{
+	@extend .col-md-7;
+    padding: 0;
+    margin: 1rem 0rem;
+	ul{
+		li{
+			
+			display:inline-flex;
+			padding: 1rem 0.7rem;
+			position: relative;
+			@include media-breakpoint-up(md){
+					 padding: 2.6rem 1rem;
+			}
+				a{
+					color:$midnight-charcoal  ;
+					padding: 0 0.3rem;
+                    letter-spacing: 0.2px;
+                    font-size: $font-12;
+                    font-family: $medium;
+					&:hover,&.active{
+						color:$primary-color;
+						text-decoration:none;
+					}
+
+				}
+				&:before{
+					content: "";
+					width: 20px;
+					height: 1px;
+					background: $midnight-charcoal ;
+					bottom:0;
+					top:0;
+					right:-14px;
+					position:absolute;
+					margin: auto;
+
+				}
+				&:nth-last-child(1){
+					&:before{
+						content: "";
+						display: none;
+					}
+				}
+		}
+	}
+	}
+}
+}
+.gallery-wrapper{
+	padding:0 0 1.875rem 0;
+	@include media-breakpoint-up(lg){
+		padding:3.75rem 0 3.75rem 0;
+ 	}
+	.gallery-listing{
+		padding:0.625rem 0 ;
+		@include media-breakpoint-up(lg){
+			padding:1.25rem 0 ;
+		}
+	}
+
+	.gallery-wrap{
+		@extend .container ;
+		 @extend .no-padding ;
+ 		margin: 0 auto;
+		@include media-breakpoint-up(xl){
+			padding-left:0px;
+			padding-right:0px;
+		}
+ 		ul{
+			list-style:none;
+			padding:0px;
+			margin-top:0px;
+			margin-bottom:0px;
+            width: 100%;
+			li{
+				&.fancybox{
+					    padding: 0 10px;
+    					margin: 0;
+              float: left;
+							@extend .col-sm-4;
+				}
+			}
+		}
+  	.item {
+    	margin: 0 0px 1.25rem ;
+			float:left;
+			width:100%;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			img{
+				width:100%;
+			}
+			&:hover{cursor: pointer;opacity: 0.7;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			}
+		}
+		.item+.item {
+				@include media-breakpoint-up(md){
+				margin: 0 0px 0px ;
+				}
+		}
+	}
+}

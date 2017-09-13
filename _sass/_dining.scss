@@ -1,0 +1,132 @@
+.inner-page-banner {
+  height: 250px;
+  @include media-breakpoint-up(md){
+    height: 477px;
+  }
+}
+.page-intro-headline { 
+  padding: 3.250rem 0 1.5rem 0;
+  @include media-breakpoint-up(lg){
+   padding: 4.250rem 4.250rem 4.938rem 4.250rem;
+  }
+  .container-fluid {
+    padding: 0 1.875rem;
+  }
+    h1 {
+      color: $midnight-charcoal;
+    }
+}
+.page-intro {
+  background-color: $midnight-charcoal;
+  padding: 2rem 0;
+  color: $white; 
+  @include media-breakpoint-up(md){
+     padding: 2rem;
+  }   
+  @include media-breakpoint-up(lg){
+     padding: 4.000rem 4.250rem;
+  }  
+      .left-content {
+        padding-left: 1.875rem;
+        width: 100%;
+         @include media-breakpoint-up(lg){
+          width: 78%;
+         }
+      }
+      .logo-wrap {
+        max-width: 273px;
+        margin: 0 auto;
+         img {
+           width: 100%;
+         }
+      }
+      .second-row {
+        @extend .row;
+        padding-top: 3.250em;
+      }
+      .second-row-left {
+        @include media-breakpoint-up(md){
+          margin-right: -26px;
+        }
+      }
+      .left-image {
+        padding: 2rem;
+           @include media-breakpoint-up(md){
+                    padding: 0;
+           }
+         img {
+           width: 100%; 
+         }
+         span {
+           display: block;
+           font-family: $italic;
+           color: $light-slate-grey;
+           font-size: $font-14;
+           padding: 2.125em 0;
+           letter-spacing: 0.050rem;
+         }
+      }
+      .btn-holder {
+        padding: 0 2rem;
+         @include media-breakpoint-up(md){
+          text-align: right;
+          padding: 0;
+         }
+      }
+      .right-content {
+        padding: 2rem; 
+         @include media-breakpoint-up(md){
+          margin-left: 20%;
+          padding: 2rem 0 0 0;
+         }
+        p { 
+          @include media-breakpoint-up(md){
+            width: 100%;
+          }
+          @include media-breakpoint-up(xl){
+            width: 84%;
+          }
+        }
+      }
+      .two-colo-img {
+         @include media-breakpoint-up(md){
+          
+        }
+         @include media-breakpoint-up(lg){ 
+          position: absolute; 
+          margin-top: 3rem;
+        }
+        img {
+          width: 100%;
+        }
+      }
+}
+
+.page-content {
+  padding: 2rem 0;
+  @include media-breakpoint-up(lg){
+    padding: 8.625rem 4.250rem 5.625rem 4.250rem;
+  }
+
+  .content {
+    padding-top: 3.500rem;
+    padding-left: 1.563rem;
+  }
+  h2 {
+    color: $midnight-charcoal;
+    line-height: 2rem;
+  }
+  h6 {
+    font-family: $medium;
+    font-weight: bold;
+    font-size: $font-12; 
+    color: $midnight-charcoal;
+    letter-spacing: 0.200rem;
+    line-height: 20px;
+  }
+  .image-content {
+    img {
+      width: 100%;
+    }
+  } 
+}

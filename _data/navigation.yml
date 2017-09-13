@@ -1,15 +1,15 @@
 main:
-  - title: About
-    url: /
-  - title: Rooms
-    url: /
-  - title: Offers
-    url: /
-  - title: Location
-    url: /
-  - title: Events
-    url: 
-  - title: Gallery
-    url: /
-  - title: Contact
-    url: /
+  - left:
+    - title: About
+      url: /about/
+    - title: Rooms
+      url: /rooms/
+    - title: Offers
+      url: /offers/ 
+  - right:   
+    - title: Dining
+      url: /dining/
+    - title: Gallery
+      url: /gallery/
+    - title: Contact
+      url: /contact/

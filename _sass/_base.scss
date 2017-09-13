@@ -6,17 +6,17 @@ html {
   min-height: 100%;
   font-size: 0.813rem;
     @include media-breakpoint-up(lg){
-      font-size:$type-size-5 ;
+      font-size:$font-15 ;
     }
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: $light-color;
+  color: $midnight-charcoal ;
   font-family: $regular;
   line-height: 1.5;
-  background: $background-color url('/assets/images/texture.png'); 
+  background: $white url('/assets/images/pattern.png'); 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,19 +26,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  font-size: $type-size-1;
+  font-size: $font-45;
   font-family: $regular;
 }
 
 h2 {
-  font-size: $type-size-10;
-  letter-spacing: .1rem;
-  line-height: 3.5rem;
-  @include media-breakpoint-up(md){
-   font-size: $type-size-2;
-   line-height: 4.5rem;
-   letter-spacing: .2rem;
-  }
+  font-size: $font-24;
+  letter-spacing: .1rem; 
+  font-family: $medium;
+  line-height: 2.5rem;
      u{
       position: relative;
       border-bottom: 0;
@@ -65,19 +61,19 @@ h2 {
 }
 
 h3 {
-  font-size: $type-size-3;
+  font-size: $font-12;
 }
 
 h4 {
-  font-size: $type-size-6;
+  font-size: $font-200;
 }
 
 h5 {
-  font-size: $type-size-6;
+  font-size: $font-14;
 }
 
 h6 {
-  font-size: $type-size-6;
+  font-size: $font-16;
 }
 
 small, .small {
@@ -85,8 +81,9 @@ small, .small {
 }
 
 p {
-  font-size:$type-size-5 ;
+  font-size:$font-15 ;
   margin-bottom: 1.3rem;
+  line-height: 1.5rem;
 }
 
 u,
@@ -168,11 +165,14 @@ svg:not(:root) {
 
 /* Container*/
 .container{
-  max-width: 1192px;
+  max-width: 1128px;
   width: 100%;
   position: relative;
 }
-
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .white-bg{
   background-color: $white;  //white background color
 }
@@ -199,7 +199,9 @@ svg:not(:root) {
 .e-icon{
   font-family: $font-icon;
 }
-
+.spacer-bottom{
+  margin-bottom:  3.438rem;
+}
 //buttons
 .btn-primary{
   border-radius: 0;
@@ -213,10 +215,16 @@ svg:not(:root) {
   line-height: 1.3rem;
   padding: 0.9rem 1.4rem 0.6rem 1.4rem;
   cursor: pointer;
+  &:hover{
+     outline: 0;
+     background-color: $slate-grey;
+    text-decoration: none;
+  }
 }
 .btn-blue{
   @extend .btn-primary;
-   padding: 1.2rem 1.1rem 0.8rem 1.6rem;
+  letter-spacing: .1rem;
+   padding: 1rem 2rem .7rem 2rem;
      .e-icon{
       position: relative;
       vertical-align: middle;
@@ -233,6 +241,15 @@ svg:not(:root) {
     border: 2px solid $black;
   }
 }
+.btn-white{
+    @extend .btn-primary;
+    color: $primary-color !important;
+    background-color: $white;
+     &:hover{
+        background-color: $black;
+        color: $white !important;
+      }
+}
 .btn-outline-arrow{
    @extend .btn-blue;
    border: 2px solid $black;
@@ -244,7 +261,108 @@ svg:not(:root) {
      border: 2px solid $black;
    }
 }
+.btn-white{
+  @extend .btn-blue;
+  border: 0;
+  position: relative;
+  background-color: $white;
+  font-size: $font-12;
+  line-height: $font-18;
+  color: $primary-color !important;
+  @include transition($global-transition);
+   i{ 
+    font-size: $font-18;
+    vertical-align: middle;
+    margin-top: -3px;
+   }
+  &:hover{
+    outline: 0;
+    color: $white !important;
+    background-color: $primary-color;
+    text-decoration: none;
+  }
+}
+.btn-square{
+  @extend .btn-blue;
+  max-width: 142px;
+  padding: 3rem;
+  white-space: normal; 
+  right: 0;
+  top: 0;
+  border:0px;
+  &:hover
+  {
+    background-color: $white;
+    color: $primary-color !important;
+  }
+}
+.btn-2-cta{
+  color: $primary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  padding: .3rem .7rem;
+  font-size: $font-14;
+  font-family: $medium;
+  letter-spacing:.12rem;
+  font-weight: bold;
+  outline: 0; 
+  @include transition($global-transition);
+  &:before{
+     content: '';
+     height: 100%;
+     width: 2px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     background-color: $primary-color;
+      @include transition($global-transition);
+  }
+  &:hover, &:focus{
+         outline: 0;
+         box-shadow: none;
+         color: $slate-grey;
+         &:before{
+             height: 50%;
+             top: 26%;
+             background-color: $slate-grey;
+         }
+  }
+  &.in-black-cta{
+    color: $white;
+    &:before{
+      background-color: $white;
+    }
+     @include  media-breakpoint-up(md){
+      color: inherit;
+      &:before{
+        background-color:$slate-grey;
+      }
+     }
 
+  }
+  &.cat-white{
+    color: $white;
+    &:before{
+      content: '';
+      background-color: $white;
+    }
+    &:hover{
+      color: $slate-grey !important;
+      text-decoration: none;
+      &:before{
+        background-color: $slate-grey;
+    }
+    }
+  }
+}
+.btn-3-cta{
+  @extend .btn-2-cta;
+  color: $white;
+    &:before {
+      background-color: $white;
+    }
+}
 @keyframes type{ 
   from { width: 0; } 
 } 
@@ -254,3 +372,63 @@ svg:not(:root) {
   50%{width: 0;}
   100%{ width: 100; } 
 } 
+
+.bsHCarousel { 
+  overflow: hidden; 
+  width: 100%;
+  position: relative;
+  .carousel-inner{ 
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item-prev{
+       display:inline-block !important;
+      } 
+    }
+  .carousel-inner {
+    transition: 1s ease all;
+    //float: left;
+    display: block;
+    .carousel-item {
+      display: block;
+      float: left;
+       
+    }
+  }
+    a.carousel-control-prev, a.carousel-control-next{
+            width:31px;
+            height:31px;
+            background:$white ;
+            position:absolute;
+            color: $midnight-charcoal;
+            top:0px;
+            right:15px;
+            left:auto;
+            opacity:1;
+            @include media-breakpoint-up(xl){
+                    right:0px;
+            }
+            @include transition($global-transition);
+             &:hover{
+               background-color: $light-slate-grey;
+             }
+            i{
+               @include transition($global-transition);
+               &:hover{
+               color: $white;
+             }
+            }
+            &.carousel-control-prev{
+              right: 48px;
+              @include media-breakpoint-up(xl){
+                right: 33px;
+              }
+            }
+            &.over {
+                pointer-events: none;
+                cursor: none;
+                background-color: $light-slate-grey;
+                color: $white !important;
+              }
+          }
+   
+}

@@ -108,7 +108,18 @@
         word-spacing: 0.200rem;
     }
 
+
   }
+  h2{
+      color: $white;
+      font-size: $font-35;
+      line-height: 4rem;
+      u{
+        &:before{
+                bottom: 0;
+        }
+      }
+    }
   .middle-content{
     max-width: 48rem;
     width: 99%;
@@ -162,8 +173,9 @@
     }
       button{
         @extend .btn ;
-          @extend .btn-blue ;
+          @extend .btn-white ;
           font-family: $regular;
+          border: 0;
           &:hover,&:focus
           {
             outline: 0;
@@ -174,25 +186,23 @@
      
   }
   .nwl-bg{
-    min-height: 610px;
+    min-height: 618px;
   }
 }
 /* instagram*/
 
 .instagram{
-  @extend .row ;
-  @extend .align-items-center ;
+  @extend .row ; 
   margin: 0;
-
-  .heading{
-      background:$light-color;
+  
+  .heading{ 
       @extend .text-center ;
       width: 100%;
       color:$black;
       padding: 2.863rem 0 0.6rem 0;
       text-transform: uppercase;
       letter-spacing: 0.289rem;
-      h3{
+      h2{
       padding:1.19rem 0rem;
       a{
         color:$black;
@@ -201,6 +211,7 @@
       }
    }
   .instagram-img{
+    background-color: $midnight-charcoal;
       width:100%;
       @include media-breakpoint-up(md){
         width: 20%;
@@ -212,14 +223,18 @@
     }
 
     .contact-details{
-      padding:2rem 1rem;
+      color: $white;
+      background-color: $midnight-charcoal;
+      padding:2rem 1rem .5rem 1rem;
       width: 100%;
       text-align: center;
       @include media-breakpoint-up(md){
           width: 60%;
       }
       p{
-        line-height: 2.205rem;
+        line-height: 2rem;
+        padding: 0;
+        margin: 0;
         span{
           font-weight: bold;
           text-transform: uppercase;
@@ -236,11 +251,28 @@
           }
 
         }
+        .contact-links{
+           padding: 1rem 0 0 0;
+           margin: 0; 
+           li{
+            display: inline-block;
+            a{
+              padding: .2rem 1rem;
+              text-transform: uppercase;
+              letter-spacing: 0.1rem;
+              &:hover{
+                color: $light-slate-grey;
+              }
+            }
+           }
+        }
         .social-links{
+              padding-top: 0.2rem;
+              margin: 0;
           a{
             font-size:$type-size-7;
             color:$light-color;
-            padding: 0 5px;
+            padding: 0 3px;
             @include transition($global-transition);
             &:hover{
               color: $primary-color;
@@ -248,8 +280,13 @@
                 border-color: transparent;
             }
             span{
-              border: 1px solid $light-color;
-              padding: 10px;
+              border: 2px solid $light-color;
+              padding: 8px 7px;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              border-radius: 50%;
+              display: inline-block;
               @include border-radius(50%);
             }
           }
