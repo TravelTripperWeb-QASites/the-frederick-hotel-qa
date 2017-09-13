@@ -45,7 +45,7 @@
     }
 
     th {
-      font-size: 10px;
+      font-size: $font-12;
       text-transform: uppercase;
       font-weight: normal;
       color: #333;
@@ -55,6 +55,9 @@
     td span {
       text-align: center;
       color: #333;
+      border: none;
+      padding: 0.8em;
+      background: $white;
     }
 
     .ui-state-disabled {
@@ -83,7 +86,12 @@
 
 .ui-datepicker-header {
   font-family: $medium;
-  font-size: 13px;
+  font-size: 17px;
   color: #333;
   margin-bottom: 10px;
+  border-bottom: 1px solid $black!important;
+  border-left: 0px solid $black!important;
+  border-right: 0px solid $black!important;
+  border-top: 0px solid $black!important;
+  background:$white!important;
 }
