@@ -3,24 +3,20 @@
     padding: 1rem 0rem;
     .contact-wrapper,.rfp-wrapper{
       @extend .row ;
-      @extend .justify-content-center ;
+      margin: 0 auto;
+     
       .address{
         @extend .col-md-5 ;
+     
       }
       .contact-form{
         @extend .col-md-7 ;
         form {
-          @extend  .row ;
-          h3{
-            text-align: center;
-            padding: 2rem 0;
-            width: 100%;
-          }
+          @extend .row;
           .first-name,
           .last-name,
           .email,
-          .company,
-          .phonenumber,.arrival,.departure,.rooms-per-night,.space,.type-of-meeting,.event-name,.type,.number-of-att,.message,.btn,.organiz{
+          .phonenumber,.message,.btn{
           @extend .col-sm-12 ;
           margin: 0.625rem 0rem;
           text-align: left;
@@ -88,7 +84,7 @@
            }
           }
            .rfp-form{
-              @extend .col-md-7 ;
+              @extend .col-md-9 ;
              
               form {
                 @extend  .row ;
@@ -102,15 +98,16 @@
                 .last-name,
                 .email,
                 .company,
-                .phonenumber,.arrival,.departure,.rooms-per-night,.event-name,.type,.number-of-att {
-                @extend .col-sm-6 ;
+                .phonenumber,.arrival,.departure,.rooms-per-night,.event-name,.type,.number-of-att,.space, .btn {
+                @extend .col-md-6 ;
                 
                 margin: 0.625rem 0rem;
                 text-align: left;
-                input [type="radio"]{
+                input [type="checkbox"], [type="radio"]{
                   margin: 1rem 0;
+                  vertical-align: middle;
                 }
-                .message,.btn-sec,.organiz,.space,.type-of-meeting{
+                .message,.btn-sec,.organiz,.type-of-meeting{
                   @extend .col-sm-12 ;
                   margin: 0.625rem 0rem;
                   text-align: left;
@@ -121,13 +118,14 @@
                   }
                   select{
                     height:49px;
-                   
                   }
-        
-                  button{
+                  label{
+                    padding: 0 0.2rem; 
+                  }      
+                   button{
                     width: auto;
                     background: $primary-color ;
-                    border: none;
+                    border: none ;
                     font-weight: bold;
                     color:$white;
                     font-family: $medium;
