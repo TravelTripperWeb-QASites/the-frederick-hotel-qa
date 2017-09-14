@@ -1,7 +1,5 @@
-  
-  /* Datepicker */
-   	.ui-datepicker {
-  width: 100% !important;
+.ui-datepicker {
+  width: auto;
   padding: 20px;
   background: #f9f9f9;
 
@@ -11,7 +9,7 @@
     width: 5px;
     height: 5px;
     border-top: 2px solid #333;
-    
+
     &.ui-state-disabled {
       opacity: 0.2;
     }
@@ -24,6 +22,7 @@
     cursor: pointer;
   }
 
+  
   .ui-datepicker-next {
     right: 80px;
     border-right: 2px solid #333;
@@ -37,20 +36,19 @@
   }
 
   .ui-datepicker-calendar {
-    font-family: "Open Sans","Arial";
-    font-size: 14px;
+    font-family: $medium;
+    font-size: $font-14;
     font-weight: lighter;
 
     tbody tr {
-      border-top: 1px solid #ebebeb;
+      border-top: 0px solid #ebebeb;
     }
 
     th {
-      font-size: 14px;
-     
+      font-size: $font-12;
+      text-transform: uppercase;
       font-weight: normal;
       color: #333;
-      height: 3em;
     }
 
     td a,
@@ -59,55 +57,43 @@
       color: #333;
       border: none;
       padding: 0.8em;
-     
+      background: $white;
     }
 
     .ui-state-disabled {
       opacity: .3;
     }
 
-
+    .ui-datepicker-today {
+      a {
+        font-weight: bold;
+      }
+    }
+    .ui-state-highlight{
+    color: $white;
+    background: $midnight-charcoal;
+    border: 1px solid $midnight-charcoal;
+  }
     .ui-datepicker-current-day {
       .ui-state-active {
-        color: #fff;
-        background: #1f75bb;
-        
+        color: $white;
+        background: $midnight-charcoal;
+        border-radius: 0px;
       }
     }
   }
 }
 
 .ui-datepicker-header {
-  font-family: "Open Sans","Arial";
-  font-size: 13px;
+  font-family: $medium;
+  font-size: 17px;
   color: #333;
-  height: 52px;
-  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $black;
+  border-left: 0px solid $black!important;
+  border-right: 0px solid $black!important;
+  border-top: 0px solid $black!important;
+  background:$white;
 }
-
-  
-   .ui-datepicker-month{
-         width: 60%;
-        font-size: 17px;
-        height: 52px;
-        line-height: 44px;
-   }
-  
-  .dp-highlight .ui-state-default {
-          background: #2b337e !important;
-          color: #fff !important;
-		      border: 1px solid #2b337e;
-		      position: relative;
-		  	  height: 3em;
-  }
-  
-  
-@media only screen and (max-width: 1120px) {
-  #ui-datepicker-div, div.ui-datepicker {
-      font-size: 14px;
-  }
-}
-
-
 
 
