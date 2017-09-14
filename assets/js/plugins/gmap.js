@@ -127,7 +127,7 @@ markers1 = [
     ['7', 'WALL STREET STOCK EXCHANGE,<br>  New York, NY 10005', 40.706877, -74.011265, 'attractions','1','https://goo.gl/maps/PEewaqiETfz'],
     ['8', 'TRINITY CHURCH,<br>  75 Broadway, New York, NY 10006', 40.708062, -74.012185, 'attractions','1','https://goo.gl/maps/qgFPaAYkaLr'],
     ['9', 'BROOKLYN BRIDGE,<br>  New York, NY 10038', 40.706086, -73.996864, 'attractions','1','https://goo.gl/maps/NtGNzH963tG2'],
-    ['10','BROOKLSOUTH STREET SEA PORT MUSEUM,<br>  12 Fulton St, <br/> New York, NY 10038', 40.706562, -74.003710, 'attractions','1','https://goo.gl/maps/BcANXCKz1mv'],
+    ['10','SOUTH STREET SEA PORT MUSEUM,<br>  12 Fulton St, <br/> New York, NY 10038', 40.706562, -74.003710, 'attractions','1','https://goo.gl/maps/BcANXCKz1mv'],
     ['11', 'WJ Hotel, <br />318 W 51st St, New York, <br /> NY 10019 ', 40.763309, -73.986814, 'hotels', '2','https://goo.gl/maps/A7k6NYaG3c12'],
     ['12', 'Hotel Edison,<br />228 W 47th St, <br /> New York, NY 10036 ', 40.759648, -73.986132, 'hotels', '2','https://goo.gl/maps/WR2sym1X8ts'],
     ['13', 'Salaam Bombay,<br>319 Greenwich St<br>New York, NY 10013 ', 40.717044, -74.010526, 'restaurants', '1','https://goo.gl/maps/XrscnR4Whzt'],
