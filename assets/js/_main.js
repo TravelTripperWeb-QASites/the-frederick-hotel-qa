@@ -157,7 +157,7 @@ $(".filter").on("click", function () {
   altField  : '#input_9',
   altFormat : 'yy-mm-dd',
         onClose: function () {
-            var dt1 = $('#input_9').datepicker('getDate');
+            var dt1 = $('#input_8').datepicker('getDate');
             console.log(dt1);
             var dt2 = $('#input_9').datepicker('getDate');
             if (dt2 <= dt1) {
