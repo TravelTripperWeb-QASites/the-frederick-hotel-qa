@@ -123,7 +123,7 @@ markers1 = [
     ['2', 'HOTEL CHANDLER, <br /> 12 E 31st St,<br /> New York, NY 10016, USA ', 40.745934, -73.985187, 'hotels', '2','https://goo.gl/maps/9PVDjN4sAZx'],
     ['3', 'Jackson Square', 29.957444, -90.062935, 'restaurants', '1',''],
     ['4', 'Original French Market ', 29.959283, -90.060688, 'shops','3', ''], 
-    ['6', 'Coop\'s Place ', 29.960159, -90.059867, 'transport','1',''],
+    ['6', 'Grand Central Station ', 40.752726, -73.977229, 'transport','1','https://goo.gl/maps/nZBLhVsZCqL2'],
     ['7', 'WALL STREET STOCK EXCHANGE,<br>  New York, NY 10005', 40.706877, -74.011265, 'attractions','1','https://goo.gl/maps/PEewaqiETfz'],
     ['8', 'TRINITY CHURCH,<br>  75 Broadway, New York, NY 10006', 40.708062, -74.012185, 'attractions','1','https://goo.gl/maps/qgFPaAYkaLr'],
     ['9', 'BROOKLYN BRIDGE,<br>  New York, NY 10038', 40.706086, -73.996864, 'attractions','1','https://goo.gl/maps/NtGNzH963tG2'],
@@ -143,7 +143,8 @@ markers1 = [
     ['23', 'Zuckers Bagels & Smoked Fish,<br>146 Chambers St,<br>New York, NY 10007 ', 40.715619, -74.009838, 'shops', '3','https://goo.gl/maps/rYwYxQfMTFF2'],
     ['24', 'Tribeca Treats,<br>94 Reade St # 1,<br>New York, NY 10013 ', 40.715732, -74.007864, 'shops', '3','https://goo.gl/maps/LJpDixeU1S62'],
     ['25', 'Starbucks,<br>125 Chambers St,<br>New York, NY 10007 ', 40.715570, -74.008868, 'shops', '3','https://goo.gl/maps/LFRqGoDhWaJ2'],
-    ['26', 'Le Pain Quotidien,<br>81 W Broadway,<br>New York, NY 10007 ', 40.714993, -74.009324, 'shops', '3','https://goo.gl/maps/v72X3eDrHHK2']
+    ['26', 'Le Pain Quotidien,<br>81 W Broadway,<br>New York, NY 10007 ', 40.714993, -74.009324, 'shops', '3','https://goo.gl/maps/v72X3eDrHHK2'],
+    ['27', 'Penn Station,<br> New York, NY 10119', 40.750568, -73.993519, 'transport','1','https://goo.gl/maps/4pkCTGrRaVv'],
     
     
 ];
@@ -155,7 +156,7 @@ markers1 = [
 function initialize() {
     var center = new google.maps.LatLng(40.715475, -74.008909);
     var mapOptions = {
-        zoom: 14,
+        zoom: 12,
         center: center,
         styles: mapstyle, 
         mapTypeId: google.maps.MapTypeId.TERRAIN
