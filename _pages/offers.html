@@ -1,0 +1,47 @@
+---
+layout: default
+title: "Offers"
+permalink: /offers/
+---
+
+{% assign offers = site.data._models.offers | sort: 'order' %}
+
+<section class="inner-banner bg-styles" style="background-image: url('/assets/images/specials/specials-banner.jpg');"></section>
+
+<section class="specials-top">
+  <div class="specials-container">
+    <div class="specials-container-inner">
+      <h3>The Frederick Hotel</h3>
+      <h1>Exclusive Offers</h1>
+      <p>Explore our special offers and save on accommodations when you book direct. </p>
+    </div>
+  </div>
+</section>
+
+<section class="exclusive-offers-sec">
+  <div class="offers-wrap">
+
+    {% for offer in offers limit: 4 %}
+
+      <div class="offer-sec">
+        <a href="{{ offer.url_friendly_name }}">
+          <div class="offer-img" style="background-image:url('{% if offer.excerpt_image %}{{ offer.excerpt_image.url }}{% else %}{{ offer.banner_image.url_small }}{% endif %}');">
+            <div class="img-bg"></div>
+          </div>
+        </a>
+        <div class="btn-holder">
+          <a href="{{ offer.url_friendly_name }}" class="btn btn-white">See Details <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <a href="{{ offer.url_friendly_name }}">
+          <div class="offer-heading">
+            <h6>{{ offer.title }}</h6>
+          </div>
+        </a>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</section>
+
+{% include instagram.html%}

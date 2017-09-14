@@ -1,0 +1,24 @@
+<section class="map-section">
+  <ul class="map-nav nav justify-content-center ">
+    <li class="map-item">
+      <a class="map-link {% if(page.url == '/')%}active{% endif %}" onclick="filterMarkers('hotel');">The Frederick</a>
+    </li>
+    <li class="map-item">
+      <a class="map-link" onclick="filterMarkers('hotels');">More Hotels</a>
+    </li>
+    <li class="map-item">
+      <a class="map-link {% if(page.url == '/location/')%}active{% endif %}" onclick="filterMarkers('attractions');">attractions</a>
+    </li>
+    <li class="map-item">
+      <a class="map-link" onclick="filterMarkers('restaurants');">Restaurant/Bar</a>
+    </li>
+    <li class="map-item">
+      <a class="map-link" onclick="filterMarkers('shops');">Shops</a>
+    </li>
+    <li class="map-item">
+      <a class="map-link" onclick="filterMarkers('transport');">Transportation</a>
+    </li>
+  </ul>
+  <div id="map-canvas">
+  </div>
+</section>

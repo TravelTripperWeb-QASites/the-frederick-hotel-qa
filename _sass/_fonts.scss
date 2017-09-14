@@ -1,9 +1,13 @@
 @font-face{
     font-family:"Courier New W01 Italic";
-    src:url("/assets/fonts/7e2238fd-be71-4077-9c84-a131182472b8.eot?#iefix");
-    src:url("/assets/fonts/7e2238fd-be71-4077-9c84-a131182472b8.eot?#iefix") format("eot"),url("/assets/fddff8089-8a74-4b32-9c0d-335920906fd7.woff2") format("woff2"),url("/assets/fonts/9e71a4ae-786b-43ab-8470-6e927ce35298.woff") format("woff"),url("/assets/fonts/8deecbe8-7d4d-4574-abb0-7bc01084320b.ttf") format("truetype"),url("/assets/fonts/8a2a107d-f55f-4b02-bb9b-eb7fbc734d97.svg#8a2a107d-f55f-4b02-bb9b-eb7fbc734d97") format("svg");
+        src:url("/assets/fonts/7e2238fd-be71-4077-9c84-a131182472b8.eot?#iefix");
+        src:url("/assets/fonts/7e2238fd-be71-4077-9c84-a131182472b8.eot?#iefix") format("eot"),url("/assets/fonts/ddff8089-8a74-4b32-9c0d-335920906fd7.woff2") format("woff2"),url("/assets/fonts/9e71a4ae-786b-43ab-8470-6e927ce35298.woff") format("woff"),url("/assets/fonts/8deecbe8-7d4d-4574-abb0-7bc01084320b.ttf") format("truetype"),url("/assets/fonts/8a2a107d-f55f-4b02-bb9b-eb7fbc734d97.svg#8a2a107d-f55f-4b02-bb9b-eb7fbc734d97") format("svg");
 }
-
+ @font-face{
+        font-family:"Courier W01 Medium";
+        src:url("/assets/fonts/3729ca26-df07-4955-9cdf-5f0f72526c97.eot?#iefix");
+        src:url("/assets/fonts/3729ca26-df07-4955-9cdf-5f0f72526c97.eot?#iefix") format("eot"),url("/assets/fonts/49aeaefe-8be7-44dd-8ad0-fce9af828e1a.woff2") format("woff2"),url("/assets/fonts/0502226c-5b4d-427f-b9e3-ad04f550da02.woff") format("woff"),url("/assets/fonts/17644dc1-34d2-4084-bd75-a49ca7ae6688.ttf") format("truetype"),url("/assets/fonts/373381a2-d907-4241-bb64-b764ee96ada8.svg#373381a2-d907-4241-bb64-b764ee96ada8") format("svg");
+    }
 @font-face{
     font-family:"Courier New W07 Regular";
     src:url("/assets/fonts/d8dd49c8-c4df-41b7-9f0d-aa400ef0a95d.eot?#iefix");
@@ -24,7 +28,7 @@
 
 
 //icons style
-.social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_instagram
+.social_facebook, .social_twitter, .social_pinterest, .social_googleplus, .social_instagram, .icon-star
 {
 	font-family: 'ElegantIcons';
 	speak: none;
@@ -49,4 +53,7 @@
 }
 .social_instagram:before {
 	content: "\e09a";
+}
+.icon-star:before {
+	content: "\e033";
 }

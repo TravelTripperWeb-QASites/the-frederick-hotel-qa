@@ -1,0 +1,26 @@
+{% assign offers = site.data._models.offers | sort: 'order' %}
+<section class="exclusive-offers-sec">
+	<div class="offers-wrap">
+  
+	  {% for offer in offers limit: 4 %}
+  
+		<div class="offer-sec">
+		  <a href="{{ offer.url_friendly_name }}">
+			<div class="offer-img" style="background-image:url('{% if offer.excerpt_image %}{{ offer.excerpt_image.url }}{% else %}{{ offer.banner_image.url_small }}{% endif %}');">
+			  <div class="img-bg"></div>
+			</div>
+		  </a>
+		  <div class="btn-holder">
+			<a href="{{ offer.url_friendly_name }}" class="btn btn-white">See Details <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		  </div>
+		  <a href="{{ offer.url_friendly_name }}">
+			<div class="offer-heading">
+			  <h6>{{ offer.title }}</h6>
+			</div>
+		  </a>
+		</div>
+  
+	  {% endfor %}
+  
+	</div>
+  </section>

@@ -1,0 +1,129 @@
+---
+layout: default
+title: "Room Details"
+---
+
+{% assign rooms = page %}
+{% assign model = page %}
+
+<section>
+  <div class="inner-banner " style="background-image: url('{{ rooms.banner_image.url }}')"></div>
+</section>
+
+<!-- <section class="offers-nav">
+  <div class=" container-fluid p-0">
+    <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" title="Previous offer">Previous offer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="Next Offer">Next Offer</a>
+      </li>
+    </ul>
+  </div>
+</section> -->
+
+<section class="heading-section">
+  <div class="heading-inner">
+
+    <div class="heading">
+      <!-- <h3>TONIGHT'S RATE <a href="" title="rate">$385</a></h3> -->
+      <h1>{{ rooms.title }}</h1>
+      <div class="btn-holder">
+        <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book now" class="btn btn-blue">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="special-info">
+      <p>{{ rooms.description }}</p>
+    </div>
+
+    <!-- <div class="search-widgt">
+      <div class="arrival ">
+        <label>Arrival Date</label><br>
+        <input type="text" class="form-control" id="input_8" placeholder="09, 10, 2017" aria-label="Start date" />
+      </div>
+      <div class="departures">
+        <label>Departures Date</label><br>
+        <input type="text" class="form-control" id="input_9" placeholder="09, 11, 2017" aria-label="end date" />
+      </div>
+      <div class="rooms ">
+        <label>Rooms</label><br>
+        <div class="count-input space-bottom">
+          <a class="incr-btn" data-action="decrease" title="-" href="#">–</a>
+          <input class="quantity" type="text" name="quantity" aria-label="Rooms" value="0" min="1" max="10" />
+          <a class="incr-btn" data-action="increase" title="+" href="#">&plus;</a>
+        </div>
+      </div>
+      <div class="adults ">
+        <label>Adults</label><br>
+        <div class="count-input space-bottom">
+          <a class="incr-btn" data-action="decrease" title="-" href="#">–</a>
+          <input class="quantity" type="text" name="quantity" aria-label="Adults" value="0" min="1" max="6" />
+          <a class="incr-btn" data-action="increase" title="+" href="#">&plus;</a>
+        </div>
+      </div>
+      <div class="child">
+        <label>Children</label><br>
+        <div class="count-input space-bottom">
+
+          <a class="incr-btn" data-action="decrease" title="-" href="#">–</a>
+          <input class="quantity" type="text" name="quantity" aria-label="Children" value="0" min="1" max="6" />
+          <a class="incr-btn" data-action="increase" href="#" title="+">&plus;</a>
+        </div>
+      </div>
+      <div class="btn-sec">
+        <button>Check Availability <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div> -->
+
+    <div class="special-img">
+      <img src="/assets/images/rooms/details-1.jpg" alt="Room service package" class="img-fluid" />
+    </div>
+
+    <div class="special-info-heading">
+      <h2>{{ rooms.title }}</h2>
+      <h5>{{ rooms.occupancy }} person</h5>
+      <div class="btn-holder">
+        <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book now" class="btn btn-2-cta">BOOK NOW </a>
+      </div>
+      <div class="btn-holder">
+        <a href="/gallery/" title="View Gallery" class="btn btn-2-cta">View Gallery</a>
+      </div>
+    </div>
+
+    <div class="special-info-list">
+      {{ rooms.amenities_list }}
+    </div>
+
+  </div>
+
+  {% if rooms.gallery1 and rooms.gallery2 and rooms.gallery3 %}
+    <div class="room-images">
+
+      <div class="photo-full"><img src="{{ rooms.gallery1.url }}" alt="{{ rooms.gallery1.alt }}" class="img-fluid"></div>
+
+      <div class="photo-half">
+        <div class="row">
+          <div class="photo-half-1"><img src="{{ rooms.gallery2.url }}" alt="{{ rooms.gallery2.alt }}" class="img-fluid"></div>
+          <div class="photo-half-2"><img src="{{ rooms.gallery3.url }}" alt="{{ rooms.gallery3.alt }}" class="img-fluid"></div>
+        </div>
+      </div>
+
+    </div>
+  {% else %}
+    <div class="room-images">
+      <div class="photo-full "><img src="/assets/images/rooms/details-2.jpg" alt="JUNIOR SUITES" class="img-fluid" /></div>
+      <div class="photo-half">
+        <div class="row">
+            <div class="photo-half-1"><img src="/assets/images/rooms/details-3.jpg" alt="JUNIOR SUITES " class="img-fluid" /></div>
+              <div class="photo-half-2"><img src="/assets/images/rooms/details-4.jpg" alt="JUNIOR SUITES" class="img-fluid" /></div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+</section>
+
+{% include exclusive-offers.html %}
+{% include instagram.html %}

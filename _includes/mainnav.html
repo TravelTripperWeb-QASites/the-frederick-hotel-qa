@@ -1,19 +1,31 @@
 {% assign menuitems = site.data.navigation.main %}
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-toggleable-md navbar-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
     </button>
+    <div class="group-logo">
+           <a href="http://www.triumphhotels.com/blog/hotel/cosmopolitan/" target="_blank"><img src="/assets/images/triumph-key.png" alt="triupmh icon"></a>
+    </div> 
+   <div class="brand-centered">
+   <a  class="navbar-brand self-align-center" href="/" title="The Frederick Hotel Homepage"><img src="/assets/images/logo.png" alt="{{ site.title }}"></a></div> 
     
-    <a class="navbar-brand" href="{{ home | absolute_url }}">{{ site.title }}</a>
-
+  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	<ul class="navbar-nav mr-auto">
-	    {% for item in menuitems %}
-	    <li class="nav-item {% if page.url==item.url %}active{% endif%}">
+	    {% for item in menuitems[0].left %}
+	    <li class="nav-item {% if page.url == item.url %}active{% endif%}">
 		<a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
 	    </li>
 	    {% endfor %}
 	</ul>
+	<ul class="navbar-nav ml-auto">
+          {% for item in  menuitems[1].right %}
+	  	    <li class="nav-item {% if page.url == item.url %}active{% endif%}">
+	  		<a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+	  	    </li>
+  	      {% endfor %}
+        </ul>
     </div>
+    <a href="#" title="Reservations" class="btn btn-square" show-booking-widget="">Book Now</a>
 </nav>

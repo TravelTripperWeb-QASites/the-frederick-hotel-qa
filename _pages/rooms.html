@@ -1,0 +1,153 @@
+---
+title_localized:
+  en: "Rooms"
+label_localized:
+  en:
+layout_localized:
+  en: default
+permalink_localized:
+  en: /rooms/
+parent: rooms
+---
+
+{% assign rooms = site.data._models.rooms | sort: 'order' %}
+
+<div class="inner-page-banner bg-image-cover" style="background-image:url('/assets/images/rooms/rooms-banner.jpg');"></div>
+
+<section class="rooms">
+
+  <div class="container-fluid p-0">
+    <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" data-target="#all" role="tab">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" data-target="#rooms" role="tab">Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" data-target="#suites" role="tab">Suites</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="rooms-intro">
+    <h6>The Frederick Hotel</h6>
+    <h1>Classic rooms & Suites</h1>
+    <p>Explore our classic guest rooms and suites below.</p>
+    <a href="/gallery/" class="btn btn-2-cta">View Gallery</a>
+    <div class="btn-holder">
+      <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="tab-content">
+
+    <div class="tab-pane fade show active" id="all" role="tabpanel">
+
+      {% for room in rooms %}
+
+        <div class="room-item">
+          <div class="col-md-7 p-0">
+            <div class="room-image">
+              <img src="{% if room.excerpt_image %}{{ room.excerpt_image.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt_image %}{{ room.excerpt_image.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+            </div>
+          </div>
+          <div class="col-md-5 p-0 align-self-center">
+            <div class="room-content">
+              <h2>{{ room.title }}</h2>
+              <!-- <h6>Tonight's Rate <a href="">$385</a></h6> -->
+              <p>{{ room.description }}</p>
+              <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+              <div class="btn-holder">
+                <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+    <div class="tab-pane" id="rooms" role="tabpanel">
+
+      {% for room in rooms %}
+        {% if room.category == 'room' %}
+
+          <div class="room-item">
+            <div class="col-md-7 p-0">
+              <div class="room-image">
+                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+              </div>
+            </div>
+            <div class="col-md-5 p-0 align-self-center">
+              <div class="room-content">
+                <h2>{{ room.title }}</h2>
+                <!-- <h6>Tonight's Rate <a href="">$385</a></h6> -->
+                <p>{{ room.description }}</p>
+                <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+                <div class="btn-holder">
+                  <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+    <div class="tab-pane" id="suites" role="tabpanel">
+
+      {% for room in rooms %}
+        {% if room.category == 'suite' %}
+
+          <div class="room-item">
+            <div class="col-md-7 p-0">
+              <div class="room-image">
+                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+              </div>
+            </div>
+            <div class="col-md-5 p-0 align-self-center">
+              <div class="room-content">
+                <h2>{{ room.title }}</h2>
+                <!-- <h6>Tonight's Rate <a href="">$385</a></h6> -->
+                <p>{{ room.description }}</p>
+                <a href="{{ room.url_friendly_name }}" class="btn btn-2-cta">View Room</a>
+                <div class="btn-holder">
+                  <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="map-section">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-5 p-0 align-self-center">
+        <div class="map-content">
+          <h2>Have It All</h2>
+          <h5>Tribeca -  New York City</h5>
+          <p> If eating and drinking well is your thing, Tribeca is where you want to be. With its innovative chefs, design-forward enclaves, and repurposed turn-of-the-century factories, Tribeca is what is happening in New York City. </p>
+          <a href="/location/" class="btn btn-3-cta">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="col-md-7 p-0">
+        <div class="map-holder"><img src="/assets/images/rooms/map.jpg" alt="The Frederick hotel" style="width:100%;"></div>
+      </div>
+
+    </div>
+  </div>
+</section>

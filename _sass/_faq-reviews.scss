@@ -1,0 +1,94 @@
+
+.reviews,.faq{
+    @extend .container;
+    .reviews-content,.faq-content{
+     @extend  .row;
+     padding: 1.75rem 0;
+     @include media-breakpoint-up(md){
+        padding: 2.75rem 0;   
+     }
+     @include media-breakpoint-up(lg){
+        padding: 3.75rem 0;   
+     }
+     @extend .m-auto;
+    .review-details,.quations{
+        @extend .col-md-5;  
+        .visitor-name{
+            font-family: $medium ;
+            font-weight: bold;
+            font-size: $font-16;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+        } 
+        .date{
+            @extend  .visitor-name;
+            font-size: $font-12 ;
+            letter-spacing:.2rem; 
+            border-right: solid 1px $light-slate-grey  ;  
+            padding-right:0.6rem; 
+        }
+        .v-location{
+            @extend  .visitor-name;
+            font-size: $font-12 ;
+            padding-left:0.6rem; 
+            letter-spacing:.15rem; 
+        }
+
+        .stars{
+            color:$primary-color;
+            padding: 0.70rem 0rem;
+
+            .gray-clr{
+                color:$light-slate-grey  ;  
+            }
+        }
+        quate{
+            text-transform: uppercase;
+            font-size: $font-16;
+            font-weight: bold;
+            letter-spacing: .2rem;
+            font-style: italic;
+        }
+        p{
+           @extend   quate;
+            font-style: normal;
+            font-family: $medium;
+        }
+    }
+    .review-full,.answer{
+        @extend .col-md-7;   
+        p{
+            font-size: $font-14;
+            line-height: 2.1rem;
+        }
+    }
+
+   
+}
+hr{
+    border-top: 1px solid $light-slate-grey;
+    margin: 0rem ;
+    width: 100%;
+}
+    .loadmore{
+        text-align: center;
+        padding: 1.55rem 0;
+        a{
+            color:$slate-grey  ;
+            text-transform: uppercase;
+            @include transition($global-transition);
+            &:hover,:focus{
+                box-shadow: none;
+                color:$primary-color  ;
+            }
+        }
+    }
+}
+
+.privacypolicy{
+    @extend .container;
+    @include  media-breakpoint-up(xl){
+    padding: 0;
+    }
+   padding:0 15px;
+}

@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "bootstrap/scss/bootstrap";
 @import "variables";
 @import "base";
@@ -8,6 +7,19 @@
 @import "utilities"; 
 @import "aos"; 
 /* Import custom Sass files below */
-@import "fonts";
+@import "fonts"; 
 @import "instagram";
-@import "home"; 
+@import "home";
+@import "dining"; 
+@import "header"; 
+@import "about";
+@import "location";
+@import "standards";
+@import "specials"; 
+@import "rooms";
+@import "gallery";
+@import "faq-reviews";
+@import "contact";
+@import  "datepicker";
+@import  "date-picker";
+@import  "booking-widget";

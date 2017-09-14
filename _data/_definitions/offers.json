@@ -1,0 +1,35 @@
+{
+  "title": {
+    "required": true,
+    "placeholder": "Room Service Package"
+  },
+  "order": {
+    "type": "integer",
+    "instructions": "Used to order the offers on the main /offers page. If not used offers will be listed in the order they were added."
+  },
+  "url_friendly_name": {
+    "required": true,
+    "type": "url_slug",
+    "instructions": "Add only the last part of the url. For https://www.frederickhotelnyc.com/offers/room-service-package/ you would only add room-service-package"
+  },
+  "banner_image": {
+    "required": true,
+    "type": "image",
+    "instructions": "This is the banner or 'hero' image at the top of the page."
+  },
+  "excerpt_image": {
+    "type": "image",
+    "instructions": "This image will go on the /offers page excerpt. If this is blank the banner image will be used."
+  },
+  "description": {
+    "required": true,
+    "type": "richtext"
+  },
+  "details_image": {
+    "type": "image",
+    "instructions": "This image will below the the description, above the terms list."
+  },
+  "terms_list": {
+    "type": "richtext"
+  }
+}

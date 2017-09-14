@@ -1,0 +1,123 @@
+
+.navbar{
+	background-color: $midnight-charcoal;
+	color: $white;
+	height: 60px;
+    padding: 0;
+    position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	@include media-breakpoint-up(lg) {
+		position: relative;
+		height: 115px;
+	}
+    &.shrink-nav{
+    	position: fixed;
+    	z-index: 10;
+    	width: 100%;
+    	opacity: 0;
+    	animation: smoothScroll 1s forwards;
+    	@include transition($global-transition);
+    }
+	 ul.navbar-nav{
+		background-color: $midnight-charcoal;
+		.nav-item{
+			.nav-link{
+				color: $white;
+				text-transform: uppercase;
+				font-size: $font-16;
+				text-align: center;
+				padding:1rem 2rem; 
+				border-bottom:  0.3125rem solid transparent;
+                @include transition($global-transition);
+                @include media-breakpoint-up(lg) {
+                  padding: 3.1rem 1rem 2.8rem 1rem; 
+                }
+                @include media-breakpoint-up(xl) {
+                  padding: 3.1rem 2.3rem 2.8rem 2.3rem; 
+                }
+				&:hover{
+					border-bottom:  0.3125rem solid $white;
+					background-color: $slate-grey;
+				}
+			}
+		 &.active{
+		 	 a{
+		 	 	border-bottom:  0.3125rem solid $white; 
+		 	 }
+		 }
+		}
+	}
+	.btn-square{
+	  position: absolute;
+      max-width: 80px;
+      height: 60px; 
+      top: 0;
+      padding:1.2rem;
+      right: 0;
+      @include media-breakpoint-up(lg) {
+           max-width: 142px;
+           height: 115px;
+           margin-left: 20px;
+           position: relative;
+           padding: 3rem;
+      }
+	}
+	.group-logo{
+		padding: 1rem 2rem;
+		width: 64px;
+		@include media-breakpoint-up(lg) {
+         padding: 2rem;
+         width: 140px;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+	.navbar-toggler{
+		    right: 90px;
+            margin-top: 1rem;
+            border: 0;
+            &:hover, &:focus{
+            	outline: 0;
+            	opacity: 1;
+            }
+	}
+}
+.brand-centered { 
+  position: absolute;
+  width: 120px;   
+  vertical-align: middle;
+  left:50px;
+  height: 113px; 
+  top: 0;
+  @include media-breakpoint-up(lg) {
+    width: 200px; 
+    left:42%; 
+    left:calc(50% - 100px); 
+  }
+  .navbar-brand {
+  	vertical-align: middle;
+  	height: 100%;
+  	position: relative;
+	   img{
+	   	  max-width: 100%;
+	   	  padding-top: 0.5rem;
+	   	  @include media-breakpoint-up(lg) {
+            padding-top: 1.3rem;
+	   	  }
+	   } 
+	}
+}
+ 
+ @keyframes smoothScroll {
+	0% {
+		transform: translateY(-200px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

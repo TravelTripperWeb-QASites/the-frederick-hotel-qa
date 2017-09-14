@@ -1,0 +1,82 @@
+---
+layout: default
+title: "Offer-details"
+description: "Come join us at one of our events."
+---
+
+{% assign offers = page %}
+{% assign model = page %}
+
+<section>
+  <div class="inner-banner " style="background-image: url('{{ offers.banner_image.url }}')"></div>
+</section>
+
+<!-- <section class="offers-nav">
+  <div class=" container-fluid p-0">
+    <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#" title="Previous offer">Previous offer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="Next Offer">Next Offer</a>
+      </li>
+    </ul>
+  </div>
+</section> -->
+
+<section class="heading-section">
+  <div class="heading-inner">
+    <div class="heading">
+      <h1>{{ offers.title }}</h1>
+      <!-- <h5>Share
+        <a href="" title="Google+"><i class="social_googleplus" aria-hidden="true"></i></a>
+        <a href="" title="FaceBook"><i class="social_facebook" aria-hidden="true"></i></a>
+        <a href="" title="Twitter"><i class="social_twitter" aria-hidden="true"></i></a>
+        <a href="" title="pinterest"><i class="social_pinterest" aria-hidden="true"></i></a>
+      </h5> -->
+      <div class="btn-holder">
+        <a href="/contact/" title="Contact" class="btn btn-2-cta">CONTACT US</a>
+      </div>
+      <div class="btn-holder">
+        <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book now" class="btn btn-blue">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="special-info">
+      <p>{{ offers.description }}</p>
+    </div>
+
+    {% if offers.details_image %}
+      <div class="special-img">
+        <img src="{{ offers.details_image }}" alt="{{ offers.details_image.alt }}" class="img-fluid">
+      </div>
+    {% endif %}
+
+    <!-- <div class="special-info-heading"> -->
+      <!-- <h2>{{ offers.title }}</h2> -->
+      <!-- <div class="btn-holder">
+        <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book now" class="btn btn-blue">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      </div> -->
+    <!-- </div> -->
+
+    <!-- {% if offers.terms_list %}
+      <div class="special-info-list">
+        {{ offers.terms_list }}
+      </div>
+    {% endif %} -->
+
+  </div>
+</section>
+
+<section class="book-now-sec" style="background-image:url(/assets/images/specials/specials-booknow.jpg);">
+  <div class="inner-content">
+    <h5>THE FREDERICK<br>HOTEL</h5>
+    <div class="fr-logo"><a href="/" title="Hotel Edison"><img src="/assets/images/about/white-logo.png" alt="THE FREDERICK Hotel" /></a></div>
+    <h6>A TRIBECA BOUTIQUE HOTEL<br>IN NEW YORK CITY</h6>
+    <div class="btn-holder">
+      <a href="/rooms/" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+{% include exclusive-offers.html %}
+{% include instagram.html %}
