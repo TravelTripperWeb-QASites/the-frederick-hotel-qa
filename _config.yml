@@ -2,7 +2,7 @@
 title                    : "The Frederick Hotel"
 title_separator          : "-"
 name                     : "The Frederick Hotel"
-description              : "The Frederick Hotel"
+description              : "Welcome to The Frederick Hotel in Tribeca, a Tribeca hotel offering boutique accommodations and timeless style in the vibrant heart of lower Manhattan."
 url                      : "https://www.frederickhotelnyc.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "TravelTripperWeb/frederick-hotel"

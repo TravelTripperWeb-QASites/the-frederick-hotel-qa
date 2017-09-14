@@ -1,22 +1,60 @@
 {
-  "_definitions": [
+  "events": [
+
+  ],
+  "gallery": [
+
+  ],
+  "homepage_slider": [
+
+  ],
+  "offers": [
     {
-      "name": {
-        "required": true
-      },
-      "title": {
-        "required": true
-      },
-      "file": "events.json"
+      "name": "Perfectly Planned NYC Stay",
+      "title": "Perfectly Planned NYC Stay",
+      "file": "offers1.json"
     },
     {
-      "name": {
-        "required": true
-      },
-      "title": {
-        "required": true
-      },
-      "file": "gallery.json"
+      "name": "City Hall Wedding Package",
+      "title": "City Hall Wedding Package",
+      "file": "offers2.json"
+    },
+    {
+      "name": "Advanced Purchase Rate",
+      "title": "Advanced Purchase Rate",
+      "file": "offers3.json"
+    },
+    {
+      "name": "One World Observatory",
+      "title": "One World Observatory",
+      "file": "offers4.json"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "Superior Single",
+      "title": "Superior Single",
+      "file": "rooms1.json"
+    },
+    {
+      "name": "Deluxe Queen",
+      "title": "Deluxe Queen",
+      "file": "rooms2.json"
+    },
+    {
+      "name": "Deluxe King",
+      "title": "Deluxe King",
+      "file": "rooms3.json"
+    },
+    {
+      "name": "Deluxe Double Double",
+      "title": "Deluxe Double Double",
+      "file": "rooms4.json"
+    },
+    {
+      "name": "Junior Suite",
+      "title": "Junior Suite",
+      "file": "rooms5.json"
     }
   ]
 }
