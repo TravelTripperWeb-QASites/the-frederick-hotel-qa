@@ -1,18 +1,18 @@
 <div class="ttweb-booking-widget">
-      <form action="https://gc.synxis.com/rez.aspx?" method="get" target="_blank">
+      <form action="https://gc.synxis.com/rez.aspx?" method="get" target="_blank" title="Booking Widget">
         <input type="hidden" name="hotel" value="16065" />
         <input type="hidden" name="chain" value="16087" />
         <input type="hidden" name="shell" value="GCF3" />
         <input type="hidden" name="start" value="availresults">
         <div class="ttweb-booking-widget__header">
-          <div class="ttweb-booking-widget__header__close">
+          <div class="ttweb-booking-widget__header__close" title="close">
             <span class="elegant-icon">M</span>
           </div>
           <div class="ttweb-booking-widget__header__title">Your Booking</div>
         </div>
         <div class="ttweb-booking-widget__body">
           <div class="ttweb-booking-widget__body__flex-dates">
-            <a href="https://gc.synxis.com/rez.aspx?shell=GCF3&chain=16087&hotel=16065" class="ttweb-booking-widget__body__flex-dates__link">
+            <a href="https://gc.synxis.com/rez.aspx?shell=GCF3&chain=16087&hotel=16065" class="ttweb-booking-widget__body__flex-dates__link" title="Flexible Dates">
               <span class="ttweb-booking-widget__body__flex-dates__link__label">Flexible Dates</span>
               <span class="elegant-icon"></span>
             </a>
@@ -37,8 +37,8 @@
               </div>
             </div>
             <div class="ttweb-booking-widget__body__date-selection__calendar">
-                <input type="text" id="arrival_dates" name="arrive"   style="display:none;">
-                <input type="text" id="departure_dates" name="depart"  style="display:none;">
+                <input type="text" id="arrival_dates" name="arrive" aria-label="arrive"   style="display:none;">
+                <input type="text" id="departure_dates" name="depart" aria-label="depart"  style="display:none;">
                 <div class="date-widget"></div>
             </div>
           </div>
@@ -46,7 +46,7 @@
           <!-- Rooms, Adults, Children -->
           <div class="ttweb-booking-widget__body__people">
             <div class="ttweb-booking-widget__body__people__selector ttweb-booking-widget__body__people__selector--adults">
-              <select name="adult">
+              <select name="adult" aria-label="Adult">
                 <option value="1">1 Adult</option>
                 <option value="2" selected="">2 Adults</option>
                 <option value="3">3 Adults</option>
@@ -54,7 +54,7 @@
               </select>
             </div>
             <div class="ttweb-booking-widget__body__people__selector" ttweb-booking-widget__body__people__selector--children="">
-              <select name="child">
+              <select name="child" aria-label="Child">
                 <option value="0">0 Children</option>
                 <option value="1">1 Children</option>
                 <option value="2">2 Children</option>
@@ -80,38 +80,38 @@
                 
                   <li class="ttweb-booking-widget__body__specials__rates__list__item">
                     <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
-                      <input type="radio" name="rate_code" value="group">
+                      <input type="radio" name="rate_code" value="group" aria-label="group" >
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Group Code</span>
                     </label>
-                    <input type="text" id="group" class="special_rate_input" name="group" placeholder="Enter Your Group Code" disabled>
+                    <input type="text" id="group" class="special_rate_input" aria-label="special_rate_input-group" name="group" placeholder="Enter Your Group Code" disabled>
                   </li>
                 
                   <li class="ttweb-booking-widget__body__specials__rates__list__item">
                     <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
-                      <input type="radio" name="rate_code" value="promo">
+                      <input type="radio" name="rate_code" value="promo" aria-label="promo">
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Promo Code</span>
                     </label>
-                    <input type="text" id="promo" class="special_rate_input" name="group" placeholder="Enter Your Promo Code" disabled>
+                    <input type="text" id="promo" class="special_rate_input" aria-label="special_rate_input-promo" name="group" placeholder="Enter Your Promo Code" disabled>
                   </li>
                 
                   <li class="ttweb-booking-widget__body__specials__rates__list__item">
                     <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
-                      <input type="radio" name="rate_code" value="corporate">
+                      <input type="radio" name="rate_code" value="corporate" aira-label="corporate">
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span> 
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Corporate Code</span>
                     </label>
-                    <input type="text" id="corporate" class="special_rate_input" name="corporate" placeholder="Enter Your Corporate Code" disabled>
+                    <input type="text" id="corporate" class="special_rate_input" aria-label="specaial-rate-input" name="corporate" placeholder="Enter Your Corporate Code" disabled>
                   </li>
                 
                   <li class="ttweb-booking-widget__body__specials__rates__list__item">
                     <label class="ttweb-booking-widget__body__specials__rates__list__item__radio">
-                      <input type="radio" name="rate_code" value="iata">
+                      <input type="radio" name="rate_code" value="iata" aira-label="Iata">
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__icon"></span>
                       <span class="ttweb-booking-widget__body__specials__rates__list__item__radio__title">Travel Agent Id</span>
                     </label>
-                    <input type="text" id="iata" class="special_rate_input" name="iata" placeholder="Enter Your Travel Agent Id" disabled>
+                    <input type="text" id="iata" class="special_rate_input" aria-label="special-rates" name="iata" placeholder="Enter Your Travel Agent Id" disabled>
                   </li>
                 
                   
