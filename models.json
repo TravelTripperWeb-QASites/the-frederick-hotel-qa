@@ -3,7 +3,156 @@
 
   ],
   "gallery": [
-
+    {
+      "name": "Junoir Suite",
+      "title": "Junoir Suite",
+      "file": "gallery1.json"
+    },
+    {
+      "name": "Rooms",
+      "title": "Rooms",
+      "file": "gallery10.json"
+    },
+    {
+      "name": "Drinks",
+      "title": "Drinks",
+      "file": "gallery11.json"
+    },
+    {
+      "name": "Rooms",
+      "title": "Rooms",
+      "file": "gallery12.json"
+    },
+    {
+      "name": "Historical",
+      "title": "Historical",
+      "file": "gallery13.json"
+    },
+    {
+      "name": "Building Map",
+      "title": "Building Map",
+      "file": "gallery14.json"
+    },
+    {
+      "name": "History",
+      "title": "History",
+      "file": "gallery15.json"
+    },
+    {
+      "name": "Hotel",
+      "title": "Hotel",
+      "file": "gallery16.json"
+    },
+    {
+      "name": "Restaurant",
+      "title": "Restaurant",
+      "file": "gallery17.json"
+    },
+    {
+      "name": "Gem",
+      "title": "Gem",
+      "file": "gallery18.json"
+    },
+    {
+      "name": "Old new york city",
+      "title": "Old new york city",
+      "file": "gallery19.json"
+    },
+    {
+      "name": "Deluxe Double Bed",
+      "title": "Deluxe Double Bed",
+      "file": "gallery2.json"
+    },
+    {
+      "name": "Walking tour",
+      "title": "Walking tour",
+      "file": "gallery20.json"
+    },
+    {
+      "name": "Amenities",
+      "title": "Amenities",
+      "file": "gallery21.json"
+    },
+    {
+      "name": "Attraction",
+      "title": "Attraction",
+      "file": "gallery22.json"
+    },
+    {
+      "name": "Attraction",
+      "title": "Attraction",
+      "file": "gallery23.json"
+    },
+    {
+      "name": "Hotel",
+      "title": "Hotel",
+      "file": "gallery24.json"
+    },
+    {
+      "name": "Attraction",
+      "title": "Attraction",
+      "file": "gallery25.json"
+    },
+    {
+      "name": "Restaurant",
+      "title": "Restaurant",
+      "file": "gallery26.json"
+    },
+    {
+      "name": "K9",
+      "title": "K9",
+      "file": "gallery27.json"
+    },
+    {
+      "name": "Chairs",
+      "title": "Chairs",
+      "file": "gallery28.json"
+    },
+    {
+      "name": "Suite",
+      "title": "Suite",
+      "file": "gallery29.json"
+    },
+    {
+      "name": "Hotel",
+      "title": "Hotel",
+      "file": "gallery3.json"
+    },
+    {
+      "name": "Pizza",
+      "title": "Pizza",
+      "file": "gallery30.json"
+    },
+    {
+      "name": "Attraction",
+      "title": "Attraction",
+      "file": "gallery4.json"
+    },
+    {
+      "name": "Interior",
+      "title": "Interior",
+      "file": "gallery5.json"
+    },
+    {
+      "name": "Amenites",
+      "title": "Amenites",
+      "file": "gallery6.json"
+    },
+    {
+      "name": "Hotel",
+      "title": "Hotel",
+      "file": "gallery7.json"
+    },
+    {
+      "name": "Coffee shop",
+      "title": "Coffee shop",
+      "file": "gallery8.json"
+    },
+    {
+      "name": "Rooms",
+      "title": "Rooms",
+      "file": "gallery9.json"
+    }
   ],
   "homepage_slider": [
 

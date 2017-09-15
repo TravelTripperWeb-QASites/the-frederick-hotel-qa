@@ -34,7 +34,8 @@ permalink: /gallery/
       <ul>
           {% for gallery in galleries %} 
                 <li class="fancybox" data-filter="{{ gallery.category }}">
-                  <div class="item" data-src="{{ gallery.gallery_image.url_large }}"> <img src="{{ gallery.gallery_image.url_small}}" alt="{{gallery.gallery_image.alt}}" class="img-fluid"/> </div>
+                  <div class="item" data-src="{{ gallery.image.url_large }}"> 
+                    <div class="thumb-img" style="background:url({{ gallery.image.url_medium}}); " alt="{{gallery.alt_tag}}" class="img-fluid"></div> </div>
                 </li>
                 {% endfor %}  
                 <!-- <li class="fancybox" data-filter="Rooms">
