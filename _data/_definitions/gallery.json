@@ -8,7 +8,7 @@
   },
   "category": {
     "type": "select",
-    "options":["rooms","amenities","interior","exterior","attractions"],
+    "options":["Hotel","Rooms","Historical","Amenities","Attractions"],
     "label": "Image Category",
     "required": true
   },
