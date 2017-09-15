@@ -13,7 +13,7 @@ permalink: /gallery/
     <h5>Photos of The Frederick</h5>
     <h1>One Gem of a Place</h1>
   </div>
-  <!-- <nav>
+   <nav>
     <ul>
       <li><a href="javascript:;" class="filter active" title="All"  data-filter="all" data-rel="all" >All</a></li>
       <li><a href="javascript:;"  class="filter" title="Hotel" data-rel="Hotel">Hotel</a></li>
@@ -22,20 +22,22 @@ permalink: /gallery/
       <li><a href="javascript:;"  class="filter" title="Amenities" data-rel="Amenities"> Amenities</a></li>
       <li><a href="javascript:;"  class="filter" title="Attractions" data-rel="Attractions">Attractions</a></li>
     </ul>
-    </nav> -->
+    </nav>
 </div>
 </section>
 <!-- gallery wrap -->
 <div class="gallery-wrapper">
   <div class="gallery-listing">
+      {% assign galleries = site.data._models.gallery %}
     <div class="gallery-wrap" id="lightgallery">
       <div class="row no-gutters">
       <ul>
-                <li class="fancybox" data-filter="Hotel">
-                  <div class="item" data-src="/assets/images/gallery/gallery-big-1.jpg"> <img src="/assets/images/gallery/gallery-1.jpg" alt="Hotel" class="img-fluid"/> </div>
+          {% for gallery in galleries %} 
+                <li class="fancybox" data-filter="{{ gallery.category }}">
+                  <div class="item" data-src="{{ gallery.gallery_image.url_large }}"> <img src="{{ gallery.gallery_image.url_small}}" alt="{{gallery.gallery_image.alt}}" class="img-fluid"/> </div>
                 </li>
-
-                <li class="fancybox" data-filter="Rooms">
+                {% endfor %}  
+                <!-- <li class="fancybox" data-filter="Rooms">
                   <div class="item" data-src="/assets/images/gallery/gallery-big-2.jpg"> <img src="/assets/images/gallery/gallery-2.jpg" alt="Rooms" class="img-fluid"/> </div>
                 </li>
 
@@ -64,10 +66,11 @@ permalink: /gallery/
 
                 <li class="fancybox" data-filter="Rooms">
                   <div class="item" data-src="/assets/images/gallery/gallery-big-9.jpg"> <img src="/assets/images/gallery/gallery-9.jpg" alt="Rooms" class="img-fluid"/> </div>
-                </li>  
+                </li>   -->
       </ul>
       </div>
     </div>
+       
   </div>
 </div>
 </section>

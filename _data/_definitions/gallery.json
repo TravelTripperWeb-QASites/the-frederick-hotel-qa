@@ -6,9 +6,17 @@
     "type": "image",
     "required": true
   },
+  "category": {
+    "type": "select",
+    "options":["rooms","amenities","interior","exterior","attractions"],
+    "label": "Image Category",
+    "required": true
+  },
   "alt_tag": {
     "type": "text",
     "label": "Image Alt Tag",
     "required": true
   }
+  
+
 }
