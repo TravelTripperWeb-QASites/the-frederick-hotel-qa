@@ -3,6 +3,12 @@
     "required": true,
     "placeholder": "Room Service Package"
   },
+  "seo_title":{
+    "required": true,
+  },
+  "excerpt":{
+    "required": true,
+  },
   "order": {
     "type": "integer",
     "instructions": "Used to order the offers on the main /offers page. If not used offers will be listed in the order they were added."
