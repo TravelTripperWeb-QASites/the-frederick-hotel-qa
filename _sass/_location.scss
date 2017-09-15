@@ -304,7 +304,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   .map-nav{
       @extend .row ;
     border: 1px solid  $midnight-charcoal;
-    max-width:740px;
+    max-width:910px;
     margin:4rem auto;
     position: absolute;
     left: 0;
@@ -315,7 +315,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
      text-align: center;
      text-transform: uppercase; 
      position: relative;
-     margin: 9px 1px;
+     margin: 9px 0px;
     .map-link{
           cursor: pointer;
           border-radius: 0;
