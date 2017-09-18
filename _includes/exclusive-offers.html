@@ -3,8 +3,14 @@
 <section class="specials-top">
   <div class="specials-container">
     <div class="specials-container-inner">
-      <h1>Exclusive Offers</h1>
-      <p>Explore our special offers and save on accommodations when you book direct. </p>
+
+			{% regionblock excluse-offers-heading  type:header %}
+			<h1>Exclusive Offers</h1>
+			{% endregionblock %}
+			
+			{% regionblock excluse-offers-content  type:header %}
+			<p>Explore our special offers and save on accommodations when you book direct. </p>
+			{% endregionblock %}
     </div>
   </div>
 </section>
