@@ -13,8 +13,12 @@ permalink: /contact/
 <section class="heading-section">
   <div class="heading-inner">
     <div class="heading">
+      {% regionblock contact-heading-1 type:header %}
       <h6>Contact us</h6>
+      {% endregionblock %}
+      {% regionblock contact-heading-2 type:header %}
       <h1>Have a question?</h1>
+      {% endregionblock %}
   </div>
   </div>
 </section>
@@ -22,12 +26,14 @@ permalink: /contact/
         <div class="contact-wrapper">
 
                 <div class="address">
+                        {% regionblock cc-heading-1 type:header %}
                         <h2>THE FREDERICK HOTEL</h2>
-
+                        {% endregionblock %}
+                        {% regionblock cc-address type:header %}
                         <p>95 West Broadway,<br> New York, NY 10007</p>
                         <p><strong>GENERAL INQUIRIES</strong> <a href="mailto:info@triumphny.com" title="GENERAL INQUIRIES">info@triumphny.com</a>
                         <p> <strong>PRESS INQUIRIES </strong> <a href="mailto:press@triumphny.com"  title="PRESS INQUIRIES">press@triumphny.com</a></p>
-                       
+                        {% endregionblock %}
                 </div>
                 <div class="contact-form">
                        

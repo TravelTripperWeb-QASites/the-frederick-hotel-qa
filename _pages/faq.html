@@ -13,10 +13,18 @@ permalink: /faq/
 <section class="heading-section">
   <div class="heading-inner">
     <div class="heading">
+      {% regionblock faq-heading-1  type:header %}
       <h6>FAQ</h6>
+      {% endregionblock %}
+
+      {% regionblock faq-heading-2  type:header %}
       <h1>FREQUENTLY<br>ASKED QUESTIONS</h1>
+      {% endregionblock %}
+
       <div class="btn-holder">
+        {% regionblock faq-contact-link type:text %}
         <a href="/contact/" title="Contact us" class="btn btn-2-cta">CONTACT US</a>
+        {% endregionblock %}
       </div>
   </div>
   </div>
@@ -27,82 +35,103 @@ permalink: /faq/
                       
                         <div class="faq-content">
                                 <div class="quations">
-                                    
+                                    {% regionblock faq-contact-q-1 type:text %}
                                     <p>WHAT IS THE ESTIMATED TRAVEL TIME FROM AREA AIRPORTS TO THE FREDERICK?</p>
+                                    {% endregionblock %}
                                 </div>
                                 <div class="answer ">  
+                                    {% regionblock faq-contact-a-1 type:text %}
                                   <p>By car, estimated travel times are as follows:</p>
                                   <ul>
                                     <li>John F. Kennedy International Airport: 50 min.</li>
                                     <li>LaGuardia Airport: 30 min.</li>
                                     <li>Newark Liberty International Airport: 50 min.</li>
                                   </ul>
+                                  {% endregionblock %}
                                 </div>
                                
                             </div>
                             <hr>
                             <div class="faq-content">
                                     <div class="quations">
-                                        
+                                        {% regionblock faq-contact-q-2 type:text %}
                                         <p>IS THE HOTEL NEAR PUBLIC TRANSPORTATION?</p>
+                                        {% endregionblock %}
                                     </div>
                                     <div class="answer ">  
+                                        {% regionblock faq-contact-q-2 type:text %}
                                       <p>Yes, The Frederick is located near a number of MTA subway stations. Trains within walking distance include: 1/2/3 trains (Chambers St. Station), A/C trains (Chambers St. Station), and the R train (City Hall Station).</p>
+                                      {% endregionblock %}
                                     </div>
                                    
                                 </div>
                                 <hr>
                                 <div class="faq-content">
                                         <div class="quations">
-                                            
+                                            {% regionblock faq-contact-q-3 type:text %}
                                             <p>DOES THE FREDERICK OFFER FREE WI-FI?</p>
+                                            {% endregionblock %}
                                         </div>
                                         <div class="answer ">  
+                                            {% regionblock faq-contact-a-3 type:text %}
                                           <p>Yes, we are pleased to offer complimentary high-speed wireless internet access for your convenience.</p>
+                                          {% endregionblock %}
                                         </div>
                                        
                                     </div>
                                     <hr>
                                     <div class="faq-content">
                                             <div class="quations">
-                                                
+                                                {% regionblock faq-contact-q-4 type:text %}
                                                 <p >DOES THE FREDERICK OFFER PARKING SERVICE?</p>
-                                            </div>
+                                                {% endregionblock %}
+                                              </div>
                                             <div class="answer ">  
+                                                {% regionblock faq-contact-a-4 type:text %}
                                               <p>Yes, our Tribeca hotel is pleased to offer valet parking service for our guests.</p>
+                                              {% endregionblock %}
                                             </div>
                                            
                                         </div>
                                         <hr>
                                         <div class="faq-content">
                                                 <div class="quations">
-                                                    
+                                                    {% regionblock faq-contact-q-5 type:text %}
                                                     <p>HOW CLOSE IS THE FREDERICK TO MIDTOWN MANHATTAN?</p>
-                                                </div>
-                                                <div class="answer ">  
+                                                    {% endregionblock %}
+                                                  </div>
+                                                <div class="answer "> 
+                                                    {% regionblock faq-contact-a-5 type:text %} 
                                                   <p>Times Square is only a 10 minute ride away via the 2/3 express train, which stops at the Chambers St. Station on our block.</p>
+                                                  {% endregionblock %}
                                                 </div>
                                                
                                             </div>
                                             <hr>
                                             <div class="faq-content">
                                                     <div class="quations">
-                                                        
+                                                        {% regionblock faq-contact-q-6 type:text %}
                                                         <p >CAN WE BOOK THEATER AND EVENT TICKETS THROUGH THE HOTEL?</p>
-                                                    </div>
-                                                    <div class="answer ">  
+                                                        {% endregionblock %}
+                                                      </div>
+                                                    <div class="answer "> 
+                                                        {% regionblock faq-contact-a-6 type:text %} 
                                                       <p>Yes. Please email our hotel at <a href="mailto:info@triumphny.com" title="Contact to sales">info@triumphny.com</a></p>
+                                                      {% endregionblock %}
                                                     </div>
                                                    
                                                 </div>
                                                 <hr>
                                                 <div class="faq-content">
                                                   <div class="quations">
-                                                      
+                                                      {% regionblock faq-contact-q-7 type:text %}
                                                       <p >CAN WE STORE BELONGINGS AT THE HOTEL?</p>
-                                                  </div>
-                                                  <div class="answer ">  
+                                                      {% endregionblock %}
+                                                    </div>
+                                                  <div class="answer "> 
+                                                      {% regionblock faq-contact-a-7 type:text %} 
                                                     <p>Due to limited storage capacity, please contact us ahead of your stay in regard to storing luggage, boxes, bicycles and other equipment - thank you. </p>
+                                                    {% endregionblock %}
                                                   </div>
                                                  
                                               </div>
