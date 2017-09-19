@@ -1,10 +1,11 @@
 ---
 title_localized:
-  en: Dining
+  en: Italian Restaurants in NYC | Serafina Tribeca Restaurant
 label_localized:
   en: 
 layout_localized:
   en: default
+excerpt: Serafina Tribeca, located at The Frederick Hotel, opened in July 2017 serving guests with authentic Italian fare set within an upbeat and energetic atmosphere.
 permalink_localized:
   en: /dining/
 parent: dining
@@ -14,8 +15,14 @@ parent: dining
 
 <section class="page-intro-headline">
     <div class="container-fluid">
+      {% regionblock dining-heading-1  type:header %}
       <h3>Legendary Pizza</h3>
+      {% endregionblock %}
+
+      {% regionblock dining-heading-2  type:header %}
       <h1>SERAFINA<br>TRIBECA</h1>
+      {% endregionblock %}
+
     </div>
 </section>
 
@@ -24,13 +31,20 @@ parent: dining
       <div class="row">
       <div class="col-md-6 p-0">
         <div class="left-content">
+          {% regionblock serafina-content  type:text %}
           <p>Serafina Tribeca, located on the ground floor of The Frederick Hotel, opened in July 2017 and upholds its tradition of providing guests with authentic Italian fare set within an upbeat and energetic atmosphere. Serafina Tribeca serves brunch, lunch, dinner, and takeout daily. This fall, the restaurant will be open for breakfast and will provide room service to guests of The Frederick.</p>
+          {% endregionblock %}
+
+          {% regionblock serafina-menu  type:text %}
           <a href="http://www.serafinarestaurant.com/serafina-restaurants-italian-menu/" target="_blank" class="btn btn-3-cta" title="View Menu">View Menu</a>
+          {% endregionblock %}
         </div>
       </div>
       <div class="col-md-6 p-0">
           <div class="logo-wrap">
+              {% regionblock serafina-brand  type:image %}
               <a href="" target="_blank"><img src="/assets/images/dining/serafina-logo.png" alt="Serafina TriBeCa" class="img-fluid"></a>
+              {% endregionblock %}
           </div>
       </div>
     </div>
@@ -38,18 +52,30 @@ parent: dining
       <div class="col-md-6 p-0">
         <div class="second-row-left">
           <div class="left-image">
+              {% regionblock bruscetta-pic  type:imgae %}
               <img src="/assets/images/dining/serafina-dish.jpg" class="img-fluid" alt="Bruscetta at Serafina Tribeca">
-              <span>Bruscetta at Serafina Tribeca</span>
+              {% endregionblock %}
+              <span>
+                  {% regionblock bruscetta-text  type:text %} 
+                  Bruscetta at Serafina Tribeca
+                  {% endregionblock %}
+                </span>
             </div>
-            <div class="btn-holder"><a href="https://www.opentable.com/r/serafina-tribeca-new-york" target="_blank" class="btn btn-blue" title="Make A Reservation">Make A Reservation <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+            <div class="btn-holder">
+              {% regionblock opentable-link  type:text %} 
+              <a href="https://www.opentable.com/r/serafina-tribeca-new-york" target="_blank" class="btn btn-blue" title="Make A Reservation">Make A Reservation <i class="fa fa-angle-right" aria-hidden="true"></i></a>{% endregionblock %}</div>
         </div>
       </div>
       <div class="col-md-6 p-0">
           <div class="right-content">
+              {% regionblock serafina-info  type:text %} 
               <p>The Serafina Tribeca menu includes a selection of various homemade pastas, salads, and main dishes including a Filet Mignon Burger, with gorgonzola cheese and caramelized onions; Filet of Bass Al Pinot Grigio, wrapped in thin-sliced potatoes on a bed of zucchini and leeks; Serafina’s legendary Tartufo Nero Pizza with hand-selected Italian gourmet black truffles.</p>
               <p>The restaurant also features custom paintings from artist Pato Paez. Brightly colored art from Paez can be found throughout the space as well as a message of love displayed on the main dining room wall.</p>
+              {% endregionblock %}
               <div class="two-colo-img">
+                  {% regionblock serafina-drink  type:image %} 
                 <img src="/assets/images/dining/serafina-drink.png"  class="img-fluid"  alt="Serafina TriBeCa Pizza">
+                {% endregionblock %}
               </div>
             </div>
             
@@ -63,20 +89,30 @@ parent: dining
       <div class="row">
         <div class="col-md-3">
           <div class="content">
+          {% regionblock dining-heading-3  type:header %}
           <h2>Starbucks & Pret <br/>A Manger</h2>
+          {% endregionblock %}
+
+          {% regionblock dining-heading-4  type:header %}
           <h6>on-site at The Frederick</h6>
+          {% endregionblock %}
+
         </div>
         </div>
         <div class="col-md-9">
           <div class="row">
             <div class="col-md-6">
             <div class="image-content">
+                {% regionblock starbucks-pic-1  type:image %}
                 <img src="/assets/images/dining/other-restaurants-2.jpg" alt="Starbucks Restaurants">
+                {% endregionblock %}
               </div>
             </div>
             <div class="col-md-6">
                 <div class="image-content">
+                    {% regionblock starbucks-pic-2  type:image %} 
                     <img src="/assets/images/dining/other-restaurants-1.jpg" alt="Starbucks Restaurants">
+                    {% endregionblock %}
                 </div>
             </div>
           </div>

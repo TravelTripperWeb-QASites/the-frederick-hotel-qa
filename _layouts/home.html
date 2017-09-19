@@ -41,15 +41,24 @@ layout: default
      <div class="row no-gutters">
         <div class="col-md-7">
            <figure>
+              {% regionblock welcome-heading type:image %}  
              <img src="/assets/images/home/edison.jpg" alt="Frederick interior" class="img-fluid">
+             {% endregionblock %}
            </figure>
         </div>
         <div class="col-md-5">
             <div class="detail">
-                <h2>Welcome to<br/>
-the Frederick hotel</h2>
-<p>The newest lifestyle offering from Triumph Hotels, The Frederick is the spot for in-the-know travelers and creatives looking for a good time and a comfortable stay. With a one-of-a-kind-bar, international cuisine, and stylish accommodations, The Frederick is how you do New York. </p>
-           <p><a class="btn btn-2-cta" href="/contact/" title="Contact us">Contact Us</a></p>
+                {% regionblock welcome-heading type:header %}  
+                <h2>Welcome to<br/> the Frederick hotel</h2>
+                {% endregionblock %}
+
+                {% regionblock welcome-content type:text %}
+                <p>The newest lifestyle offering from Triumph Hotels, The Frederick is the spot for in-the-know travelers and creatives looking for a good time and a comfortable stay. With a one-of-a-kind-bar, international cuisine, and stylish accommodations, The Frederick is how you do New York. </p>
+                {% endregionblock %}
+
+                {% regionblock welcome-link type:text %}
+                <p> <a class="btn btn-2-cta" href="/contact/" title="Contact us">Contact Us</a></p>
+                {% endregionblock %}
             </div>
         </div>
      </div>
@@ -58,15 +67,29 @@ the Frederick hotel</h2>
      <div class="wrapper">
             <div class="col-md-7 p-xl-0">
                <figure class="left-image">
+                 <span>
+                  {% regionblock welcome-pic-2  type:image %}
                   <img src="/assets/images/home/i-fell-in-love.jpg" class="img-fluid pr-md-2 pb-3 float-md-left" alt="I fell in love here">
-                  <span class="caption-90"><i>A young spirit with a storied past.</i></span>
+                  {% endregionblock %}
+                 </span>
+                  <span class="caption-90">
+                    {% regionblock caption-1  type:text  %}
+                    <i>A young spirit with a storied past.</i>
+                    {% endregionblock %} 
+                  </span>
                </figure> 
             </div>
             <div class="col-md-5 p-xl-0"> 
                <figure>
+                  {% regionblock welcome-pic-3   type:image %}
                   <img src="/assets/images/home/west-view.jpg" class="img-fluid" alt="Live in the here  now.">
-               </figure>
-               <div class="caption-90"><i>Live in the here &amp; now.</i></div> 
+                  {% endregionblock %}
+                </figure>
+               <div class="caption-90">
+                {% regionblock caption-2  type:text  %}
+                <i>Live in the here &amp; now.</i>
+                {% endregionblock %} 
+              </div> 
             </div>
         </div>
     </div>
@@ -106,14 +129,22 @@ the Frederick hotel</h2>
         </a>
       </div>
       <div class="rooms-heading">
+        {% regionblock rooms-heading-1  type:header %}
         <h2>The Art of Traveling Well</h2>
+        {% endregionblock %}
+
+        {% regionblock rooms-heading-2 type:header %}
         <h5>Accommodations with Good Taste</h5>
+        {% endregionblock %}
         
+         {% regionblock rooms-link type:text %}
           <a href="/rooms/" class="btn btn-2-cta in-black-cta" title="Discover all rooms & Suites">View Rooms </a>
-       
+         {% endregionblock %}
       </div>
       <div class="rooms-content">
+        {% regionblock rooms-content type:text %}
         <p>An artful mix of old and new in a historic Tribeca building, The Frederick is a unique breed among lifestyle hotels with rooms that look as good as they feel in the heart of New York’s most happening neighborhood. Style and comfort do meet - but only at The Frederick.</p>
+        {% endregionblock %}
       </div>
     </div> 
   </div>
@@ -121,19 +152,36 @@ the Frederick hotel</h2>
 <section class="spring-fall">
   <div class="spring-inner">
     <div class="left-part">
-      <img class="d-block img-fluid" src="/assets/images/home/friends.jpg" alt="Friends">
+        {% regionblock walking-tour-pic-1 type:image %}
+        <img class="d-block img-fluid" src="/assets/images/home/friends.jpg" alt="Friends">
+        {% endregionblock %}
+
+      {% regionblock walking-heading-1 type:header %}  
       <h2>The Insider’s Tribeca</h2>
+      {% endregionblock %}
+
+      {% regionblock walking-heading-2 type:header %}
       <h5>Complimentary Walking Tours</h5>
+      {% endregionblock %}
+
+      {% regionblock walking-content type:text %}
       <p>Let The Frederick and Streetwise show you around the neighborhood. See our favorite hidden gems and get the best local tips during our complimentary walking tours.  After all, the city is better when you know someone. And now you do. </p>
+      {% endregionblock %}
     </div>
     <div class="middle-part">
-      <img class="d-block img-fluid" src="/assets/images/home/nyc.jpg" alt="nyc View">
+        {% regionblock walking-tour-pic-2 type:image %}
+        <img class="d-block img-fluid" src="/assets/images/home/nyc.jpg" alt="nyc View">
+        {% endregionblock %}
     </div>
     <div class="right-part">
-      <img class="ml-auto hidden-sm-down img-fluid" src="/assets/images/home/tour.jpg" alt="tour View">
+        {% regionblock walking-tour-pic-3 type:image %}
+        <img class="ml-auto hidden-sm-down img-fluid" src="/assets/images/home/tour.jpg" alt="tour View">
+        {% endregionblock %}
       <div class="clearfix"></div>
       <div class="btn-holder">
+       {% regionblock bookyour-tour-link type:text %}
         <a href="https://www.triumphhotels.com/walkingtours/" class="btn btn-2-cta" target="_blank" title="Book your tour">Book your tour now</a>
+        {% endregionblock %}
       </div>
     </div>
   </div>
@@ -142,22 +190,34 @@ the Frederick hotel</h2>
   <div class="dining-section-wrapper">
     <div class="dining-phot-description">
       <figure>
+        {% regionblock dining-pic type:image %}
         <img src="/assets/images/home/pizza-sampler.jpg" alt="Serafina’s Pizza"  class="img-fluid" /> 
+        {% endregionblock %}
       </figure>
-      <p>From handmade pastas to legendary black truffle pizza, Serafina’s authentic Neapolitan fare has made a name for itself not just in New York, but all over the world. And it’s in Tribeca at The Frederick Hotel.</p>
+        {% regionblock dining-content type:text %}
+        <p>From handmade pastas to legendary black truffle pizza, Serafina’s authentic Neapolitan fare has made a name for itself not just in New York, but all over the world. And it’s in Tribeca at The Frederick Hotel.</p>
+        {% endregionblock %}
     </div>
 
 
     <div class="gastronomic">
-      <h2>Authentic Italian</h2>
-      <h5>Serafina Tribeca</h5>
+      {% regionblock gastronomic-heading-1 type:header %}
+       <h2>Authentic Italian</h2>
+      {% endregionblock %}
+
+      {% regionblock gastronomic-heading-1 type:header %}
+       <h5>Serafina Tribeca</h5>
+      {% endregionblock %}
       <div class="btn-holder">
+        {% regionblock gastronomic-learnmore-link type:text %}
         <a href="/dining/" class="btn btn-2-cta in-black-cta" title="Learn More">Learn More</a>
+        {% endregionblock %}
       </div>
 
       <figure class="text-right">
-
-        <img src="/assets/images/home/9k.jpg" alt="9k"  class="img-fluid" />
+          {% regionblock gastronomic-pic type:image %}
+          <img src="/assets/images/home/9k.jpg" alt="9k"  class="img-fluid" />
+          {% endregionblock %}
            </figure>
       
       
@@ -165,21 +225,30 @@ the Frederick hotel</h2>
 </div>
 </section>
  {% include map-section.html %}
-
 <section class="location-section">
     <div class="heading-sec">
       <div class="heading">
+      {% regionblock loc-heading-1 type:header %}
       <h2>Tribeca - New York City</h2>
+      {% endregionblock %}
+
+      {% regionblock loc-heading-2 type:header %}
       <h5>It’s all happening here</h5>
+      {% endregionblock %}
     </div>
     <div class="photos">
      <div class="container">
         <div class="row">
           <div class="photo">
+              {% regionblock location-pic-1 type:image %}
             <img src="/assets/images/home/location-2.jpg" class="img-fluid" alt="NEW YORK CITY" />
+            {% endregionblock %}
+            
           </div>
           <div class="photo">
+              {% regionblock  location-pic-2 type:image %}
             <img src="/assets/images/home/location-3.jpg" class="img-fluid" alt="Location" />
+            {% endregionblock %}
           </div>
         </div>
       </div>
@@ -189,14 +258,26 @@ the Frederick hotel</h2>
 <section class="location-content ">
 <div class="location-wrapper">
 <div class="photo">
+{% regionblock  location-pic-3 type:image %}
 <img src="/assets/images/home/location-1.jpg" alt="Cycle Parking" class="img-fluid top" />
+{% endregionblock %}
 </div>
-<div class="description"><p>Conveniently located in downtown Manhattan, The Frederick is surrounded by New York’s most talked-about art galleries, fashion-forward boutiques, and world-renown restaurants. From Tribeca, you can do anything - and get anywhere. </p>
+
+<div class="description">
+    {% regionblock location-content  type:text %}
+  <p>Conveniently located in downtown Manhattan, The Frederick is surrounded by New York’s most talked-about art galleries, fashion-forward boutiques, and world-renown restaurants. From Tribeca, you can do anything - and get anywhere. </p>
+   {% endregionblock %}
 </div>
+
 <div class="links">
   <div class="btn-holder">
-    <a href="/location/" class="btn btn-2-cta" title="Get Directions">Get Directions </a><br><br><br>
+      {% regionblock directions-link type:text %}
+    <a href="/location/" class="btn btn-2-cta" title="Get Directions">Get Directions </a>
+    {% endregionblock  %}
+      <br><br>
+      {% regionblock discover-link type:text %}
     <a href="/location/" class="btn btn-2-cta" title="Discover more">Discover more </a>
+    {% endregionblock %}
   </div>
 </div>
 </div>
@@ -299,13 +380,22 @@ the Frederick hotel</h2>
 </section-->
 
 <section class="triumph-hotels spacer-bottom">
+  {% regionblock triumph-heading-1 type:header %} 
   <h2>UNLOCK THE NEW YORK CITY EXPERIENCE </h2>
+  {% endregionblock %}
+  {% regionblock triumph-heading-2 type:header %} 
   <h3>With Triumph Hotels</h3>
+  {% endregionblock %}
 
 <div class="more-hotels" style="background-image:url(/assets/images/home/nyc-camera.jpg);">
   <div class="inner-content">
     <ul>
-    <li><a href="/" title="Triumph Hotel"><img src="/assets/images/triumph-logosvg.svg" alt="Triumph Hotel" /></a></li>
+    <li>
+      {% regionblock triumph-logo type:image %} 
+      <a href="/" title="Triumph Hotel"><img src="/assets/images/triumph-logosvg.svg" alt="Triumph Hotel" /></a>
+      {% endregionblock %}
+    </li>
+    {% regionblock triumph-hotels type:text %} 
     <li><a href="/" title="Hotel Belleclaire">Hotel Belleclaire <span>Upper West Side</span></a></li>
     <li><a href="/" title="Washington Jefferson Hotel">WJ Hotel <span>Theater District</span></a></li>
      <li><a href="/" title="Hotel Edison">Hotel Edison <span>Times Square</span></a></li>
@@ -313,7 +403,7 @@ the Frederick hotel</h2>
     <li><a href="/" title="Hotel Chandler">Hotel Chandler <span>Flatiron District</span></a></li>
     <li><a href="/" title="The Evelyn">The Evelyn <span>Nomad</span></a></li>  
     <li><a href="/" title="The Frederick - TriBeCa">The Frederick <span>Tribeca</span></a></li>
-    
+    {% endregionblock %}
    
     <ul>
   </div>

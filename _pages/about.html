@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "About"
+title: "Boutique Hotel in Tribeca, NYC | About the Frederick Hotel"
+excerpt: With gems hidden behind historic corners, vibrant art and nightlife, Tribeca is where you want to be in New York City - and so is The Frederick.
 permalink: /about/
 ---
 
@@ -12,8 +13,13 @@ permalink: /about/
 <section class="heading-section">
   <div class="heading-inner">
     <div class="heading">
-      <h6>About</h6>
-      <h1>The Frederick Hotel</h1>
+      {% regionblock about-heading-1  type:header %}
+        <h6>About</h6>
+      {% endregionblock %}
+
+      {% regionblock about-heading-2  type:header %}
+        <h1>The Frederick Hotel</h1>
+      {% endregionblock %}
      
   </div>
   </div>
@@ -21,19 +27,29 @@ permalink: /about/
 
 <section class="whyus">
       <div class="container">
-        <p class="heading"> A Tribeca Boutique Hotel <br/> in New York City</p>
+        {% regionblock why-heading  type:header %}
+         <p class="heading"> A Tribeca Boutique Hotel <br/> in New York City</p>
+        {% endregionblock %}
        
       </div>
       <div class="why-pic">
-       <img src="/assets/images/about/bead-room.jpg" alt="bed room" class="img-fluid">
+        {% regionblock why-pic-1  type:image %}
+          <img src="/assets/images/about/bead-room.jpg" alt="bed room" class="img-fluid">
+        {% endregionblock %}
        </div>
       <div class="why-content">
+        {% regionblock why-content  type:text %}
         <p>With gems hidden behind historic corners, vibrant art and nightlife, Tribeca is where you want to be in New York City - and so is The Frederick. Thoughtfully-designed, The Frederick Hotel mixes vintage styles - like Mid-Century Modern and Art Nouveau - with turn-of-the-century and minimalist accents for a look as eclectic as the hotel itself. Here intriguing people, artful cocktails, and luxurious accommodations mingle for an experience that can’t be found anywhere else.</p>
+        {% endregionblock %}
         <div class="btn-holder">
-          <a href="/contact/" title="Contact us" class="btn btn-2-cta">CONTACT US</a>
+          {% regionblock why-contact-link-1  type:text %}
+           <a href="/contact/" title="Contact us" class="btn btn-2-cta">CONTACT US</a>
+          {% endregionblock %}
         </div>
         <div class="btn-holder">
+            {% regionblock why-contact-link-2  type:text %}
             <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3"  target="_blank" title="Book now" class="btn btn-blue">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            {% endregionblock %}
       </div>
       </div>
 </section>
@@ -41,10 +57,16 @@ permalink: /about/
 <section class="amenites">
 <div class="row">
       <div class="amienites-pic">
-       <img src="/assets/images/about/amenities.jpg" alt="amenities" class="img-fluid">
+        {% regionblock amenites-pic-1  type:image %}
+          <img src="/assets/images/about/amenities.jpg" alt="amenities" class="img-fluid">
+        {% endregionblock %}
        </div>
       <div class="amienites-list">
+        {% regionblock amenites-list-heading type:header %}
         <h2>Amenities</h2>
+        {% endregionblock %}
+
+        {% regionblock amenites-list  type:text %}
         <ul>
         <li>Complimentary Wi-Fi throughout the hotel</li>
         <li>Frette linens</li>
@@ -60,11 +82,16 @@ permalink: /about/
         <li>Complimentary New York Times newspapers</li>
         <li>Serafina, Starbucks and Pret A Manger on premises</li>
         </ul>
+        {% endregionblock %}
        <div class="btn-holder">
+       {% regionblock amenites-lnik-1  type:text %}
        <a href="/contact/" title="contact us " class="btn btn-2-cta">contact us </a>
+       {% endregionblock %}
        </div>
        <div class="btn-holder">
+          {% regionblock amenites-lnik-2  type:text %}
           <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now"  target="_blank" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          {% endregionblock %}
       </div>
       </div>
       </div>
@@ -72,38 +99,72 @@ permalink: /about/
 
 <section class="history">
   <div class="first-pic">
+  {% regionblock histroy-pic-1  type:image %}
   <img src="/assets/images/about/history-1.jpg" alt="historic hotels in Tribeca ">
+  {% endregionblock %}
+
+  {% regionblock history-heading-1  type:header %}
   <h2>About The Frederick</h2>
+  {% endregionblock %}
+
+  {% regionblock history-heading-2  type:header %}
   <h6>A Historic Tribeca Hotel</h6>
+  {% endregionblock %}
+
+  {% regionblock history-content  type:text %}
   <p>One of the longest-running historic hotels in Tribeca, The Frederick was built in 1838 in the Gothic Revival style, with some Italianate details added soon after. With many of these details still intact, The Frederick is able to express its history while still leaving room for stylish reinvention.</p>
+  {% endregionblock %}
+
   <div class="btn-holder">
+    {% regionblock history-lnik-1  type:text %}
     <a href="/contact/" title="contact us " class="btn btn-2-cta cat-white">contact us </a>
+    {% endregionblock %}
     </div>
   <div class="btn-holder">
+      {% regionblock history-lnik-2  type:text %}
       <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3"  target="_blank" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      {% endregionblock %}
   </div>
 </div>
 
   <div class="middle-pic">
+  {% regionblock history-pic-2  type:image %}
   <img src="/assets/images/about/history-2.jpg" class="img-fluid" alt="Historic hotels in Tribeca">
+  {% endregionblock %}
   </div>
   <div class="last-pic">
+  {% regionblock history-pic-3  type:image %}  
   <img src="/assets/images/about/history-3.jpg" class="img-fluid" alt="Historic hotels in Tribeca">
+  {% endregionblock %}
   </div>
 </section>
 
 <section class="old-newyork">
+  {% regionblock history-pic-4  type:image %}
    <img src="/assets/images/about/old-pic.jpg" alt="Old new york city " >
+   {% endregionblock %}
 </section>
 
   <section class="book-now-sec" style="background-image:url(/assets/images/about/nyc-bg.jpg);">
       
           <div class="inner-content">
+          {% regionblock frederick-heading  type:header %}
           <h5>THE FREDERICK<br>HOTEL</h5>
-            <div class="fr-logo"><a href="/" title="Hotel Edison"><img src="/assets/images/about/white-logo.png" alt="THE FREDERICK Hotel" /></a></div>
+          {% endregionblock %}
+
+            <div class="fr-logo">
+            {% regionblock about-frederick-logo  type:image %}
+              <a href="/" title="Hotel Edison"><img src="/assets/images/about/white-logo.png" alt="THE FREDERICK Hotel" />
+            </a>
+            {% endregionblock %}
+            </div>
+            {% regionblock frederick-heading-1  type:header %}
             <h6>A TRIBECA BOUTIQUE HOTEL<br>IN NEW YORK CITY</h6>
+            {% endregionblock %}
             <div class="btn-holder">
-  <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3"  target="_blank" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            {% regionblock frederick-booking-link  type:text %}
+            <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3"  target="_blank" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            {% endregionblock %}
 </div>
           </div>
         </section>

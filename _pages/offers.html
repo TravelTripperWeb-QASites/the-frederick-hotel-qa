@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Offers"
+title: "Boutique Hotel Deals & Offers | Offers at The Frederick"
+excerpt: Explore our special offers and save on accommodations when you book direct. Choose from advanced purchase deals to wedding packages and lots more!
 permalink: /offers/
 ---
 
@@ -11,9 +12,17 @@ permalink: /offers/
 <section class="specials-top">
   <div class="specials-container">
     <div class="specials-container-inner">
+      {% regionblock offers-heading-1  type:header %}
       <h3>The Frederick Hotel</h3>
+      {% endregionblock %}
+
+      {% regionblock offers-heading-2  type:header %}
       <h1>Exclusive Offers</h1>
+      {% endregionblock %}
+
+      {% regionblock offers-content  type:text %}
       <p>Explore our special offers and save on accommodations when you book direct. </p>
+      {% endregionblock %}
     </div>
   </div>
 </section>

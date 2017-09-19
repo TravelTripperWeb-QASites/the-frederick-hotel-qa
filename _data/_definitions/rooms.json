@@ -3,6 +3,12 @@
     "required": true,
     "placeholder": "Superior King"
   },
+  "seo_title":{
+    "required": true,
+  },
+  "excerpt":{
+    "required": true,
+  },
   "order": {
     "type": "integer",
     "instructions": "Used to order the rooms on the main /rooms page. If not used rooms will be listed in the order they were added."

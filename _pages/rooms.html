@@ -1,10 +1,11 @@
 ---
 title_localized:
-  en: "Rooms"
+  en: "Boutique Accommodations in Lower Manhattan | The Frederick"
 label_localized:
   en:
 layout_localized:
   en: default
+excerpt: "Explore our classic guest rooms and suites available at The Frederick Hotel in Tribeca, New York. Perfect for boutique stays in Lower Manhattan!"
 permalink_localized:
   en: /rooms/
 parent: rooms
@@ -31,12 +32,26 @@ parent: rooms
   </div>
 
   <div class="rooms-intro">
+    {% regionblock rooms-heading-1  type:header %}
     <h6>The Frederick Hotel</h6>
+    {% endregionblock %}
+
+    {% regionblock rooms-heading-1  type:header %}
     <h1>Classic rooms & Suites</h1>
+    {% endregionblock %}
+
+    {% regionblock rooms-content type:text %}
     <p>Explore our classic guest rooms and suites below.</p>
+    {% endregionblock %}
+
+    {% regionblock rooms-gallery-link  type:text %}
     <a href="/gallery/" class="btn btn-2-cta">View Gallery</a>
+    {% endregionblock %}
+
     <div class="btn-holder">
+      {% regionblock rooms-booking-link  type:text %}
       <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-blue">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      {% endregionblock %}
     </div>
   </div>
 
@@ -77,7 +92,9 @@ parent: rooms
           <div class="room-item">
             <div class="col-md-7 p-0">
               <div class="room-image">
-                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+                <!-- <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}"> -->
+                <img src="{% if room.excerpt_image %}{{ room.excerpt_image.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt_image %}{{ room.excerpt_image.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+
               </div>
             </div>
             <div class="col-md-5 p-0 align-self-center">
@@ -106,7 +123,9 @@ parent: rooms
           <div class="room-item">
             <div class="col-md-7 p-0">
               <div class="room-image">
-                <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+                <!-- <img src="{% if room.excerpt %}{{ room.excerpt.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt %}{{ room.excerpt.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}"> -->
+                <img src="{% if room.excerpt_image %}{{ room.excerpt_image.url }}{% else %}{{ room.banner_image.url_medium }}{% endif %}" alt="{% if room.excerpt_image %}{{ room.excerpt_image.alt }}{% else %}{{ room.banner_image.alt }}{% endif %}">
+                
               </div>
             </div>
             <div class="col-md-5 p-0 align-self-center">
@@ -137,10 +156,21 @@ parent: rooms
 
       <div class="col-md-5 p-0 align-self-center">
         <div class="map-content">
+          {% regionblock map-heading-1  type:header %}
           <h2>Have It All</h2>
+          {% endregionblock %}
+
+          {% regionblock map-heading-2  type:header %}
           <h5>Tribeca -  New York City</h5>
+          {% endregionblock %}
+
+          {% regionblock map-content  type:text %}
           <p> If eating and drinking well is your thing, Tribeca is where you want to be. With its innovative chefs, design-forward enclaves, and repurposed turn-of-the-century factories, Tribeca is what is happening in New York City. </p>
+          {% endregionblock %}
+
+          {% regionblock map-location-link  type:text %}
           <a href="/location/" class="btn btn-3-cta">Get Directions</a>
+          {% endregionblock %}
         </div>
       </div>
 
