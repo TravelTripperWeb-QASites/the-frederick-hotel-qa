@@ -4,10 +4,10 @@
     "placeholder": "Room Service Package"
   },
   "seo_title":{
-    "required": true,
+    "required": true
   },
   "excerpt":{
-    "required": true,
+    "required": true
   },
   "order": {
     "type": "integer",
