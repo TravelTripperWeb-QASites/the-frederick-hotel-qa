@@ -155,7 +155,15 @@
     }
   ],
   "homepage_slider": [
-
+    {
+      "file": "homepage_slider1.json"
+    },
+    {
+      "file": "homepage_slider2.json"
+    },
+    {
+      "file": "homepage_slider3.json"
+    }
   ],
   "offers": [
     {

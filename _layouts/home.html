@@ -5,9 +5,21 @@ layout: default
  <!--main hero image slider-->
 <section class="hero-slider">
   <div id="image-slider" class="carousel carousel-fade" data-ride="carousel">
-
+		<div class="carousel-inner">
+  			{% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="carousel-item bg-center-center bg-cover  bg-norepeat active" style="background-image:url({{slilderimages.slider_image.url}})">
+              {% else %}
+              <div class="carousel-item bg-center-center bg-cover  bg-norepeat" style="background-image:url({{slilderimages.slider_image.url}})">
+              {% endif %} 
+                <div class="carousel-caption d-md-block">
+		          <div class="title"> {{ slilderimages.carousel_caption }}</div> 
+		        </div>
+			</div>
+		   {% endfor %}
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <!--div class="carousel-inner">
       <div class="carousel-item bg-center-center bg-cover  bg-norepeat active" style="background-image:url(/assets/images/hotel-hero-photo.jpg);">
         <div class="carousel-caption d-md-block">
           <div class="title">This must be<br/>the place.</div> 
@@ -21,9 +33,9 @@ layout: default
       <div class="carousel-item bg-center-center bg-cover  bg-norepeat" style="background-image:url(/assets/images/home/food.jpg);">
         <div class="carousel-caption d-md-block">
           <div class="title">This must be<br/>the place.</div>  
-        </div>
+        </div-->
       </div>
-    </div>
+   
     <a class="carousel-control-prev" data-target="#image-slider" title="Prev" role="button" data-slide="prev">
      <span class="site-text">The Frederick</span>
      <span class="e-icon" aria-hidden="true">#</span>
@@ -32,7 +44,8 @@ layout: default
     <span class="site-text">The Frederick</span>
     <span class="e-icon" aria-hidden="true">$</span>
     </a>
-  </div> 
+  </div>  
+  </div>
  </section>
  
 

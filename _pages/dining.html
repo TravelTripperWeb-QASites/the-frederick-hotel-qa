@@ -124,11 +124,21 @@ parent: dining
   <section class="book-now-sec" style="background-image:url(/assets/images/dining/dining-cta.jpg);">
     
         <div class="inner-content">
-        <h5>THE FREDERICK<br>HOTEL</h5>
-          <div class="fr-logo"><a href="/" title="Hotel Edison"><img src="/assets/images/about/white-logo.png" alt="THE FREDERICK Hotel" /></a></div>
+            {% regionblock dining-frederick-heading-1  type:header %}
+            <h5>THE FREDERICK<br>HOTEL</h5>
+            {% endregionblock %}
+          <div class="fr-logo">
+              {% regionblock dining-frederick-logo  type:image %}
+            <a href="/" title="Hotel Edison"><img src="/assets/images/about/white-logo.png" alt="THE FREDERICK Hotel" /></a>
+            {% endregionblock %}
+          </div>
+          {% regionblock dining-frederick-heading-2  type:header %}
           <h6>A TRIBECA BOUTIQUE HOTEL<br>IN NEW YORK CITY</h6>
+          {% endregionblock %}
           <div class="btn-holder">
-<a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          {% regionblock dining-frederick-logo  type:text %}
+          <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book Now" class="btn btn-white">Book Now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          {% endregionblock %}
 </div>
         </div>
       </section>
