@@ -65,13 +65,17 @@
 	}
 }
 .title{
-	font-size:$type-size-9;
-	letter-spacing: 0.8rem;
-	@include media-breakpoint-up(md){
-      font-size: $type-size-1;
-      letter-spacing: 0.8rem;
-	}
-}
+  p{
+    	font-size:$type-size-9;
+    	letter-spacing: 0.8rem;
+       line-height:inherit;
+    	@include media-breakpoint-up(md){
+          font-size: $type-size-1;
+          letter-spacing: 0.8rem;
+          line-height:inherit;
+    	}
+    }
+  }
 .fullscreen-wrapper{
    min-height: 18.75rem;
    position: relative;

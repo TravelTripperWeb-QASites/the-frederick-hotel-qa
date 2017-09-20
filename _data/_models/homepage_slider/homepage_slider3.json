@@ -1,0 +1,23 @@
+{
+  "slider_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/food.jpg",
+    "name": "food",
+    "file_name": "food.jpg",
+    "file_type": "image/jpeg",
+    "date_added": "2017-09-19 02:38:14",
+    "tags": "",
+    "file_size": 275599,
+    "width": 1320,
+    "height": 900,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/large_food.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/medium_food.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/small_food.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/xsmall_food.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/thumb_food.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/414_720_7179/media/2017-09-19-023813/food.jpg",
+    "alt": "Food"
+  },
+  "carousel_caption": "<p>This must be<br />the place.</p>",
+  "sort_order": 3
+}
