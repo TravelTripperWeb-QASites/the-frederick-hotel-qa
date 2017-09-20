@@ -21,15 +21,15 @@
 	  {% for offer in offers limit: 4 %}
   
 		<div class="offer-sec">
-		  <a href="/offers/{{ offer.url_friendly_name }}">
+		  <a href="/offers/{{ offer.url_friendly_name }}/">
 			<div class="offer-img" style="background-image:url('{% if offer.excerpt_image %}{{ offer.excerpt_image.url }}{% else %}{{ offer.banner_image.url_small }}{% endif %}');">
 			  <div class="img-bg"></div>
 			</div>
 		  </a>
 		  <div class="btn-holder">
-			<a href="/offers/{{ offer.url_friendly_name }}" class="btn btn-white">See Details <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="/offers/{{ offer.url_friendly_name }}/" class="btn btn-white">See Details <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 		  </div>
-		  <a href="/offers/{{ offer.url_friendly_name }}">
+		  <a href="/offers/{{ offer.url_friendly_name }}/">
 			<div class="offer-heading">
 			  <h6>{{ offer.title }}</h6>
 			</div>
