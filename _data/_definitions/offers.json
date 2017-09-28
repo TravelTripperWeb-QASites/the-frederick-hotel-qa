@@ -37,5 +37,8 @@
   },
   "terms_list": {
     "type": "richtext"
+  },
+  "book_now": {
+    "label":"Book Now URL"
   }
 }
