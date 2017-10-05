@@ -85,10 +85,17 @@ hr{
     }
 }
 
-.privacypolicy{
+.privacypolicy, .accessibility-content{
     @extend .container;
     @include  media-breakpoint-up(xl){
     padding: 0;
     }
    padding:0 15px;
+}
+.accessibility-heading{
+    &.heading-section{ 
+        .heading-inner {
+                padding: 3.6rem 0 2.5rem;
+        }
+    }
 }
