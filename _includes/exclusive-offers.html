@@ -20,7 +20,7 @@
   
 	  {% for offer in offers limit: 4 %}
   
-		<div class="offer-sec">
+		<div class="offer-sec {% if forloop.length == 3 %} three-offers {% elsif forloop.length == 2 %} two-offers {% elsif forloop.length == 1 %} one-offer {% endif %} ">
 		  <a href="/offers/{{ offer.url_friendly_name }}/">
 			<div class="offer-img" style="background-image:url('{% if offer.excerpt_image %}{{ offer.excerpt_image.url }}{% else %}{{ offer.banner_image.url_small }}{% endif %}');">
 			  <div class="img-bg"></div>
