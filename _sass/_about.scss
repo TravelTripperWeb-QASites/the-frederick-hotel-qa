@@ -228,7 +228,17 @@
       position:relative;
       cursor:pointer;
       @extend .col-md-3;
-      padding:0;
+      &.three-offers{
+        @extend .col-md-4;
+      }
+      &.two-offers{
+        @extend .col-md-6;
+      }
+      &.one-offer{
+        @extend .col-md-12;
+      }
+      padding-left : 0 !important;
+      padding-right : 0 !important;
       .offer-heading{
         position:relative;
         height:8.75rem;
