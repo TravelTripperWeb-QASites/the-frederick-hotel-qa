@@ -2,25 +2,27 @@
 ---
 @import "bootstrap/scss/bootstrap";
 @import "variables";
+@import "fonts";
 @import "base";
+@import "header";
 @import "footer";
-@import "utilities"; 
-@import "aos"; 
+@import "utilities";
+@import "aos";
+
 /* Import custom Sass files below */
-@import "fonts"; 
 @import "instagram";
-@import "home";
-@import "dining"; 
-@import "header"; 
-@import "about";
+@import "pages/home";
+@import "pages/dining";
+@import "pages/about";
 @import "location";
 @import "standards";
-@import "specials"; 
-@import "rooms";
+@import "pages/specials";
+@import "pages/rooms";
 @import "gallery";
 @import "faq-reviews";
-@import "contact";
-@import  "datepicker";
-@import  "date-picker";
-@import  "booking-widget";
-@import  "booking-widget-datepicker.scss";
+@import "pages/contact";
+@import "pages/best-deal";
+@import "datepicker";
+@import "date-picker";
+@import "booking-widget";
+@import "booking-widget-datepicker";
