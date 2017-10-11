@@ -8,6 +8,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		margin: 0 auto;
+		@include  media-breakpoint-down(sm){
+			width:80%;
+		}
 	  }
   }
   .modal-wrapper {
