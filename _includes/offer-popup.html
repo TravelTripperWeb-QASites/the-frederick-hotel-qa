@@ -1,0 +1,30 @@
+<div id="offer-popup" class="offer-popup modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-wrapper">
+
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      <div class="modal-content">
+        <div class="modal-content-inner">
+          <img src="/assets/images/frederick-hotel-logo.svg" alt="Frederick Hotel"/>
+          <h2>Extra, Extra!</h2>
+			<p>For a limited time only we’re offering a <b>$25 American Express Card per night</b> for all bookings made directly through the Frederick Hotel website. That’s for <b>each night</b> you stay with us for up to <b>8 nights</b> and <b>$200</b>, and valid with all Frederick Hotel packages and promotions.</p>
+          <a class="btn btn-blue m-t-40" href="https://gc.synxis.com/rez.aspx?shell=GCF3&chain=16087&hotel=16065" target="_blank">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  if (!Cookies.get('popup')) {
+    $('#offer-popup').show();
+    $('#offer-popup').modal();
+    Cookies.set('popup', '1', {
+      expires: 1
+    });
+  }
+</script>
