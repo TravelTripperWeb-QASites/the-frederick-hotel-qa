@@ -14,6 +14,11 @@
     "type": "url_slug",
     "instructions": "Add only the last part of the url. For https://www.frederickhotelnyc.com/room-service-package/ you would only add room-service-package"
   },
+  "banner_image": {
+    "required": true,
+    "type": "image",
+    "instructions": "This is the banner or 'hero' image at the top of the page."
+  },
   "description": {
     "required": true,
     "type": "richtext"

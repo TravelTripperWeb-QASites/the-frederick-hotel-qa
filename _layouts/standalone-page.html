@@ -7,10 +7,11 @@ description: "Come join us at one of our events."
 {% assign offers = page %}
 {% assign model = page %}
 
-<!--<section>
+{% if offers.banner_image and offers.banner_image !="" %}
+<section>
   <div class="inner-banner " style="background-image: url('{{ offers.banner_image.url }}')"></div>
-</section>-->
-
+</section>
+{% endif %}
 <!-- <section class="offers-nav">
   <div class=" container-fluid p-0">
     <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
