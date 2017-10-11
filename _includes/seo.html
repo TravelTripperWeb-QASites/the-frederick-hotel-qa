@@ -4,7 +4,7 @@
 {% endif %}
 
 {% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.name | normalize_whitespace | escape_once %}
+  {% assign seo_title = page.title | normalize_whitespace | escape_once %}
 {% else %}
   {% assign seo_title = site.title | append: " " | append: site.title_separator | append: " " | append: site.name %}
 {% endif %}
@@ -13,9 +13,9 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{{ seo_title }}</title>
 
-{% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
+{% assign seo_description = page.meta_description | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
 {% endif %}
@@ -39,12 +39,16 @@
 
 <meta name="author" content="{{ seo_author }}">
 
-<meta property="og:locale" content="{{ site.default_lang | replace: "-", "_" | default: "en_US" }}">
+<meta property="og:locale" content="{{ site.active_lang | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | escape_once }}">
 
 {% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  {% if site.active_lang == site.default_lang %}
+    <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  {% else %}
+    <link rel="canonical" href="{{ page.url | prepend: site.active_lang | prepend: "/" | prepend: seo_url | replace: "/index.html", "/" }}">
+  {% endif %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
@@ -54,9 +58,9 @@
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:url" content="{{ canonical_url }}">
   <meta name="twitter:card" content="summary">
-  
+
   {% if site.data.social.og_image %}
-  <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
+    <meta name="twitter:image" content="{{ site.data.social.og_image | absolute_url }}">
   {% endif %}
 
   {% if seo_author_twitter %}
@@ -117,5 +121,18 @@
 {% endif %}
 {% if site.data.verification.yandex_site_verification %}
   <meta name="yandex-verification" content="{{ site.data.verification..yandex_site_verification }}">
+{% endif %}
+
+<meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+<link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.permalink_localized }}">
+{% for lang in site.languages %}
+  {% if lang == site.default_lang %}
+    {% continue %}
+  {% endif %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink_localized }}">
+{% endfor %}
+
+{% if page.meta_tags.robots %} 
+  <meta name="robots" content="{{ page.meta_tags.robots }}">
 {% endif %}
 <!-- end SEO -->
