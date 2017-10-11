@@ -1,6 +1,6 @@
 {
-  "title": "Perfectly Planned NYC Stay",
-  "seo_title": "NYC Stay Hotel Package | Deals at The Frederick Hotel",
+  "title": "25$ card per night offer",
+  "seo_title": "25$ card per night offer | Deals at The Frederick Hotel",
   "excerpt": "Booking direct has its perks. When you book directly with The Frederick Hotel, we’ll give you a $25 American Express Card for each night you stay with us,  up to $200 to spend around NYC, perfect for a meal on us or few drinks in the greatest city in the world.",
   "banner_image": {
     "url": "//cdn.traveltripper.io/site-assets/414_720_7603/media/2017-09-28-051114/Lion-King-Minskoff-Theatre.jpg",
@@ -22,8 +22,9 @@
     "file_name": "Lion-King-Minskoff-Theatre.jpg",
     "date_added": "2017-09-28-051114"
   },
-  "url_friendly_name": "test-page",
-  "description": "<i>Booking direct has its perks. When you book directly with The Frederick Hotel, we’ll give you a $25 American Express Card for each night you stay with us,  up to $200 to spend around NYC, perfect for a meal on us or few drinks in the greatest city in the world.</i>",
+  "url_friendly_name": "25-dollar-card-per-night-offer",
+  "description": "<p><em>Booking direct has its perks. When you book directly with The Frederick Hotel, we&rsquo;ll give you a $25 American Express Card for each night you stay with us, up to $200 to spend around NYC, perfect for a meal on us or few drinks in the greatest city in the world.</em></p>",
   "perk_list": "<p>In addition to your $25 AMEX Card, other perks of The Frederick Hotel include:</p>",
-  "book_now": "http://frederickhotelnyc.reservenewyorkcity.com/"
+  "book_now": "https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087",
+  "perks_list": "<p>In addition to your $25 AMEX Card, other perks of The Frederick Hotel include:</p>\n<ul>\n<li>Complimentary Wi-Fi throughout the hotel</li>\n<li>Frette linens</li>\n<li>Concierge services</li>\n<li>Valet parking</li>\n<li>24-hour fitness room</li>\n<li>C.O. Bigelow bath amenities</li>\n<li>Complimentary New York Times newspapers</li>\n<li>Serafina, Starbucks and Pret A Manger on premises</li>\n</ul>"
 }
