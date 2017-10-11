@@ -7,9 +7,9 @@ description: "Come join us at one of our events."
 {% assign offers = page %}
 {% assign model = page %}
 
-<section>
+<!--<section>
   <div class="inner-banner " style="background-image: url('{{ offers.banner_image.url }}')"></div>
-</section>
+</section>-->
 
 <!-- <section class="offers-nav">
   <div class=" container-fluid p-0">
@@ -24,7 +24,7 @@ description: "Come join us at one of our events."
   </div>
 </section> -->
 
-<section class="heading-section">
+<section class="heading-section m-t-50">
   <div class="heading-inner">
     <div class="heading">
       <h1>{{ offers.title }}</h1>
@@ -37,8 +37,8 @@ description: "Come join us at one of our events."
       <div class="btn-holder">
         <a href="/contact/" title="Contact" class="btn btn-2-cta">CONTACT US</a>
       </div>
-      <div class="amex-offer">
-      	<i>{{ offers.description }}</i>
+      <div class="standalone-offer">
+      	<i class="non-italic">{{ offers.description }}</i>
 	  </div>
       <div class="btn-holder">
         {% if offers.book_now and offers.book_now !="" %}
@@ -48,8 +48,8 @@ description: "Come join us at one of our events."
          {% endif %}
       </div>
     </div>
-    <div class="special-info">
-      <p>{{ offers.perk_list }}</p>
+    <div class="standalone-offer-list">
+      {{ offers.perks_list }}
     </div>
 
     <!-- <div class="special-info-heading"> -->
