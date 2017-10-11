@@ -208,5 +208,12 @@
       "title": "Junior Suite",
       "file": "rooms5.json"
     }
+  ],
+  "standalone-page": [
+    {
+      "name": "Perfectly Planned NYC Stay",
+      "title": "Perfectly Planned NYC Stay",
+      "file": "standalone-page1.json"
+    }
   ]
 }
