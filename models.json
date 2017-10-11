@@ -9,11 +9,6 @@
       "name": "Advanced Purchase Rate",
       "title": "Advanced Purchase Rate",
       "file": "offers3.json"
-    },
-    {
-      "name": "Perfectly Planned NYC Stay",
-      "title": "Perfectly Planned NYC Stay",
-      "file": "offers1.json"
     }
   ],
   "events": [
@@ -211,8 +206,8 @@
   ],
   "standalone-page": [
     {
-      "name": "25$ card per night offer",
-      "title": "25$ card per night offer",
+      "name": "$25 American Express Card per Night",
+      "title": "$25 American Express Card per Night",
       "file": "standalone-page1.json"
     }
   ]
