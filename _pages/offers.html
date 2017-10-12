@@ -5,7 +5,7 @@ excerpt: Explore our special offers and save on accommodations when you book dir
 permalink: /offers/
 ---
 
-{% assign offers = site.data._models.offers | sort: 'order' %}
+{% assign offers = site.data._models.offers | sort: 'order' | where: "publish", "true" %}
 
 <section class="inner-banner bg-styles" style="background-image: url('/assets/images/specials/specials-banner.jpg');"></section>
 
@@ -29,10 +29,8 @@ permalink: /offers/
 
 <section class="exclusive-offers-sec">
   <div class="offers-wrap">
-
     {% for offer in offers limit: 4 %}
-
-      <div class="offer-sec {% if forloop.length == 3 %} three-offers {% elsif forloop.length == 2 %} two-offers {% elsif forloop.length == 1 %} one-offer {% endif %} ">
+       <div class="offer-sec {% if forloop.length == 3 %} three-offers {% elsif forloop.length == 2 %} two-offers {% elsif forloop.length == 1 %} one-offer {% endif %} ">
         <a href="{{ offer.url_friendly_name }}/">
           <div class="offer-img" style="background-image:url('{% if offer.excerpt_image %}{{ offer.excerpt_image.url }}{% else %}{{ offer.banner_image.url_small }}{% endif %}');">
             <div class="img-bg"></div>
@@ -46,8 +44,7 @@ permalink: /offers/
             <h6>{{ offer.title }}</h6>
           </div>
         </a>
-      </div>
-
+      </div> 
     {% endfor %}
 
   </div>

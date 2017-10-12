@@ -7,6 +7,7 @@ description: "Come join us at one of our events."
 {% assign offers = page %}
 {% assign model = page %}
 
+{% if offers.publish == true %}
 <section>
   <div class="inner-banner " style="background-image: url('{{ offers.banner_image.url }}')"></div>
 </section>
@@ -74,6 +75,18 @@ description: "Come join us at one of our events."
 
   </div>
 </section>
+{% else %}
+<section class="heading-section">
+	<div class="heading-inner">
+		<div class="heading">
+			<h1>Offer you're looking for no more exist. Please check our latest offers.</h1>
+			<div class="btn-holder">
+				<a href="/contact/" title="Contact" class="btn btn-blue">View Latest Offers</a>
+		    </div>
+		</div>
+	</div>
+</section>
+{% endif %}
 
 <section class="book-now-sec" style="background-image:url(/assets/images/specials/specials-booknow.jpg);">
   <div class="inner-content">
