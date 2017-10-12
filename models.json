@@ -211,8 +211,8 @@
   ],
   "standalone-page": [
     {
-      "name": "25$ card per night offer",
-      "title": "25$ card per night offer",
+      "name": "$25 American Express Card per Night",
+      "title": "$25 American Express Card per Night",
       "file": "standalone-page1.json"
     }
   ]
