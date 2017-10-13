@@ -26,6 +26,7 @@
   "description": "<p>When you book directly with The Frederick Hotel, we&rsquo;ll give you a $25 American Express Card for each night you stay with us, up to $200. Treat yourself while you&rsquo;re in NYC &ndash; grab a special meal or a few drinks in the greatest city in the world.</p>",
   "addon": "",
   "terms_list": "",
-  "book_now": "https://www.frederickhotelnyc.com/25-dollar-card-per-night-offer/",
-  "publish": true
+  "book_now": "https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&_ga=2.29585087.1201291722.1507922663-1654536262.1507922663&",
+  "publish": true,
+  "order": 1
 }
