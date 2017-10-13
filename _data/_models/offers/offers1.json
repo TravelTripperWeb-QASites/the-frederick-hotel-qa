@@ -24,6 +24,8 @@
   },
   "url_friendly_name": "perfectly-planned-nyc-stay",
   "description": "<p>Planning not your thing? Let The Frederick and Reserve Direct take care of your NYC travel plans. Book all of your New York City attractions, from Broadway to the One World Observatory, and your stay at our Tribeca boutique hotel in one click, as part of our Perfectly Planned NYC Stay package.</p>",
+  "addon":"Book this package and you’ll also receive a $25 American Express Card for each night you stay with us, up to $200. Treat yourself while you’re in NYC – grab a special meal or a few drinks in the greatest city in the world.",
   "terms_list": "",
-  "book_now": "http://frederickhotelnyc.reservenewyorkcity.com/"
+  "book_now": "http://frederickhotelnyc.reservenewyorkcity.com/",
+  "publish": false
 }

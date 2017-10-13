@@ -208,5 +208,12 @@
       "title": "Junior Suite",
       "file": "rooms5.json"
     }
+  ],
+  "standalone-page": [
+    {
+      "name": "$25 American Express Card per Night",
+      "title": "$25 American Express Card per Night",
+      "file": "standalone-page1.json"
+    }
   ]
 }
