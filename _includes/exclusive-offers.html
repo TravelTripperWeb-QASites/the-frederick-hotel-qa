@@ -1,4 +1,4 @@
-{% assign offers = site.data._models.offers | sort: 'order' %}
+{% assign offers = site.data._models.offers | sort: 'order' | where: "publish", "true" %}
 
 <section class="specials-top">
   <div class="specials-container">
