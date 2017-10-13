@@ -31,6 +31,10 @@
     "required": true,
     "type": "richtext"
   },
+  "addon":{
+	"label":"Addon",
+	"instructions":"Any extra discount/benefit can be added here."
+  },
   "details_image": {
     "type": "image",
     "instructions": "This image will below the the description, above the terms list."
@@ -40,5 +44,9 @@
   },
   "book_now": {
     "label":"Book Now URL"
+  },
+  "publish": {
+    "label":"Publish Offer",
+	"type": "boolean"
   }
 }
