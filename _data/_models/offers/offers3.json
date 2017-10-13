@@ -22,7 +22,9 @@
     "alt": "Advanced Purchase Rate"
   },
   "url_friendly_name": "advanced-purchase-rate",
-  "description": "<p>One of our best rates available, get up to 20% off when you book our Advanced Purchase Rate 14 days in advance at our Tribeca boutique hotel. Sleep easy in our stylish accommodations knowing you got the hook-up at The Frederick.</p>",
+  "description": "<p>One of our best rates available, get up to 20% off when you book our Advanced Purchase Rate 14 days in advance at our Tribeca boutique hotel. Mingle at our speakeasy-style bar and sleep easy in our stylish accommodations knowing you got the hook-up at The Frederick.</p>",
+  "addon":"Book this package and you’ll also receive a $25 American Express Card for each night you stay with us, up to $200. Treat yourself while you’re in NYC – grab a special meal or a few drinks in the greatest city in the world.",
   "terms_list": "<ul>\n<li>A three-night minimum stay is required.</li>\n<li>The reservation must be paid in full at the time of booking.&nbsp;</li>\n</ul>",
-  "book_now": "https://gc.synxis.com/rez.aspx?abtest=true&promo=ADV&Chain=16087&Hotel=16065"
+  "book_now": "https://gc.synxis.com/rez.aspx?abtest=true&promo=ADV&Chain=16087&Hotel=16065",
+  "publish": true
 }

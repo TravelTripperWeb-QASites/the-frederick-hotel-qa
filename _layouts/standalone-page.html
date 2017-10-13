@@ -1,17 +1,17 @@
 ---
 layout: default
-title: "Offer-details"
+metatags: noindex, nofollow
 description: "Come join us at one of our events."
 ---
 
 {% assign offers = page %}
 {% assign model = page %}
 
-{% if offers.publish == true %}
+{% if offers.banner_image and offers.banner_image !="" %}
 <section>
   <div class="inner-banner " style="background-image: url('{{ offers.banner_image.url }}')"></div>
 </section>
-
+{% endif %}
 <!-- <section class="offers-nav">
   <div class=" container-fluid p-0">
     <ul class="nav nav-tabs rooms-tabs nav-fill" role="tablist">
@@ -25,7 +25,7 @@ description: "Come join us at one of our events."
   </div>
 </section> -->
 
-<section class="heading-section">
+<section class="heading-section m-t-50">
   <div class="heading-inner">
     <div class="heading">
       <h1>{{ offers.title }}</h1>
@@ -38,11 +38,9 @@ description: "Come join us at one of our events."
       <div class="btn-holder">
         <a href="/contact/" title="Contact" class="btn btn-2-cta">CONTACT US</a>
       </div>
-      {% if offers.addon and offers.addon !="" %}
-		  <div class="standalone-offer">
-			<i>{{ offers.addon }}</i>
-		  </div>
-      {% endif %}
+      <div class="standalone-offer">
+      	<i class="non-italic">{{ offers.description }}</i>
+	  </div>
       <div class="btn-holder">
         {% if offers.book_now and offers.book_now !="" %}
              <a href="{{offers.book_now}}" title="Book now" class="btn btn-blue" target="_blank">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -50,17 +48,10 @@ description: "Come join us at one of our events."
             <a href="https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&shell=GCF3" title="Book now" class="btn btn-blue" target="_blank">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
          {% endif %}
       </div>
-      
     </div>
-    <div class="special-info">
-      <p>{{ offers.description }}</p>
+    <div class="standalone-offer-list">
+      {{ offers.perks_list }}
     </div>
-
-    {% if offers.details_image %}
-      <div class="special-img">
-        <img src="{{ offers.details_image }}" alt="{{ offers.details_image.alt }}" class="img-fluid">
-      </div>
-    {% endif %}
 
     <!-- <div class="special-info-heading"> -->
       <!-- <h2>{{ offers.title }}</h2> -->
@@ -77,18 +68,6 @@ description: "Come join us at one of our events."
 
   </div>
 </section>
-{% else %}
-<section class="heading-section">
-	<div class="heading-inner">
-		<div class="heading">
-			<h1>Offer you're looking for no more exist. Please check our latest offers.</h1>
-			<div class="btn-holder">
-				<a href="/offers/" title="Offers" class="btn btn-blue">View Latest Offers</a>
-		    </div>
-		</div>
-	</div>
-</section>
-{% endif %}
 
 <section class="book-now-sec" style="background-image:url(/assets/images/specials/specials-booknow.jpg);">
   <div class="inner-content">
