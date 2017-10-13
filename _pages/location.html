@@ -12,32 +12,32 @@ permalink: /location/
 
 <section class="location">
     <div class="description">
-    {% regionblock location-heading-1  type:header %}
+    {% regionblock location_heading_1,  type:header %}
     <h5>Tribeca NYC</h5>
     {% endregionblock %}
 
-    {% regionblock location-heading-2  type:header %}
+    {% regionblock location_heading_2,  type:header %}
     <h2>It’s All Happening Here</h2>
     {% endregionblock %}
 
-    {% regionblock location-content-1  type:text %}
+    {% regionblock location-content-1,  type:text %}
     <p>With gems hidden behind historic corners, vibrant art and nightlife. Tribeca is where you want to be in New York City - and so is The Frederick. Here intriguing people, artful cocktails, and luxurious accommodations mix and mingle for an experience that can’t be found anywhere else.</p>
     {% endregionblock %}
     
     <div class="btn-holder">
-      {% regionblock location-drection-link  type:text %}
+      {% regionblock location_drection_link,  type:text %}
       <a href="" title="GET HOTEL DIRECTIONS"  class="btn btn-2-cta">GET HOTEL DIRECTIONS</a>
       {% endregionblock %}
     </div>
     </div>
     <div class="photo">
       <figure>
-          {% regionblock location-brooklyn-pic  type:image %}
+          {% regionblock location_brooklyn_pic,  type:image %}
           <img src="/assets/images/location/location-1.jpg" class="img-fluid" alt="Tribeca's gateway to Brooklyn"/>
           {% endregionblock %}
       </figure>
       <figcaption>
-          {% regionblock location-brooklyn-text type:text %}
+          {% regionblock location_brooklyn_text, type:text %}
            <em>Tribeca's gateway to Brooklyn</em>
           {% endregionblock %}
         </figcaption>
@@ -49,13 +49,13 @@ permalink: /location/
     <div class="group-img">
     <div class="p1">
     <figure>
-      {% regionblock location-shopping-pic type:image %}
+      {% regionblock location_shopping_pic, type:image %}
        <img src="/assets/images/location/location-2.jpg" class="img-fluid" alt="Shopping"/>
       {% endregionblock %}</figure>
     </div>
     <div class="p2">
       <figure>
-        {% regionblock location-city-view type:image %}
+        {% regionblock location_city_view, type:image %}
          <img src="/assets/images/location/location-3.jpg" class="img-fluid" alt="City View"/>
         {% endregionblock %}
       </figure>
@@ -63,24 +63,24 @@ permalink: /location/
     </div>
     </div>
     <div class="address">
-    {% regionblock location-address type:header %}
+    {% regionblock location_address, type:header %}
     <h5 >Get in Touch</h5>
     {% endregionblock %}
 
 
     <ul>
-      {% regionblock location-address-details type:text %}
+      {% regionblock location_address_details, type:text %}
       <li class="icon-add">95 West Broadway, <br>New York, NY 10007<hr></li>
       {% endregionblock %}
 
-      {% regionblock location-contact-details type:text %}
+      {% regionblock location_contact_details, type:text %}
       <li class="icon-tell">
         <a href="tel:212.566.1900" title="Contact Number">(212) 566-1900</a><br><a href="tel:888.895.9400" title="Contact Number">888-895-9400</a>
         <hr>
       </li>
       {% endregionblock %}
 
-      {% regionblock location-email-details type:text %}
+      {% regionblock location_email_details, type:text %}
       <li class="icon-email">
         <a href="mailto:Info@thefrederickNYC.com" title="Email">Info@thefrederickNYC.com</a>
       </li>
