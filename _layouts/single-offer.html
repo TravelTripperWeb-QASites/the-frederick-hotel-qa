@@ -38,9 +38,11 @@ description: "Come join us at one of our events."
       <div class="btn-holder">
         <a href="/contact/" title="Contact" class="btn btn-2-cta">CONTACT US</a>
       </div>
-      <div class="standalone-offer">
-      	<i>Book this package and you’ll also receive a $25 American Express Card for each night you stay with us, up to $200. Treat yourself while you’re in NYC – grab a special meal or a few drinks in the greatest city in the world.</i>
-	  </div>
+      {% if offers.addon and offers.addon !="" %}
+		  <div class="standalone-offer">
+			<i>{{ offers.addon }}</i>
+		  </div>
+      {% endif %}
       <div class="btn-holder">
         {% if offers.book_now and offers.book_now !="" %}
              <a href="{{offers.book_now}}" title="Book now" class="btn btn-blue" target="_blank">BOOK NOW <i class="fa fa-angle-right" aria-hidden="true"></i></a>
