@@ -29,7 +29,10 @@
 
   {% include booking-widget.html %}
   {% include scripts.html %}
-  {% include offer-popup.html %}
+  
+  {% unless page.url contains 'best-' %}
+    {% include offer-popup.html %}
+  {% endunless %}
 </body>
 
 </html>
