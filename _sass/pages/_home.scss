@@ -843,6 +843,10 @@
       ul{
       	padding: 0 20px;
       	margin: 0;
+        .triump_logo_ie{
+          line-height: 100px;
+          padding-top:0rem;
+        }
         li{
           padding: .3rem 0; 
           a{
@@ -851,6 +855,7 @@
             img{
               width:auto;
               max-width: 170px;
+              height: 100%;
             }
             span{
             	display: block;
