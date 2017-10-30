@@ -116,5 +116,42 @@
 
   }
 
+.ttweb-booking-widget{
+  &.show{
+      font-family:$regular;
+      .ui-datepicker-inline{
+        font-family:$regular;
+        .ui-datepicker-header{
+          font-family:$medium;
+          letter-spacing:.1rem;
+        }
+        table{
+          &.ui-datepicker-calendar{
+            font-family:$regular;
+          }
+        }
+      }
+      select{
+        font-family:$regular;
+      }
+      button{
+        font-family:$regular;
+        letter-spacing:.1rem;
+      }
+      .ttweb-booking-widget__body__specials__title{
+      letter-spacing: .1rem;
+      .ttweb-booking-widget__body__specials__title__icon{
+        top: 44%;
+      }
+    }
+    .ttweb-booking-widget__body__flex-dates__link__label{
+      letter-spacing:.1rem;
+    }
+    .ttweb-booking-widget__body__people__selector__description{
+      padding:0;
+    }
+  }
+}
+
 
 
