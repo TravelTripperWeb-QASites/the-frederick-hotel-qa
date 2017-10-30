@@ -1,4 +1,4 @@
-<!-- begin SEO -->
+begin SEO -->
 {% if site.url %}
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
@@ -12,16 +12,18 @@
 {% if site.url %}
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
-
+<!-- 
 <title>{{ seo_title }}</title>
 
 {% assign seo_description = page.meta_description | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
-{% endif %}
+{% endif %} -->
+<title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.seo_description %}{{ page.seo_description  | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<meta name="description" content="{{ seo_description }}">
-<meta property="og:description" content="{{ seo_description }}">
+<!-- <meta name="description" content="{{ seo_description }}">
+<meta property="og:description" content="{{ seo_description }}"> -->
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.data.authors.primary.name %}
 {% if seo_author %}
@@ -135,4 +137,4 @@
 {% if page.meta_tags.robots %} 
   <meta name="robots" content="{{ page.meta_tags.robots }}">
 {% endif %}
-<!-- end SEO -->
+<!-- end SEO
