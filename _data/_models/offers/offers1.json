@@ -16,9 +16,9 @@
     "width": 1920,
     "height": 1080,
     "file_size": 1140388,
-    "alt": "Lion King Minskoff Theatre",
-    "caption": "Lion King Minskoff Theatre",
-    "description": "",
+    "alt": "Deals at The Frederick Hotel",
+    "caption": "Deals at The Frederick Hotel",
+    "description": "Receive a $25 American Express Card per night,",
     "file_name": "Frederick_hero.jpg",
     "date_added": "2017-10-13-173814"
   },
@@ -27,6 +27,6 @@
   "addon": "",
   "terms_list": "",
   "book_now": "https://gc.synxis.com/rez.aspx?hotel=16065&chain=16087&_ga=2.29585087.1201291722.1507922663-1654536262.1507922663&",
-  "publish": true,
+  "publish": false,
   "order": 1
 }
