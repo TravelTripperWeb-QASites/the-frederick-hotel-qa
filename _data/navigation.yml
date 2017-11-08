@@ -3,10 +3,10 @@ main:
 - left:
   - title: About
     url: "/about/"
-  - title: Rooms
-    url: "/rooms/"
   - title: Offers
     url: "/offers/"
+  - title: Rooms
+    url: "/rooms/"
 - right:
   - title: Dining
     url: "/dining/"
