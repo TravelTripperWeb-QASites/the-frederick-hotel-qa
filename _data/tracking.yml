@@ -21,6 +21,7 @@ __EDITABLE_FIELDS__:
             type: string
       gtm:
         type: nested
+        label: GTM
         fields:
           tracking_id:
             type: string
