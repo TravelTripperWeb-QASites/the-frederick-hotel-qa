@@ -7,8 +7,6 @@ main:
     url: "/rooms/"
   - title: Offers
     url: "/offers/"
-  - title: TEST
-    url: "/test/"
 - right:
   - title: Dining
     url: "/dining/"
