@@ -3,7 +3,7 @@
   "seo_title": "Superior Single Rooms in Lower Manhattan | The Frederick",
   "excerpt": "Relax in a comfortable double bed with luxury Frette linens, custom furnishings, and CO Bigelow amenities. This room is comfortable for one, cozy for two.",
   "description": "Relax in a comfortable double bed with luxury Frette linens, custom furnishings, and CO Bigelow amenities. This room is comfortable for one, cozy for two. Enjoy the historic essence of the hotel in these classic rooms.",
-  "amenities_list": "<ul>\n<li>One double bed</li>\n<li>Accommodates 1-2 guests</li>\n<li>Complimentary Wi-Fi</li>\n<li>Work Desk</li>\n<li>Flat-screen TV</li>\n<li>Hair Dryer</li>\n<li>C.O. Bigelow bath amenities</li>\n<li>Frette luxury linens and towels</li>\n<li>iPod docking station</li>\n<li>Cordless telephone</li>\n<li>Valet Laundry</li>\n<li>Movies on-demand</li>\n<li>Iron and ironing board</li>\n<li>Current copy of Time Out Magazine</li>\n<li>In room safe</li>\n</ul>",
+  "amenities_list": "<ul>\n<li>One double bed</li>\n<li>Accommodates 1-2 guests</li>\n<li>Complimentary Wi-Fi</li>\n<li>Work Desk</li>\n<li>Flat-screen TV</li>\n<li>Hair Dryer</li>\n<li>C.O. Bigelow bath amenities</li>\n<li>Frette luxury linens and towels</li>\n<li>iPod docking station</li>\n<li>Cordless telephone</li>\n<li>Valet Laundry</li>\n<li>Movies on-demand</li>\n<li>Iron and ironing board</li>\n<li>Current copy of Time Out Magazine</li>\n<li>In room safe that can't be broken into</li>\n</ul>",
   "occupancy": "1-2",
   "banner_image": {
     "url": "https://cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/Superior-Single.jpg",
@@ -22,7 +22,8 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/xsmall_Superior-Single.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/thumb_Superior-Single.jpg",
     "path": "https://cdn.traveltripper.io/site-assets/414_720_7109/media/2017-09-13-155403/Superior-Single.jpg",
-    "alt": "Superior Single"
+    "alt": "Superior Single",
+    "caption": ""
   },
   "url_friendly_name": "superior-single",
   "category": "room"
