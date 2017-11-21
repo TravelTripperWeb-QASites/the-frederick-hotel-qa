@@ -1,16 +1,36 @@
 ---
 main:
-- left:
+  left:
   - title: About
     url: "/about/"
   - title: Offers
     url: "/offers/"
   - title: Rooms
     url: "/rooms/"
-- right:
+  right:
   - title: Dining
     url: "/dining/"
   - title: Gallery
     url: "/gallery/"
   - title: Contact
     url: "/contact/"
+__EDITABLE_FIELDS__:
+  main: 
+    type: nested
+    fields: 
+      left: 
+        type: nested
+        multiple: true
+          fields:
+            title:
+              required: true
+            url:
+              required: true
+      right:
+        type: nested
+        multiple: true
+          fields:
+            title:
+              required: true
+            url:
+              required: true
