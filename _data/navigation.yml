@@ -21,16 +21,16 @@ __EDITABLE_FIELDS__:
       left: 
         type: nested
         multiple: true
-          fields:
-            title:
-              required: true
-            url:
-              required: true
+        fields:
+          title:
+            required: true
+          url:
+            required: true
       right:
         type: nested
         multiple: true
-          fields:
-            title:
-              required: true
-            url:
-              required: true
+        fields:
+          title:
+            required: true
+          url:
+            required: true
