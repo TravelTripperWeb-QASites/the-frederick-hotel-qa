@@ -19,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/thumb_Stay_A_Little_Longer.jpg",
       "git_file_name": "_assets/image_data/Stay A Little Longer.json",
       "path": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/Stay-A-Little-Longer.jpg"
+    },
+    {
+      "name": "Frederick_hero",
+      "file_name": "Frederick_hero.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/Frederick-hero.jpg",
+      "tags": "",
+      "file_size": 1140388,
+      "width": 1920,
+      "height": 1080,
+      "description": "",
+      "date_added": "2017-10-13-173814",
+      "url_large": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/large_Frederick_hero.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/medium_Frederick_hero.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/small_Frederick_hero.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/xsmall_Frederick_hero.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/thumb_Frederick_hero.jpg",
+      "git_file_name": "_assets/image_data/Frederick_hero.json",
+      "path": "//cdn.traveltripper.io/site-assets/480_720_8248/media/2017-10-13-173814/Frederick-hero.jpg"
     }
   ],
   "description": ""
