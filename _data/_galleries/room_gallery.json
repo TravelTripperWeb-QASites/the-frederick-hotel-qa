@@ -1,7 +1,25 @@
 {
   "name": "Room Gallery",
   "photos": [
-
+    {
+      "name": "Stay A Little Longer",
+      "file_name": "Stay A Little Longer.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/Stay-A-Little-Longer.jpg",
+      "tags": "",
+      "file_size": 2176502,
+      "width": 5472,
+      "height": 3648,
+      "description": "",
+      "date_added": "2017-11-03-174816",
+      "url_large": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/large_Stay_A_Little_Longer.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/medium_Stay_A_Little_Longer.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/small_Stay_A_Little_Longer.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/xsmall_Stay_A_Little_Longer.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/thumb_Stay_A_Little_Longer.jpg",
+      "git_file_name": "_assets/image_data/Stay A Little Longer.json",
+      "path": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-174816/Stay-A-Little-Longer.jpg"
+    }
   ],
   "description": ""
 }
