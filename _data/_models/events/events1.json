@@ -1,0 +1,27 @@
+{
+  "start_date": "2017-12-14T05:00:00.000Z",
+  "title": "Pizza Party",
+  "image": {
+    "name": "Truffle Pizza in Tribeca",
+    "file_name": "Truffle Pizza in Tribeca.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/Truffle-Pizza-in-Tribeca.jpg",
+    "tags": "",
+    "file_size": 7560389,
+    "width": 2848,
+    "height": 4272,
+    "description": "",
+    "date_added": "2017-11-03-181408",
+    "url_large": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/large_Truffle_Pizza_in_Tribeca.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/medium_Truffle_Pizza_in_Tribeca.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/small_Truffle_Pizza_in_Tribeca.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/xsmall_Truffle_Pizza_in_Tribeca.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/thumb_Truffle_Pizza_in_Tribeca.jpg",
+    "git_file_name": "_assets/image_data/Truffle Pizza in Tribeca.json",
+    "path": "//cdn.traveltripper.io/site-assets/480_720_9044/media/2017-11-03-181408/Truffle-Pizza-in-Tribeca.jpg",
+    "alt": "Test",
+    "caption": ""
+  },
+  "description": "Test",
+  "alt_tag": "Test"
+}

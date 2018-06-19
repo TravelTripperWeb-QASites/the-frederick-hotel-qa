@@ -1,7 +1,27 @@
 # Analytics
 analytics:
-  provider               : gtm # false (default), "google", "gtm", "custom"
+  provider               : "gtm" # false (default), "google", "gtm", "custom"
   google:
     tracking_id          :
   gtm:
     tracking_id          : GTM-KG9GTCD
+    
+    
+__EDITABLE_FIELDS__:
+  analytics:
+    type: nested
+    fields:
+      provider:
+        type: select
+        options: ["", "google", "gtm", "custom"]
+      google:
+        type: nested
+        fields:
+          tracking_id:
+            type: string
+      gtm:
+        type: nested
+        label: GTM
+        fields:
+          tracking_id:
+            type: string
